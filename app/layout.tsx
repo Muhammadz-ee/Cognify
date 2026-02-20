@@ -1,13 +1,6 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  variable: '--font-montserrat',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Cognify | Podcasts, Distilled.',
@@ -20,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${montserrat.variable} antialiased`}>
+    <html lang="en" className={`antialiased`}>
       <head>
         <Script
           id="meta-pixel"
