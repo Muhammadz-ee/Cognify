@@ -175,7 +175,8 @@ export function Hero() {
             <h3 className="text-4xl md:text-5xl font-bold mb-3">
               Try For <span className="text-purple-500">Free</span>
             </h3>
-            <p className="text-sm font-bold tracking-[0.2em] uppercase text-gray-400">
+            <br/>
+            <p className="text-[22px] font-bold tracking-[0.2em] uppercase text-gray-400">
               7 Day Free Trial - Cancel Any Time
             </p>
           </div>
@@ -198,14 +199,14 @@ export function Hero() {
                 <Star className="w-3 h-3 fill-current" />
                 <Star className="w-3 h-3 fill-current" />
               </div>
-              <p className="text-xs md:text-sm font-bold italic text-white">
-                "FINALLY, AN APP THAT HELPS ME ACTUALLY REMEMBER WHAT I WATCH."
-              </p>
             </div>
             <div className="text-xs font-bold text-gray-500 border-l border-white/10 pl-4 ml-2">
               SAM D.
             </div>
           </div>
+          <p className="text-xs md:text-sm font-bold italic text-white flex-1">
+            "FINALLY, AN APP THAT HELPS ME ACTUALLY REMEMBER WHAT I WATCH."
+          </p>
         </div>
       </Container>
     </section>

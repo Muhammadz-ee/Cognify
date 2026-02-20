@@ -35,7 +35,7 @@ export function Features() {
               >
                 <Button
                   size="lg"
-                  className="h-24 px-6 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                  className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
                   aria-label="Download on the App Store"
                 >
                   <Image
@@ -43,13 +43,13 @@ export function Features() {
                     alt="App Store"
                     width={40}
                     height={40}
-                    className="w-10 h-12"
+                    className="w-8 h-10"
                   />
                   <div className="text-left">
-                    <div className="text-[16px] font-bold uppercase tracking-wider opacity-90">
+                    <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[28px] font-bold leading-none">
+                    <div className="text-[24px] font-bold leading-none">
                       App Store
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export function Features() {
               >
                 <Button
                   size="lg"
-                  className="h-24 px-6 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                  className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
                   aria-label="Get it on Google Play"
                 >
                   <Image
@@ -71,13 +71,13 @@ export function Features() {
                     alt="Google Play"
                     width={40}
                     height={40}
-                    className="w-12 h-12"
+                    className="w-8 h-10"
                   />
                   <div className="text-left">
-                    <div className="text-[16px] font-bold uppercase tracking-wider opacity-90">
+                    <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[28px] font-bold leading-none">
+                    <div className="text-[24px] font-bold leading-none">
                       Google Play
                     </div>
                   </div>
@@ -291,17 +291,15 @@ export function Features() {
             </div>
           </div>
           <div className="flex-1 text-left">
-            <div className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-xs font-bold text-white mb-4">
+            <div className="inline-block px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-xs font-bold text-white mb-4 border border-white">
               Insight Modes™
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Summarize Your Way. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-green">
-                The Depth.
-              </span>
+            <h2 className="text-4xl md:text-5xl font-normal text-white mb-6 leading-tight">
+              Summarize. Skip the Noise. <strong>Learn What Counts.</strong> <br />
             </h2>
             <p className="text-gray-400 text-lg leading-relaxed">
-              Shows the choice between Short, Detailed, or Takeaway.
+              Instant takeaways and structured insights—so you save time and
+              actually remember.
             </p>
           </div>
         </div>
@@ -456,36 +454,7 @@ export function Features() {
 
                 <div className="flex-1 space-y-3 overflow-hidden relative mask-linear-fade-bottom">
                   {/* Item 1 */}
-                  <div className="bg-gray-900/30 p-3 rounded-2xl border border-white/5 hover:border-purple-500/30 hover:bg-gray-900/50 transition-all cursor-pointer group">
-                    <div className="text-[9px] text-green-500/70 mb-2 truncate font-medium bg-green-900/10 w-fit px-1.5 rounded">
-                      Gabor Mate: The Childhood lie That's Ruining All of our
-                      lives
-                    </div>
-                    <div className="flex justify-between items-start mb-2">
-                      <span className="text-[9px] bg-purple-500/10 text-purple-300 border border-purple-500/20 px-1.5 py-0.5 rounded font-bold">
-                        Note
-                      </span>
-                      <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <svg
-                          className="w-3 h-3 text-gray-400 hover:text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <p className="text-[11px] text-gray-300 leading-relaxed font-serif italic opacity-90">
-                      If we were often criticized as children, we internalize
-                      that pattern and start judging ourselv...
-                    </p>
-                  </div>
+                  
 
                   {/* Item 2 */}
                   <div className="bg-gray-900/30 p-3 rounded-2xl border border-white/5 hover:border-green-500/30 hover:bg-gray-900/50 transition-all cursor-pointer group">

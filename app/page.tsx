@@ -101,7 +101,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="h-24 px-6 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+              className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
               aria-label="Download on the App Store"
             >
               <Image
@@ -109,19 +109,19 @@ export default function Home() {
                 alt="App Store"
                 width={40}
                 height={40}
-                className="w-10 h-12"
+                className="w-8 h-10"
               /> <div className="text-left">
-                  <div className="text-[16px] font-bold uppercase tracking-wider opacity-90">
+                  <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
                     Download for free
                   </div>
-                  <div className="text-[28px] font-bold leading-none">
+                  <div className="text-[24px] font-bold leading-none">
                     App Store
                   </div>
                 </div>
             </Button>
             <Button
               size="lg"
-              className="h-24 px-6 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+              className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
               aria-label="Download on the App Store"
             >
               <Image
@@ -129,12 +129,12 @@ export default function Home() {
                 alt="App Store"
                 width={40}
                 height={40}
-                className="w-10 h-12"
+                className="w-8 h-10"
               /> <div className="text-left">
-                  <div className="text-[16px] font-bold uppercase tracking-wider opacity-90">
+                  <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
                     Download for free
                   </div>
-                  <div className="text-[28px] font-bold leading-none">
+                  <div className="text-[24px] font-bold leading-none">
                     Play Store
                   </div>
                 </div>
