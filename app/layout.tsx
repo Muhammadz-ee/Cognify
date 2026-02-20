@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`antialiased`}>
       <head>
+        <link rel="icon" href="/images/favicon.ico" />
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
