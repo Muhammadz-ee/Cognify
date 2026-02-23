@@ -14,7 +14,7 @@ const podcasts = [
 export function PodcastTicker() {
   return (
     <section className="py-2 bg-grey overflow-hidden">
-      <Container>
+      <div>
         <div className="text-center mb-12">
           <h3 className="text-2xl md:text-6xl font-bold text-white mb-2">
             Learn Smarter from the <br />
@@ -22,15 +22,15 @@ export function PodcastTicker() {
             You Already Love
             <span className="inline-block ml-2 text-purple-400">💜</span>
           </h3>
-          <p className="text-lg font-bold tracking-[0.2em] text-gray-500 uppercase mt-4">
+          <p className="mt-12 text-lg font-bold tracking-[0.2em] text-gray-500 uppercase">
             Designed for your focus, growth, and retention.
           </p>
         </div>
 
-        <div className="w-full bg-[#2E2D32] rounded-lg p-8">
-          <div className="flex flex-wrap gap-8 justify-center">
+        <div className="w-full bg-[#2E2D31] p-8">
+          <div className="flex flex-wrap gap-12 justify-center">
             {podcasts.map((podcast, index) => (
-              <div key={index} className="flex flex-col items-center gap-4 group cursor-pointer">
+              <div key={index} className="flex flex-col items-left gap-4 group cursor-pointer">
           <div className="w-28 h-28 md:w-46 md:h-46 overflow-hidden relative border border-white/10 shadow-lg transition-transform duration-300 ">
             <Image
               src={podcast.image}
@@ -39,11 +39,11 @@ export function PodcastTicker() {
               className="object-cover"
             />
           </div>
-          <div className="text-center max-w-[120px]">
-            <span className="text-[10px] md:text-xs font-medium text-gray-500 group-hover:text-white transition-colors block">
+          <div className="text-left">
+            <span className="text-[10px] md:text-[14px] font-medium text-gray-300 group-hover:text-white transition-colors block">
               {podcast.name}
             </span>
-            <span className="text-[9px] md:text-xs text-gray-600 group-hover:text-gray-400 transition-colors block mt-1">
+            <span className="text-[9px] md:text-[14px] text-gray-400 group-hover:text-gray-100 transition-colors block mt-1">
               Artist Name
             </span>
           </div>
@@ -51,7 +51,7 @@ export function PodcastTicker() {
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

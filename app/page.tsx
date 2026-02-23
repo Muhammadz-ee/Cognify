@@ -86,18 +86,11 @@ export default function Home() {
 
       <Features />
 
-      <section
-        id="contact"
-        className="py-24 bg-linear-to-b from-black to-gray-900 border-t border-white/5"
-      >
+      <section id="contact" className="py-24  border-t border-white/5">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Be Among the First?
+          <h2 className="text-[66.6667px] font-bold mb-6 leading-none">
+            Ready to Be Among <br /> the First?
           </h2>
-          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Join the waitlist and get early access to the future of smarter
-            listening.
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
@@ -110,14 +103,15 @@ export default function Home() {
                 width={40}
                 height={40}
                 className="w-8 h-10"
-              /> <div className="text-left">
-                  <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
-                    Download for free
-                  </div>
-                  <div className="text-[24px] font-bold leading-none">
-                    App Store
-                  </div>
+              />{" "}
+              <div className="text-left">
+                <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
+                  Download for free
                 </div>
+                <div className="text-[24px] font-bold leading-none">
+                  App Store
+                </div>
+              </div>
             </Button>
             <Button
               size="lg"
@@ -130,14 +124,15 @@ export default function Home() {
                 width={40}
                 height={40}
                 className="w-8 h-10"
-              /> <div className="text-left">
-                  <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
-                    Download for free
-                  </div>
-                  <div className="text-[24px] font-bold leading-none">
-                    Play Store
-                  </div>
+              />{" "}
+              <div className="text-left">
+                <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
+                  Download for free
                 </div>
+                <div className="text-[24px] font-bold leading-none">
+                  Play Store
+                </div>
+              </div>
             </Button>
           </div>
           <p className="mt-8 text-sm text-gray-500">

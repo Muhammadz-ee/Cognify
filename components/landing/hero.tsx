@@ -14,7 +14,7 @@ import {
 
 export function Hero() {
   return (
-    <section className="relative pt-40 pb-20 overflow-hidden bg-black">
+    <section className="relative pt-20 pb-20 overflow-hidden bg-black">
       <Container>
         <div className="flex flex-col items-center text-center z-10">
           <motion.div
@@ -23,8 +23,8 @@ export function Hero() {
             className="mb-4"
           >
             <h1
-              className="text-6xl sm:text-8xl md:text-9xl font-black tracking-wider text-white mb-4 uppercase leading-[0.95]"
-              style={{ fontFamily: "'Monument Extended', sans-serif" }}
+              className="text-[144.048px] font-black tracking-wider text-white mb-4 uppercase leading-[0.95]"
+              style={{ fontFamily: "'Monument Extended', sans-serif", lineHeight: "0.95" }}
             >
               PODCAST <br /> LISTENING <br /> UPGRADED
             </h1>

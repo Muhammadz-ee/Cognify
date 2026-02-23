@@ -27,12 +27,12 @@ export function Navbar() {
     return pathname === href;
   };
 
-  const linkClass = (href: string, base = "text-xl font-medium transition-colors") => {
-    return `${base} ${isActive(href) ? "text-[#ad9ad6] underline decoration-[#ad9ad6] underline-offset-4" : "text-gray-300 hover:text-white"}`;
+  const linkClass = (href: string, base = "text-[26.8224px] font-medium transition-colors") => {
+    return `${base} ${isActive(href) ? "text-[26.8224px] text-[#ad9ad6] underline decoration-[#ad9ad6] underline-offset-4" : "text-gray-150 hover:text-white"}`;
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+    <nav className="mt-8 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
       <Container>
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -42,7 +42,7 @@ export function Navbar() {
               alt="Cognify Logo"
               width={192}
               height={72}
-              className="w-48 h-auto"
+              className="w-72 h-auto"
             />
           </Link>
 
