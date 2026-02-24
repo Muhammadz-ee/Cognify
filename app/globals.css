@@ -134,7 +134,7 @@ html {
 }
 
 /* Headings and body text: use classes instead of element selectors */
-.heading-1 { font-size: clamp(154.048px, 5.2vw, 132px); line-height: 1.03; font-weight: 400; }
+.heading-1 { font-size: clamp(154.048px, 5.2vw, 132px); line-height: 1.05; font-weight: 400; }
 .heading-2 { font-size: clamp(20px, 3.8vw, 46px); line-height: 1.06; }
 .heading-3 { font-size: clamp(52px, 2.8vw, 58px); }
 .heading-4 { font-size: clamp(18px, 2.8vw, 36px); }

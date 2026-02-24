@@ -23,10 +23,10 @@ export function Hero() {
             className="mb-4"
           >
               <h1
-                className="text-[48px] md:text-[144.048px] font-black tracking-wider text-white mb-4 uppercase leading-[0.95] heading heading-1"
+                className="text-[48px] md:text-[144.048px] font-black tracking-wider text-white mb-4 uppercase leading-[1.05] heading heading-1"
               style={{
                 fontFamily: "'Monument Extended', sans-serif",
-                lineHeight: "0.85",
+                lineHeight: "1.04",
               }}
             >
               PODCAST <br /> LISTENING <br /> UPGRADED
@@ -195,10 +195,10 @@ export function Hero() {
               {/* Overlay: Try For Free + Testimonial bottom-center on video */}
               <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-20 w-full px-4 flex flex-col items-center gap-6">
                 <div className="text-center">
-                  <h3 className="text-[36px] md:text-[59.358px] font-bold mb-1 heading heading-2">
+                  <h3 className="heading-2 font-bold mb-1 heading heading-2">
                     Try For <span className="text-purple-300">Free</span>
                   </h3>
-                  <p className="mt-4 text-[14px] md:text-[22px] font-bold tracking-[0.12em] uppercase text-gray-200 body-text">
+                  <p className="mt-4 heading-2 font-bold tracking-[0.12em] uppercase text-gray-200 body-text">
                     7 Day Free Trial - Cancel Any Time
                   </p>
                 </div>
@@ -206,7 +206,7 @@ export function Hero() {
                 <div className="mt-12 relative z-10 max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-10">
                   <div className="flex flex-col items-center">
                     <div className="inline-flex bg-white rounded-full p-3 pr-8 items-center gap-4 shadow-2xl">
-                      <div className="w-20 h-16 rounded-full bg-gray-200 overflow-hidden relative border-2 border-purple-500/60">
+                      <div className="w-26 h-16 rounded-full bg-gray-200 overflow-hidden relative border-2 border-purple-500/60">
                         <Image
                           src="/images/testimonial.webp"
                           alt="Sam"
@@ -216,11 +216,11 @@ export function Hero() {
                       </div>
 
                       <div className="flex gap-1 text-purple-300">
-                        <Star className="w-5 h-5 fill-current" />
-                        <Star className="w-5 h-5 fill-current" />
-                        <Star className="w-5 h-5 fill-current" />
-                        <Star className="w-5 h-5 fill-current" />
-                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-12 h-12 fill-current" />
+                        <Star className="w-12 h-12 fill-current" />
+                        <Star className="w-12 h-12 fill-current" />
+                        <Star className="w-12 h-12 fill-current" />
+                        <Star className="w-12 h-12 fill-current" />
                       </div>
                     </div>
 
