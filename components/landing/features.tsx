@@ -13,7 +13,10 @@ export function Features() {
       <Container>
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
-          <h2 className="text-2xl md:text-5xl font-bold mb-4 text-white rgb-text" data-text="Turn Any Video Into a Masterclass">
+          <h2
+            className="text-2xl md:text-5xl font-bold mb-4 text-white rgb-text"
+            data-text="Turn Any Video Into a Masterclass"
+          >
             Turn Any Video Into a Masterclass <br />
           </h2>
           <p className="text-white/100 body-text max-w-2xl mx-auto mt-2 mb-8 leading-relaxed">
@@ -129,7 +132,10 @@ export function Features() {
             >
               Insight Modes™
             </Button>
-            <h2 className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-4 leading-[1.1] rgb-text-feature" data-text="Summarize. Skip the Noise. Learn What Counts.">
+            <h2
+              className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-4 leading-[1.1] rgb-text-feature"
+              data-text="Summarize. Skip the Noise. Learn What Counts."
+            >
               Summarize. Skip the Noise. <br className="hidden md:block" />
               <strong>Learn What Counts.</strong>
             </h2>
@@ -165,7 +171,10 @@ export function Features() {
             >
               Annotations™
             </Button>
-            <h2 className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-4 leading-[1.1] rgb-text-feature" data-text="From Passive Watching to Active Listening">
+            <h2
+              className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-4 leading-[1.1] rgb-text-feature"
+              data-text="From Passive Watching to Active Listening"
+            >
               From Passive Watching <br className="hidden md:block" />
               <strong>to Active Listening</strong>
             </h2>
@@ -201,18 +210,26 @@ export function Features() {
             >
               NoteVault™
             </Button>
-            <h2 className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-bold text-white mb-4 leading-[1.1] rgb-text-feature" data-text="Revisit & Retain">
+            <h2
+              className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-bold text-white mb-4 leading-[1.1] rgb-text-feature"
+              data-text="Revisit & Retain"
+            >
               Revisit & Retain
             </h2>
             <p className="text-gray-100 body-text leading-relaxed mb-8">
-              It all starts with a simple tap on the screen. The Memory AI solves the
-              "passive listening" problem. Your key takeaways are organized,
-              categorized, and forever accessible.
+              In a world of constant content, it's easy to forget what we hear.
+              Cognify changes that. Your key takeaways are captured, organized,
+              and always accessible.
             </p>
           </div>
         </div>
 
-       <p className="text-gray-100 body-text leading-relaxed mb-8 text-center">  „Tell me and I forget, teach me and I may remember, involve me and I learn.” <br/>-Benjamin Franklin </p>
+        <p className="text-gray-100 body-text leading-relaxed mb-8 text-center">
+          {" "}
+          „Tell me and I forget, teach me and I may remember, involve me and I
+          learn.” <br />
+          -Benjamin Franklin{" "}
+        </p>
       </Container>
     </section>
   );
