@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-white/10 pt-16 pb-8">
+    <footer className="bg-black border-t border-white/10 pt-16 pb-8 z-100">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-6 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
@@ -23,12 +23,12 @@ export function Footer() {
           </Link>
           </div>
           <div className="col-span-1">
-            <h4 className="text-[12px] font-bold text-white mb-4">Product</h4>
+            <h4 className="text-xs font-bold text-white mb-4">Product</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#features"
-                  className="text-[12px] text-gray-400 hover:text-brand-purple transition-colors"
+                  className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
                 >
                   Features
                 </Link>
@@ -37,12 +37,12 @@ export function Footer() {
           </div>
 
           <div className="col-span-1">
-            <h4 className="text-[12px] font-bold text-white mb-4">About</h4>
+            <h4 className="text-xs font-bold text-white mb-4">About</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="text-[12px] text-gray-400 hover:text-brand-purple transition-colors"
+                  className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
                 >
                   Our Story
                 </Link>
@@ -51,7 +51,7 @@ export function Footer() {
           </div>
 
             <div className="col-span-1">
-            <h4 className="text-[12px] font-bold text-white mb-4">Connect</h4>
+            <h4 className="text-xs font-bold text-white mb-4">Connect</h4>
             <ul className="space-y-3">
               <li>
               <a href="mailto:support@getcognifyai.com" className="text-gray-400 hover:text-brand-purple transition-colors inline-flex items-center gap-2">
@@ -87,12 +87,12 @@ export function Footer() {
             </div>
 
           <div className="col-span-1">
-            <h4 className="text-[12px] font-bold text-white mb-4">Support</h4>
+            <h4 className="text-xs font-bold text-white mb-4">Support</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#"
-                  className="text-[12px] text-gray-400 hover:text-brand-purple transition-colors"
+                  className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
                 >
                   Help Center
                 </Link>
@@ -100,7 +100,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/terms"
-                  className="text-[12px] text-gray-400 hover:text-brand-purple transition-colors"
+                  className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
                 >
                   Terms of Use
                 </Link>
@@ -108,7 +108,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/privacy"
-                  className="text-[12px] text-gray-400 hover:text-brand-purple transition-colors"
+                  className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
                 >
                   Privacy Policy
                 </Link>
@@ -118,7 +118,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[11px] text-light-500">
+          <p className="text-xs text-light-500">
            <strong> DISCLAIMER:</strong> ALL PODCAST AND VIDEO CONTENT DISPLAYED IN THIS
             APP—INCLUDING CREATOR IMAGES—IS FOR ILLUSTRATIVE PURPOSES ONLY. WE
             DO NOT CLAIM OWNERSHIP OF THIRD-PARTY CONTENT, NOR ARE WE AFFILIATED

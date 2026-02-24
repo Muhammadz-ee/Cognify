@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 
-export function Navbar() {
+export function NavbarContact() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const [hash, setHash] = useState("");
@@ -27,32 +27,31 @@ export function Navbar() {
     return pathname === href;
   };
 
-  const navFontStyle = { fontFamily: "'Montserrat', Montserrat, sans-serif" , fontWeight: "500", fontSize: "26.8224px" };
-
-  const linkClass = (href: string, base = "text-[26.8224px] font-medium transition-colors capitalize") => {
-    return `${base} ${isActive(href) ? "text-[26.8224px] text-[#ad9ad6] underline decoration-[#ad9ad6] underline-offset-4" : "text-gray-150 hover:text-white"}`;
+  const linkClass = (href: string, base = "text-[26.8224px] font-medium transition-colors") => {
+    return `${base} ${isActive(href) ? "text-[26.8224px] text-[#ad9ad6] underline decoration-[#ad9ad6] underline-offset-4" : "text-gray-150 hover:text-black"}`;
   };
 
   return (
-    <nav className="mt-8 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+    <nav className="mt-14 z-50">
       <Container>
-        <div className="flex items-center justify-between h-20 md:px-12">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <Image
-              src="/images/site-logo.webp"
+              src="/images/site-logo-lite.webp"
               alt="Cognify Logo"
               width={192}
-              height={70}
-              className="w-34 md:w-70 h-auto"
+              height={72}
+              className="w-72 h-auto"
             />
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className={linkClass("/")} style={navFontStyle}>Home</Link>
-            <Link href="#features" className={linkClass("#features")} style={navFontStyle}>Features</Link>
-            <Link href="/contact" className={linkClass("/contact")} style={navFontStyle}>Contact Us</Link>
+            <Link href="#about" className={linkClass("#about")}>About Us</Link>
+            <Link href="/" className={linkClass("/")}>Home</Link>
+            <Link href="#features" className={linkClass("#features")}>Features</Link>
+            <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
           </div>
 
           {/* Mobile Menu Button */}

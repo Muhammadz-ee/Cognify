@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Monument Extended';
-  src: url('/fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-family: "Monument Extended";
+  src: url("/fonts/MonumentExtended-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Monument Extended';
-  src: url('/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+  font-family: "Monument Extended";
+  src: url("/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @theme {
-  --font-monument: 'Monument Extended', sans-serif;
+  --font-monument: "Monument Extended", sans-serif;
 
-  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    var(--font-montserrat), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   --color-brand-purple: #7e4dfa;
   --color-brand-green: #1cb84b;
@@ -73,12 +75,92 @@
   }
 
   .mask-linear-fade {
-    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
   }
 
   .mask-linear-fade-bottom {
-    mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 80%, transparent 100%);
+    mask-image: linear-gradient(
+      to bottom,
+      black 0%,
+      black 80%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      black 0%,
+      black 80%,
+      transparent 100%
+    );
   }
+
+
+body {
+  background: #000;
 }
+
+.rgb-text {
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+
+  text-shadow:
+    -1px 0 0 #00ffff,  /* Cyan left */
+     1px 0 0 #ff00ff;  /* Pink right */
+}
+
+.rgb-text-feature {
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+
+  text-shadow:
+    -1px 0 0 #00ffff,  /* Cyan left */
+     1px 0 0 #ff00ff;  /* Pink right */
+}
+}
+
+/* Responsive typography and global media rules */
+html {
+  /* Base font scales between 14px and 18px depending on viewport */
+  font-size: clamp(14px, 0.9rem + 0.3vw, 18px);
+}
+
+/* Headings scale responsively */
+h1 { font-size: clamp(154.048px, 5.2vw, 132px); line-height: 1.03; font-weight: 400; }
+h2 { font-size: clamp(20px, 3.8vw, 46px); line-height: 1.06; }
+h3 { font-size: clamp(18px, 2.8vw, 36px); }
+p, li, a, span { font-size: clamp(18px, 1.2vw, 24px); }
+
+/* .headingbottom{ font-size: clamp(20px, 3.8vw, 46px); line-height: 1.06; } */
+/* Make images/videos responsive by default */
+img, picture, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility: tighter containers on small screens */
+.container-tight { padding-left: 1rem; padding-right: 1rem; }
+
+/* Improve readability for very small screens */
+@media (max-width: 640px) {
+  .rgb-text, .rgb-text-feature { text-shadow: none; }
+  h1 { font-size: clamp(56.048px, 5.2vw, 132px); line-height: 1.03; font-weight: 100; }
+  h2 { font-size: clamp(22px, 3.8vw, 56px); line-height: 1.06; }
+  h3 { font-size: clamp(14px, 2.8vw, 36px); }
+  p, li, a, span { font-size: clamp(18px, 1.2vw, 18px); }
+}
+
