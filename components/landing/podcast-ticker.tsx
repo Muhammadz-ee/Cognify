@@ -4,11 +4,31 @@ import { Container } from "@/components/ui/container";
 import Image from "next/image";
 
 const podcasts = [
-  { name: "The Mel Robbins Podcast", artist: "Mel Robbins", image: "/images/album-1.webp" },
-  { name: "Huberman Lab", artist: "Andrew Huberman", image: "/images/album-2.webp" },
-  { name: "Feel Better, Live More", artist: "Dr Rangan Chatterjee", image: "/images/album-3.webp" },
-  { name: "The Diary Of A CEO", artist: "Steven Bartlett", image: "/images/album-5.webp" },
-  { name: "Lex Fridman Podcast", artist: "Lex Fridman", image: "/images/album-4.webp" },
+  {
+    name: "The Mel Robbins Podcast",
+    artist: "Mel Robbins",
+    image: "/images/album-1.webp",
+  },
+  {
+    name: "Huberman Lab",
+    artist: "Andrew Huberman",
+    image: "/images/album-2.webp",
+  },
+  {
+    name: "Feel Better, Live More",
+    artist: "Dr Rangan Chatterjee",
+    image: "/images/album-3.webp",
+  },
+  {
+    name: "The Diary Of A CEO",
+    artist: "Steven Bartlett",
+    image: "/images/album-5.webp",
+  },
+  {
+    name: "Lex Fridman Podcast",
+    artist: "Lex Fridman",
+    image: "/images/album-4.webp",
+  },
 ];
 
 export function PodcastTicker() {
@@ -21,13 +41,20 @@ export function PodcastTicker() {
             YouTube Content <br />
             You Already Love
             <span className="inline-block ml-2 text-purple-400">🤍</span>
-          </h3>
+          </h3>  <br />  <br />  <br />
+          <p>
+            DESIGNED for your focus, growth, and retention.
+            <br />
+          </p>
         </div>
 
         <div className="w-full bg-[#2E2D31] p-8">
           <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 justify-center">
             {podcasts.map((podcast, index) => (
-              <div key={index} className="flex flex-col items-left gap-4 group cursor-pointer">
+              <div
+                key={index}
+                className="flex flex-col items-left gap-4 group cursor-pointer"
+              >
                 <div className="w-28 h-28 md:w-48 md:h-48 overflow-hidden relative border border-white/10 shadow-lg transition-transform duration-300 ">
                   <Image
                     src={podcast.image}

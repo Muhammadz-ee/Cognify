@@ -105,7 +105,7 @@ export function Features() {
         </div>
 
         {/* Feature 2: Insight Modes */}
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-12 md:-mt-24">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-12 md:-mt-14">
           <div className="flex-1 relative flex justify-center md:z-30">
             <div className="relative w-full max-w-[820px] overflow-hidden">
               <Image
@@ -115,7 +115,7 @@ export function Features() {
                 height={2080}
                 className="w-full h-auto block"
               />
-              <div className="absolute left-0 right-0 bottom-0 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
+              <div className="absolute left-0 right-0 bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
             </div>
           </div>
           <div className="flex-1 text-left">
@@ -141,7 +141,7 @@ export function Features() {
         </div>
 
         {/* Feature 3: Annotations */}
-        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 mb-12 md:-mt-12">
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 mb-12 md:-mt-52">
           <div className="flex-1 relative flex justify-center md:z-20">
             <div className="relative w-full max-w-[820px] overflow-hidden">
               <Image
@@ -151,7 +151,7 @@ export function Features() {
                 height={2080}
                 className="w-full h-auto block"
               />
-              <div className="absolute left-0 right-0 bottom-0 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
+              <div className="absolute left-0 right-0 bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
             </div>
           </div>
           <div className="flex-1 text-left">
@@ -177,7 +177,7 @@ export function Features() {
         </div>
 
         {/* Feature 4: NoteVault */}
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-12 md:-mt-6">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-12 md:-mt-36">
           <div className="flex-1 relative flex justify-center md:z-10">
             <div className="relative w-full max-w-[620px] overflow-hidden">
               <Image
@@ -187,7 +187,7 @@ export function Features() {
                 height={740}
                 className="w-full h-auto block"
               />
-              <div className="absolute left-0 right-0 bottom-0 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
+              <div className="absolute left-0 right-0 bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
             </div>
           </div>
           <div className="flex-1 text-left">
