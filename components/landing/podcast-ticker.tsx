@@ -41,9 +41,9 @@ export function PodcastTicker() {
             YouTube Content <br />
             You Already Love
             <span className="inline-block ml-2 text-purple-400">🤍</span>
-          </h3>  <br />  <br />  <br />
-          <p>
-            DESIGNED for your focus, growth, and retention.
+          </h3>  <br />  <br />
+          <p className="body-text text-gray-400 max-w-2xl mx-auto">
+            DESIGNED FOR YOUR FOCUS, GROWTH, AND RETENTION.
             <br />
           </p>
         </div>

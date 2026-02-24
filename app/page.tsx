@@ -86,57 +86,71 @@ export default function Home() {
 
       <Features />
 
-      <section id="contact" className="py-24  border-t border-white/5">
+      <section id="contact" className="py-10  border-t border-white/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-[36px] md:text-[66.6667px] font-bold mb-6 leading-none">
             Ready to Be Among <br /> the First?
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
-              aria-label="Download on the App Store"
-            >
-              <Image
-                src="/images/app-store.svg"
-                alt="App Store"
-                width={40}
-                height={40}
-                className="w-8 h-10"
-              />{" "}
-              <div className="text-left">
-                <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
-                  Download for free
-                </div>
-                <div className="text-[24px] font-bold leading-none">
-                  App Store
-                </div>
-              </div>
-            </Button>
-            <Button
-              size="lg"
-              className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
-              aria-label="Download on the App Store"
-            >
-              <Image
-                src="/images/play-store.svg"
-                alt="App Store"
-                width={40}
-                height={40}
-                className="w-8 h-10"
-              />{" "}
-              <div className="text-left">
-                <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
-                  Download for free
-                </div>
-                <div className="text-[24px] font-bold leading-none">
-                  Play Store
-                </div>
-              </div>
-            </Button>
+            <div className="flex justify-center gap-4 mt-4">
+              <a
+                href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button
+                  size="lg"
+                  className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                  aria-label="Download on the App Store"
+                >
+                  <Image
+                    src="/images/app-store.svg"
+                    alt="App Store"
+                    width={42}
+                    height={42}
+                    className="w-8 h-10"
+                  />
+                  <div className="text-left">
+                    <div className="text-[14px] font-bold uppercase tracking-wider opacity-90">
+                      Download for free
+                    </div>
+                    <div className="text-[22px] font-bold leading-none">
+                      App Store
+                    </div>
+                  </div>
+                </Button>
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button
+                  size="lg"
+                  className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                  aria-label="Get it on Google Play"
+                >
+                  <Image
+                    src="/images/play-store.svg"
+                    alt="Google Play"
+                    width={42}
+                    height={42}
+                    className="w-8 h-10"
+                  />
+                  <div className="text-left">
+                    <div className="text-[14px] font-bold uppercase tracking-wider opacity-90">
+                      Download for free
+                    </div>
+                    <div className="text-[22px] font-bold leading-none">
+                      Google Play
+                    </div>
+                  </div>
+                </Button>
+              </a>
           </div>
-          <p className="mt-8 text-sm text-gray-500">
-            Smarter listening starts today — Download now.
+          <p className="mt-8 text-sm text-gray-200">
+            🎧 Smarter listening starts today — Download now.
           </p>
         </div>
       </section>

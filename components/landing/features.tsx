@@ -9,14 +9,14 @@ import { Apple, Play } from "lucide-react";
 
 export function Features() {
   return (
-    <section id="features" className="py-24 bg-black overflow-hidden">
+    <section id="features" className="py-16 bg-black overflow-hidden">
       <Container>
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h2 className="text-2xl md:text-5xl font-bold mb-4 text-white rgb-text" data-text="Turn Any Video Into a Masterclass">
             Turn Any Video Into a Masterclass <br />
           </h2>
-          <p className="text-white/80 text-[16px] md:text-[20px] max-w-2xl mx-auto mt-2 leading-relaxed">
+          <p className="text-white/100 body-text max-w-2xl mx-auto mt-2 mb-8 leading-relaxed">
             Summarize key points, take organized notes, and get AI-powered{" "}
             answers—so you don’t just watch, you truly learn.
           </p>
@@ -42,15 +42,15 @@ export function Features() {
                   <Image
                     src="/images/app-store.svg"
                     alt="App Store"
-                    width={40}
-                    height={40}
+                    width={42}
+                    height={42}
                     className="w-8 h-10"
                   />
                   <div className="text-left">
-                    <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
+                    <div className="text-[14px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[24px] font-bold leading-none">
+                    <div className="text-[22px] font-bold leading-none">
                       App Store
                     </div>
                   </div>
@@ -70,15 +70,15 @@ export function Features() {
                   <Image
                     src="/images/play-store.svg"
                     alt="Google Play"
-                    width={40}
-                    height={40}
+                    width={42}
+                    height={42}
                     className="w-8 h-10"
                   />
                   <div className="text-left">
-                    <div className="text-[12px] font-bold uppercase tracking-wider opacity-90">
+                    <div className="text-[14px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[24px] font-bold leading-none">
+                    <div className="text-[22px] font-bold leading-none">
                       Google Play
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export function Features() {
               Summarize. Skip the Noise. <br className="hidden md:block" />
               <strong>Learn What Counts.</strong>
             </h2>
-            <p className="text-gray-100 text-[16px] md:text-[20px] leading-relaxed">
+            <p className="text-gray-100 body-text leading-relaxed">
               Instant takeaways and structured insights—so you save time and
               actually remember.
             </p>
@@ -169,7 +169,7 @@ export function Features() {
               From Passive Watching <br className="hidden md:block" />
               <strong>to Active Listening</strong>
             </h2>
-            <p className="text-gray-100 text-[16px] md:text-[20px] leading-relaxed">
+            <p className="text-gray-100 body-text leading-relaxed">
               Instantly capture ideas and effortlessly annotate videos in real
               time—without interrupting your flow.
             </p>
@@ -204,13 +204,15 @@ export function Features() {
             <h2 className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-bold text-white mb-4 leading-[1.1] rgb-text-feature" data-text="Revisit & Retain">
               Revisit & Retain
             </h2>
-            <p className="text-gray-100 text-[16px] md:text-[20px] leading-relaxed mb-8">
+            <p className="text-gray-100 body-text leading-relaxed mb-8">
               It all starts with a simple tap on the screen. The Memory AI solves the
               "passive listening" problem. Your key takeaways are organized,
               categorized, and forever accessible.
             </p>
           </div>
         </div>
+
+       <p className="text-gray-100 body-text leading-relaxed mb-8 text-center">  „Tell me and I forget, teach me and I may remember, involve me and I learn.” <br/>-Benjamin Franklin </p>
       </Container>
     </section>
   );

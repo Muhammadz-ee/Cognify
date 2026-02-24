@@ -17,7 +17,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               {/* Left column: heading + form */}
               <div className="space-y-6">
-                <h1 className="text-3xl md:text-4xl font-extrabold text-left text-gray-900">
+                <h1 className="heading-4 font-bold text-center text-gray-900">
                   We Love Feedback!
                 </h1>
               {/* Left: form card */}
@@ -75,7 +75,7 @@ export default function ContactPage() {
               {/* Right: contact info */}
               <aside className="flex flex-col items-start justify-center px-2 md:pl-8">
                 <div className="mb-6 max-w-md">
-                  <h3 className="text-xl md:text-2xl font-extrabold mb-4 leading-tight text-gray-900">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 leading-tight text-gray-900">
                     Have a question, need support, or want to collaborate? Reach out—we'd love to hear from you.
                   </h3>
                   <div className="flex items-start gap-4">
@@ -100,7 +100,8 @@ export default function ContactPage() {
                       >
                         admin@getcognifyai.com
                       </a>
-                      <p className="mt-4 text-sm text-gray-600 max-w-sm">
+                      <br />
+                      <p className="mt-8   text-sm text-gray-600 max-w-sm">
                         If you want to delete your Cognify account or any personal data associated with it, please email us at <strong>admin@getcognifyai.com</strong>.
                         We'll permanently delete your data (email, saved notes, summaries, and usage history) within 7 days.
                       </p>
