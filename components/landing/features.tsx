@@ -19,7 +19,7 @@ export function Features() {
           >
             Turn Any Video Into a Masterclass <br />
           </h2>
-          <p className="text-white/100 body-text max-w-2xl mx-auto mt-2 mb-8 leading-relaxed">
+          <p className="text-white/100 feature-body-text max-w-2xl mx-auto mt-2 mb-8 leading-relaxed">
             Summarize key points, take organized notes, and get AI-powered{" "}
             answers—so you don’t just watch, you truly learn.
           </p>
@@ -139,7 +139,7 @@ export function Features() {
               Summarize. Skip the Noise. <br className="hidden md:block" />
               <strong>Learn What Counts.</strong>
             </h2>
-            <p className="text-gray-100 body-text leading-relaxed">
+            <p className="text-gray-100 feature-body-text leading-relaxed">
               Instant takeaways and structured insights—so you save time and
               actually remember.
             </p>
@@ -178,7 +178,7 @@ export function Features() {
               From Passive Watching <br className="hidden md:block" />
               <strong>to Active Listening</strong>
             </h2>
-            <p className="text-gray-100 body-text leading-relaxed">
+            <p className="text-gray-100 feature-body-text leading-relaxed">
               Instantly capture ideas and effortlessly annotate videos in real
               time—without interrupting your flow.
             </p>
@@ -186,7 +186,7 @@ export function Features() {
         </div>
 
         {/* Feature 4: NoteVault */}
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-12 md:-mt-36">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 -mb-10 md:-mt-36">
           <div className="flex-1 relative flex justify-center md:z-10">
             <div className="relative w-full max-w-[620px] overflow-hidden">
               <Image
@@ -214,9 +214,9 @@ export function Features() {
               className="text-[32px] md:text-[48px] lg:text-[53.6701px] font-bold text-white mb-4 leading-[1.1] rgb-text-feature"
               data-text="Revisit & Retain"
             >
-              Revisit & Retain
+              <strong>Revisit & Retain</strong>
             </h2>
-            <p className="text-gray-100 body-text leading-relaxed mb-8">
+            <p className="text-gray-100 feature-body-text leading-relaxed mb-8">
               In a world of constant content, it's easy to forget what we hear.
               Cognify changes that. Your key takeaways are captured, organized,
               and always accessible.
@@ -224,7 +224,7 @@ export function Features() {
           </div>
         </div>
 
-        <p className="text-gray-100 body-text leading-relaxed mb-8 text-center">
+        <p className="text-gray-100 feature-body-text leading-relaxed mb-8 text-center">
           {" "}
           „Tell me and I forget, teach me and I may remember, involve me and I
           learn.” <br />
