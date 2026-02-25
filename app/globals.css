@@ -54,10 +54,7 @@
   body {
     @apply bg-bg-dark text-white;
   }
-  /* Use `.heading` on heading elements instead of styling headings directly */
-  .heading {
-    @apply font-bold tracking-tight;
-  }
+  /* The `.heading` class has been integrated via tailwind utilities directly in components */
 }
 
 @layer utilities {
@@ -106,25 +103,7 @@ body {
   background: #000;
 }
 
-.rgb-text {
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 600;
 
-  text-shadow:
-    -1px 0 0 #00ffff,  /* Cyan left */
-     1px 0 0 #ff00ff;  /* Pink right */
-}
-
-.rgb-text-feature {
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 400;
-
-  text-shadow:
-    -1px 0 0 #00ffff,  /* Cyan left */
-     1px 0 0 #ff00ff;  /* Pink right */
-}
 }
 
 /* Responsive typography and global media rules */
@@ -133,16 +112,7 @@ html {
   font-size: clamp(14px, 0.9rem + 0.3vw, 18px);
 }
 
-/* Headings and body text: use classes instead of element selectors */
-.heading-1 { font-size: clamp(154.048px, 5.2vw, 132px); line-height: 1.05; font-weight: 400; }
-.heading-2 { font-size: clamp(20px, 3.8vw, 46px); line-height: 1.06; }
-.heading-3 { font-size: clamp(52px, 2.8vw, 58px); }
-.heading-4 { font-size: clamp(18px, 2.8vw, 36px); }
-.body-text { font-size: clamp(22px, 1.4vw, 28px); line-height: 1.03; }
-.feature-body-text { font-size: clamp(22px, 1.3vw, 26px); line-height: 1.05; }
 
-.under-heading { font-size: clamp(42px, 1.8vw, 48px); }
-/* .headingbottom{ font-size: clamp(20px, 3.8vw, 46px); line-height: 1.06; } */
 /* Make images/videos responsive by default */
 img, picture, video, svg {
   max-width: 100%;
@@ -153,14 +123,5 @@ img, picture, video, svg {
 /* Utility: tighter containers on small screens */
 .container-tight { padding-left: 1rem; padding-right: 1rem; }
 
-/* Improve readability for very small screens */
-@media (max-width: 640px) {
-  .rgb-text, .rgb-text-feature { text-shadow: none; }
-  .heading-1 { font-size: clamp(56.048px, 5.2vw, 132px); line-height: 1.03; font-weight: 100; }
-  .heading-2 { font-size: clamp(22px, 3.8vw, 56px); line-height: 1.06; }
-  .heading-3 { font-size: clamp(14px, 2.8vw, 36px); }
-  .body-text { font-size: clamp(18px, 1.2vw, 18px); }
-  .feature-body-text { font-size: clamp(16px, 1.1vw, 20px); line-height: 1.05; }
-  .under-heading { font-size: clamp(28px, 1.2vw, 32px); }
-}
+
 

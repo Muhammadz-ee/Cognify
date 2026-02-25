@@ -36,13 +36,13 @@ export function PodcastTicker() {
     <section className="py-2 bg-grey overflow-hidden">
       <div>
         <div className="text-center mb-12">
-          <h3 className="text-3xl md:text-5xl font-bold text-white mb-2 rgb-text leading-[0.95]">
+          <h3 className="text-[32px] md:text-5xl  text-white mb-2 inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.02]">
             Learn Smarter from the <br />
             YouTube Content <br />
             You Already Love
             <span className="inline-block ml-2 text-purple-400">🤍</span>
-          </h3>  <br />  <br />
-          <p className="body-text text-gray-400 max-w-2xl mx-auto">
+          </h3>
+          <p className="text-[clamp(18px,1.2vw,18px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-gray-500 max-w-2xl mx-auto mt-6 md:mt-12">
             DESIGNED FOR YOUR FOCUS, GROWTH, AND RETENTION.
             <br />
           </p>

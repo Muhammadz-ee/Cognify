@@ -86,21 +86,30 @@ export default function Home() {
 
       <Features />
 
-      <section id="contact" className="py-10  border-t border-white/5">
+      <section id="contact" className="py-10 -mt-16 border-t border-white/15">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-[36px] md:text-[66.6667px] font-bold mb-6 leading-none">
+          <h2 className="text-[34px] md:text-[66.6667px] font-bold mb-6 leading-none">
             Ready to Be Among <br /> the First?
           </h2>
-            <div className="flex justify-center gap-4 mt-4">
-              <a
-                href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block"
+          <div className="flex justify-center gap-4 mt-4">
+            <div
+
+              className="flex flex-row justify-center gap-2 sm:gap-4 w-full px-2"
+            >
+              {/* App Store */}
+              <Button
+                size="lg"
+                asChild
+                className="h-auto py-2 sm:py-0 sm:h-18 w-auto px-2 sm:px-4 
+                rounded-xl sm:rounded-2xl flex items-center justify-center sm:justify-start 
+                gap-2 sm:gap-4 transition-all hover:scale-105 active:scale-95 
+                bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer 
+                focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
               >
-                <Button
-                  size="lg"
-                  className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                <a
+                  href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Download on the App Store"
                 >
                   <Image
@@ -108,27 +117,33 @@ export default function Home() {
                     alt="App Store"
                     width={42}
                     height={42}
-                    className="w-8 h-10"
+                    className="w-4 h-4 sm:w-8 sm:h-10 object-contain"
                   />
                   <div className="text-left">
-                    <div className="text-[14px] font-bold uppercase tracking-wider opacity-90">
+                    <div className="text-[8px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[22px] font-bold leading-none">
+                    <div className="text-[12px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
                       App Store
                     </div>
                   </div>
-                </Button>
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block"
+                </a>
+              </Button>
+
+              {/* Google Play */}
+              <Button
+                size="lg"
+                asChild
+                className="h-auto py-2 sm:py-0 sm:h-18 w-auto px-2 sm:px-4 
+                rounded-xl sm:rounded-2xl flex items-center justify-center sm:justify-start 
+                gap-2 sm:gap-4 transition-all hover:scale-105 active:scale-95 
+                bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer 
+                focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
               >
-                <Button
-                  size="lg"
-                  className="h-18 px-4 rounded-2xl flex items-center gap-4 transition-all hover:scale-105 bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Get it on Google Play"
                 >
                   <Image
@@ -136,18 +151,19 @@ export default function Home() {
                     alt="Google Play"
                     width={42}
                     height={42}
-                    className="w-8 h-10"
+                    className="w-4 h-4 sm:w-8 sm:h-10 object-contain"
                   />
                   <div className="text-left">
-                    <div className="text-[14px] font-bold uppercase tracking-wider opacity-90">
+                    <div className="text-[8px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[22px] font-bold leading-none">
+                    <div className="text-[12px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
                       Google Play
                     </div>
                   </div>
-                </Button>
-              </a>
+                </a>
+              </Button>
+            </div>
           </div>
           <p className="mt-8 text-sm text-gray-200">
             🎧 Smarter listening starts today — Download now.
