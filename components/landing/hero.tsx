@@ -211,9 +211,9 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-b border-white/25 shadow-2xl shadow-purple-900/30 h-[600px] sm:h-[650px] md:h-[820px] lg:h-[1900px] w-full mx-auto">
+            <div className="relative overflow-hidden border-b border-white/25 md:border-none shadow-2xl shadow-purple-900/30 h-[600px] sm:h-[650px] md:h-[820px] lg:h-[1900px] w-full mx-auto">
               <video
-                src="/videos/main-asset.webm"
+                src="/videos/main-asset-video.webm"
                 autoPlay
                 loop
                 muted

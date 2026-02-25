@@ -1,6 +1,7 @@
 "use client";
 
 import { Container } from "@/components/ui/container";
+import { motion } from "motion/react";
 import Image from "next/image";
 
 const podcasts = [
@@ -34,46 +35,62 @@ const podcasts = [
 export function PodcastTicker() {
   return (
     <section className="py-2 bg-grey overflow-hidden">
-      <div>
-        <div className="text-center mb-12">
-          <h3 className="text-[30px] md:text-5xl  text-white mb-2 inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.02]">
-            Learn Smarter from the <br />
-            YouTube Content <br />
-            You Already Love
-            <span className="inline-block ml-2 text-purple-400">🤍</span>
-          </h3>
-          <p className="text-[clamp(18px,1.2vw,18px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-gray-500 max-w-2xl mx-auto mt-6 md:mt-12">
-            DESIGNED FOR YOUR FOCUS, GROWTH, AND RETENTION.
-            <br />
-          </p>
-        </div>
+      <div className="text-center mb-12">
+        {/* Animated Heading */}
+        <motion.h3
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="text-[30px] md:text-5xl text-white mb-2 inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.02]"
+        >
+          Learn Smarter from the <br />
+          YouTube Content <br />
+          You Already Love
+          <span className="inline-block ml-2 text-purple-400">🤍</span>
+        </motion.h3>
 
-        <div className="w-full bg-[#2E2D31] p-8">
-          <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 justify-center">
-            {podcasts.map((podcast, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-left gap-4 group cursor-pointer"
-              >
-                <div className="w-28 h-28 md:w-48 md:h-48 overflow-hidden relative border border-white/10 shadow-lg transition-transform duration-300 ">
-                  <Image
-                    src={podcast.image}
-                    alt={podcast.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="text-left">
-                  <span className="text-xs md:text-sm font-medium text-gray-300 group-hover:text-white transition-colors block">
-                    {podcast.name}
-                  </span>
-                  <span className="text-xs md:text-sm text-gray-400 group-hover:text-gray-100 transition-colors block mt-1">
-                    {podcast.artist}
-                  </span>
-                </div>
+        {/* Animated Subtext */}
+        <motion.p
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="text-[clamp(18px,1.2vw,18px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-gray-500 max-w-2xl mx-auto mt-6 md:mt-12"
+        >
+          DESIGNED FOR YOUR FOCUS, GROWTH, AND RETENTION.
+        </motion.p>
+      </div>
+
+      <div className="w-full bg-[#2E2D31] p-8">
+        <div className="flex flex-wrap gap-6 sm:gap-8 md:gap-12 justify-center">
+          {podcasts.map((podcast, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
+              className="flex flex-col items-left gap-4 group cursor-pointer"
+            >
+              <div className="w-28 h-28 md:w-48 md:h-48 overflow-hidden relative border border-white/10 shadow-lg transition-transform duration-300">
+                <Image
+                  src={podcast.image}
+                  alt={podcast.name}
+                  fill
+                  className="object-cover"
+                />
               </div>
-            ))}
-          </div>
+              <div className="text-left">
+                <span className="text-xs md:text-sm font-medium text-gray-300 group-hover:text-white transition-colors block">
+                  {podcast.name}
+                </span>
+                <span className="text-xs md:text-sm text-gray-400 group-hover:text-gray-100 transition-colors block mt-1">
+                  {podcast.artist}
+                </span>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

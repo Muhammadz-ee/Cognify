@@ -119,7 +119,13 @@ export function Features() {
         </div>
 
         {/* Feature 2: Insight Modes */}
-        <div className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12 -mt-10 md:-mt-14">
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12 -mt-10 md:-mt-14"
+        >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-30">
             <div className="relative w-full max-w-[820px] overflow-hidden -ml-4 md:ml-0">
               <Image
@@ -132,7 +138,13 @@ export function Features() {
               <div className="absolute left-0 right-0 bottom-2 sm:bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
             </div>
           </div>
-          <div className="w-[55%] md:flex-1 text-left pr-2 md:pr-0">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="w-[55%] md:flex-1 text-left pr-2 md:pr-0"
+          >
             <Button
               size="lg"
               className="text-[4px] sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
@@ -151,11 +163,17 @@ export function Features() {
               Instant takeaways and structured insights—so you save time and
               actually remember.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Feature 3: Annotations */}
-        <div className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12 -mt-16 md:-mt-52">
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12 -mt-16 md:-mt-52"
+        >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-20">
             <div className="relative w-full max-w-[820px] overflow-hidden -mr-4 md:mr-0">
               <Image
@@ -168,7 +186,13 @@ export function Features() {
               <div className="absolute left-0 right-0 bottom-2 sm:bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
             </div>
           </div>
-          <div className="w-[55%] md:flex-1 text-left pl-2 md:pl-0">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="w-[55%] md:flex-1 text-left pl-2 md:pl-0"
+          >
             <Button
               size="lg"
               className="text-[4px] sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
@@ -187,11 +211,17 @@ export function Features() {
               Instantly capture ideas and effortlessly annotate videos in real
               time—without interrupting your flow.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Feature 4: NoteVault */}
-        <div className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 -mt-16 md:-mt-36">
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 -mt-16 md:-mt-36"
+        >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-10">
             <div className="relative w-full max-w-[620px] overflow-hidden -ml-4 md:ml-0">
               <Image
@@ -204,7 +234,13 @@ export function Features() {
               <div className="absolute left-0 right-0 bottom-2 sm:bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
             </div>
           </div>
-          <div className="w-[55%] md:flex-1 text-left pr-2 md:pr-0">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="w-[55%] md:flex-1 text-left pr-2 md:pr-0"
+          >
             <Button
               size="lg"
               className="text-[4px] sm:text-lg md:text-xl font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
@@ -223,8 +259,8 @@ export function Features() {
               Cognify changes that. Your key takeaways are captured, organized,
               and always accessible.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <p className="text-gray-100 text-[6px] sm:text-[clamp(16px,1.1vw,20px)] md:text-[clamp(22px,1.3vw,26px)] leading-relaxed mb-8 text-center mt-6 sm:mt-0">
           {" "}
