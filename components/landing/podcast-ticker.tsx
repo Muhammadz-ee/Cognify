@@ -36,7 +36,7 @@ export function PodcastTicker() {
     <section className="py-2 bg-grey overflow-hidden">
       <div>
         <div className="text-center mb-12">
-          <h3 className="text-[32px] md:text-5xl  text-white mb-2 inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.02]">
+          <h3 className="text-[30px] md:text-5xl  text-white mb-2 inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.02]">
             Learn Smarter from the <br />
             YouTube Content <br />
             You Already Love

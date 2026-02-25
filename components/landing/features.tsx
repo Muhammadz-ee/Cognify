@@ -119,7 +119,7 @@ export function Features() {
         </div>
 
         {/* Feature 2: Insight Modes */}
-        <div className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12 -mt-16 md:-mt-14">
+        <div className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12 -mt-10 md:-mt-14">
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-30">
             <div className="relative w-full max-w-[820px] overflow-hidden -ml-4 md:ml-0">
               <Image

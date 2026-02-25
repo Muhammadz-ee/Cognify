@@ -5,17 +5,19 @@
   src: url("/fonts/MonumentExtended-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Monument Extended";
   src: url("/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @theme {
-  --font-monument: "Monument Extended", sans-serif;
+  --font-monument: "Monument Extended", var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
 
   --font-sans:
     var(--font-montserrat), ui-sans-serif, system-ui, sans-serif,
@@ -52,9 +54,13 @@
 
 @layer base {
   body {
-    @apply bg-bg-dark text-white;
+    @apply bg-bg-dark text-white font-sans;
+    background: #000;
   }
-  /* The `.heading` class has been integrated via tailwind utilities directly in components */
+
+  h1 {
+    font-family: var(--font-monument);
+  }
 }
 
 @layer utilities {
@@ -67,41 +73,33 @@
   }
 
   .mask-linear-fade {
-    mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      black 10%,
-      black 90%,
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 0%,
-      black 10%,
-      black 90%,
-      transparent 100%
-    );
+    mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%);
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%);
   }
 
   .mask-linear-fade-bottom {
-    mask-image: linear-gradient(
-      to bottom,
-      black 0%,
-      black 80%,
-      transparent 100%
-    );
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      black 0%,
-      black 80%,
-      transparent 100%
-    );
+    mask-image: linear-gradient(to bottom,
+        black 0%,
+        black 80%,
+        transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom,
+        black 0%,
+        black 80%,
+        transparent 100%);
   }
 
 
-body {
-  background: #000;
-}
+  body {
+    background: #000;
+  }
 
 
 }
@@ -114,14 +112,17 @@ html {
 
 
 /* Make images/videos responsive by default */
-img, picture, video, svg {
+img,
+picture,
+video,
+svg {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
 /* Utility: tighter containers on small screens */
-.container-tight { padding-left: 1rem; padding-right: 1rem; }
-
-
-
+.container-tight {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

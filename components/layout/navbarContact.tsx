@@ -24,9 +24,7 @@ export function NavbarContact() {
     return pathname === href;
   };
 
-  const navFontStyle = { fontFamily: "'Montserrat', Montserrat, sans-serif", fontWeight: "500" };
-
-  const linkClass = (href: string, base = "text-[10px] sm:text-[16px] md:text-[26.8224px] transition-colors capitalize") => {
+  const linkClass = (href: string, base = "font-sans font-medium text-[12px] sm:text-[16px] md:text-[26.8224px] transition-colors capitalize") => {
     return `${base} ${isActive(href) ? "text-[#6B5A90] underline decoration-[#6B5A90] underline-offset-4" : "text-gray-600 hover:text-black"}`;
   };
 
@@ -41,15 +39,16 @@ export function NavbarContact() {
               alt="Cognify Logo"
               width={192}
               height={70}
+              priority
               className="w-24 sm:w-34 md:w-70 h-auto"
             />
           </Link>
 
           {/* Nav Links (Desktop & Mobile) */}
           <div className="flex items-center gap-3 sm:gap-8">
-            <Link href="/" className={linkClass("/")} style={navFontStyle}>Home</Link>
-            <Link href="/#features" className={linkClass("/#features")} style={navFontStyle}>Features</Link>
-            <Link href="/contact" className={linkClass("/contact")} style={navFontStyle}>Contact Us</Link>
+            <Link href="/" className={linkClass("/")}>Home</Link>
+            <Link href="/#features" className={linkClass("/#features")}>Features</Link>
+            <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
           </div>
         </div>
       </Container>

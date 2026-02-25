@@ -88,7 +88,7 @@ export default function Home() {
 
       <section id="contact" className="py-10 -mt-16 border-t border-white/15">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-[34px] md:text-[66.6667px] font-bold mb-6 leading-none">
+          <h2 className="text-[34px] md:text-[66.6667px] font-bold mb-6 leading-[1.05] md:leading-[0.85]">
             Ready to Be Among <br /> the First?
           </h2>
           <div className="flex justify-center gap-4 mt-4">

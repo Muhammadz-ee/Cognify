@@ -33,11 +33,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[12px] sm:text-[clamp(22px,1.8vw,48px)] leading-[1.2] sm:leading-[1.03] text-[#ad9ad6] font-bold mb-4 sm:mb-10 mx-auto text-center px-4"
+            className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] leading-[1.2] sm:leading-[1.03] text-[#ad9ad6] font-bold mb-4 sm:mb-10 mx-auto text-center px-4"
           >
             Turn Long Podcasts into Smart Takeaways. Instantly.
             <br />
-            <span className="text-[12px] sm:text-[clamp(22px,1.8vw,48px)] text-white block mt-0.5 sm:mt-2">+smart notes and study tools.</span>
+            <span className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] text-white block mt-0.5 sm:mt-2">+smart notes and study tools.</span>
           </motion.div>
 
           <motion.div
@@ -51,17 +51,17 @@ export function Hero() {
               size="lg"
               asChild
               className="h-auto py-1.5 sm:py-0 sm:h-22 
-    w-auto px-2 sm:px-6 
-    rounded-[10px] sm:rounded-2xl 
-    flex items-center justify-center sm:justify-start 
-    gap-2 sm:gap-4 
-    transition-all hover:scale-105 active:scale-95
-    bg-[#5b4a7a] hover:bg-[#4a3a67] 
-    text-white cursor-pointer 
-    focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+              w-auto px-2 sm:px-6 
+              rounded-[10px] sm:rounded-2xl 
+              flex items-center justify-center sm:justify-start 
+              gap-2 sm:gap-4 
+              transition-all hover:scale-105 active:scale-95
+              bg-[#5b4a7a] hover:bg-[#4a3a67] 
+              text-white cursor-pointer 
+              focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
             >
               <a
-                href="https://apps.apple.com/in/app/cognify-podcast-notes-ai/id6750173261"
+                href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download on the App Store"
@@ -89,17 +89,17 @@ export function Hero() {
               size="lg"
               asChild
               className="h-auto py-1.5 sm:py-0 sm:h-22 
-    w-auto px-2 sm:px-6 
-    rounded-[10px] sm:rounded-2xl 
-    flex items-center justify-center sm:justify-start 
-    gap-2 sm:gap-4 
-    transition-all hover:scale-105 active:scale-95
-    bg-[#5b4a7a] hover:bg-[#4a3a67] 
-    text-white cursor-pointer 
-    focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+              w-auto px-2 sm:px-6 
+              rounded-[10px] sm:rounded-2xl 
+              flex items-center justify-center sm:justify-start 
+              gap-2 sm:gap-4 
+              transition-all hover:scale-105 active:scale-95
+              bg-[#5b4a7a] hover:bg-[#4a3a67] 
+              text-white cursor-pointer 
+              focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
             >
               <a
-                href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
+                href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Download on the Play Store"
@@ -227,7 +227,7 @@ export function Hero() {
                   <h3 className="text-[20px] sm:text-4xl md:text-[3rem] font-bold tracking-tight mb-1 text-white">
                     Try For <span className="text-purple-300 relative inline-block"><span className="relative z-10">Free</span></span>
                   </h3>
-                  <p className="mt-1 text-[8px] sm:text-sm md:text-base font-bold tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
+                  <p className="mt-6 text-[12px] sm:text-[18px] md:text-[24px] font-bold tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
                     7 DAY FREE TRIAL - CANCEL ANY TIME
                   </p>
                 </div>

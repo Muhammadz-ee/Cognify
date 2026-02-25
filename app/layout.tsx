@@ -1,6 +1,14 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { Montserrat } from 'next/font/google';
 import './globals.css';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 export const metadata: Metadata = {
   title: 'Cognify | Podcasts, Distilled.',
@@ -13,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`antialiased`}>
+    <html lang="en" className={`antialiased ${montserrat.variable}`}>
       <head>
         <link rel="icon" href="/images/favicon.ico" />
         <Script
@@ -35,7 +43,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body suppressHydrationWarning className="bg-black text-white font-sans selection:bg-purple-500 selection:text-white">
+      <body suppressHydrationWarning className="bg-black text-white font-sans selection:bg-brand-purple selection:text-white">
         {children}
         <noscript>
           <img
