@@ -224,8 +224,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none h-[800px] sm:h-[650px] md:h-[820px] lg:h-[1950px] w-full mx-auto">
-              <div className="relative overflow-hidden border-none h-[clamp(420px,55vh,900px)] w-full mx-auto">
+            <div className="relative overflow-hidden border-none group h-[800px] sm:h-[650px] md:h-[820px] lg:h-[1950px] w-full mx-auto">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"
@@ -286,7 +285,7 @@ export function Hero() {
               </div>
 
               {/* Bottom playback controls (dark strip) */}
-              <div className="absolute left-0 right-0 bottom-0 z-30 px-4 py-4 bg-gradient-to-t from-black/95 to-transparent">
+              <div className="absolute left-0 right-0 bottom-0 z-30 px-4 py-4 bg-gradient-to-t from-black/95 to-transparent opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200">
                 <div className="max-w-[1320px] mx-auto flex items-center gap-4">
                   {/* progress track with dynamic white fill */}
                   <input

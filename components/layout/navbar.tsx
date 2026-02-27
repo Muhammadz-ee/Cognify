@@ -35,7 +35,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <Image
-              src="/images/site-logo.webp"
+              src="/images/cognify-logo.svg"
               alt="Cognify Logo"
               width={192}
               height={70}
@@ -47,6 +47,9 @@ export function Navbar() {
           {/* Nav Links (Desktop & Mobile) */}
           <div className="flex items-center gap-3 sm:gap-8">
             <Link href="/" className={linkClass("/")}>Home</Link>
+            {pathname !== "/" && (
+              <Link href="/about" className={linkClass("/about")}>About Us</Link>
+            )}
             <Link href="#features" className={linkClass("#features")}>Features</Link>
             <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
           </div>

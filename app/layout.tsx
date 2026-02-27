@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: 'Cognify | Podcasts, Distilled.',
-  description: 'Turn long podcasts into a Personal Masterclass. Instantly distill hours of content into 3, 15, or custom-minute highlights.',
+  description: 'Cognify: The premium AI intelligence layer. Distill YouTube and podcasts into personal Masterclasses with custom Key Moments, AI Insights, NoteVault, and AI-powered Q&A',
 };
 
 export default function RootLayout({
@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`antialiased ${montserrat.variable}`}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
         <Script
           id="meta-pixel"

@@ -1,10 +1,11 @@
 "use client";
 
+import { useRef, useEffect } from "react";
 import { Container } from "@/components/ui/container";
 import { NavbarContact } from "@/components/layout/navbarContact";
-import { Footer } from "@/components/layout/footer";
 
 export default function ContactPage() {
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
       <NavbarContact />
@@ -21,7 +22,7 @@ export default function ContactPage() {
                   We Love Feedback!
                 </h1>
                 {/* Left: form card */}
-                <form
+                {/* <form
                   action="https://form.jotform.com/251245347804153"
                   method="get"
                   target="_blank"
@@ -69,14 +70,27 @@ export default function ContactPage() {
                       SUBMIT
                     </button>
                   </div>
-                </form>
+                </form> */}
+
+                <section className="w-full min-h-screen flex justify-center items-start py-4 px-4">
+                  <div className="w-full max-w-5xl">
+                    <iframe
+                      src="https://form.jotform.com/251245347804153"
+                      className="w-full border-none"
+                      style={{ minHeight: "760px", borderRadius: "18px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
+                      loading="lazy"
+                      allow="geolocation; microphone; camera"
+                    />
+                  </div>
+                </section>
               </div>
 
               {/* Right: contact info */}
               <aside className="flex flex-col items-start justify-center px-2 md:pl-8 h-full">
                 <div className="mb-6 max-w-md w-full">
                   <h3 className="text-xl md:text-2xl font-bold mb-4 leading-tight text-gray-900">
-                    Have a question, need support, or want to collaborate? Reach out—we'd love to hear from you.
+                    Have a question, need support, or want to collaborate? Reach
+                    out—we'd love to hear from you.
                   </h3>
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#C5AFEC] shadow-sm ring-2 ring-dark-200">
@@ -115,8 +129,11 @@ export default function ContactPage() {
                       </a>
                       <br />
                       <p className="mt-8   text-sm text-gray-600 max-w-sm">
-                        If you want to delete your Cognify account or any personal data associated with it, please email us at <strong>admin@getcognifyai.com</strong>.
-                        We'll permanently delete your data (email, saved notes, summaries, and usage history) within 7 days.
+                        If you want to delete your Cognify account or any
+                        personal data associated with it, please email us at{" "}
+                        <strong>admin@getcognifyai.com</strong>. We'll
+                        permanently delete your data (email, saved notes,
+                        summaries, and usage history) within 7 days.
                       </p>
                     </div>
                   </div>
@@ -126,7 +143,7 @@ export default function ContactPage() {
           </div>
         </Container>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
