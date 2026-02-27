@@ -152,6 +152,7 @@ export function Hero() {
                     alt="Mel Robbins"
                     width={220}
                     height={220}
+                    sizes="(max-width:640px) 75px, (max-width:1024px) 128px, 220px"
                     className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[38px] h-[38px] sm:w-[75px] sm:h-[75px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover"
                   />
                   <div className="text-left w-[38px] sm:w-[75px] md:w-auto md:max-w-[220px]">
@@ -169,6 +170,7 @@ export function Hero() {
                     alt="The Diary of a CEO"
                     width={220}
                     height={220}
+                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
                     className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover -mr-1"
                   />
                   <div className="text-left w-[50px] sm:w-[100px] md:w-auto md:max-w-[220px]">
@@ -190,6 +192,7 @@ export function Hero() {
                     alt="The Joe Rogan Experience"
                     width={220}
                     height={220}
+                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
                     className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover -ml-1"
                   />
                   <div className="text-left w-[50px] sm:w-[100px] md:w-auto md:max-w-[220px]">
@@ -207,6 +210,7 @@ export function Hero() {
                     alt="Huberman Lab"
                     width={220}
                     height={220}
+                    sizes="(max-width:640px) 75px, (max-width:1024px) 128px, 220px"
                     className="rounded-[8px] md:rounded-3xl shadow-2xl border border-gray-900 md:border-2 w-[38px] h-[38px] sm:w-[75px] sm:h-[75px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover"
                   />
                   <div className="text-left w-[38px] sm:w-[75px] md:w-auto md:max-w-[220px]">
@@ -258,7 +262,8 @@ export function Hero() {
                         <Image
                           src="/images/testimonial.webp"
                           alt="Sam"
-                          fill
+                          width={64}
+                          height={64}
                           className="object-cover"
                         />
                       </div>

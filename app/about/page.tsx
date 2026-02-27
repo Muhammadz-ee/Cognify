@@ -33,7 +33,9 @@ export default function AboutPage() {
                 <Image
                   src="/images/about-img.webp"
                   alt="sketch"
-                  fill
+                  width={580}
+                  height={580}
+                  sizes="(max-width:640px) 380px, (max-width:1024px) 480px, 580px"
                   className="object-contain"
                 />
               </div>

@@ -114,9 +114,10 @@ export function Features() {
             <div className="relative w-full max-w-[820px] overflow-hidden -ml-4 md:ml-0">
               <Image
                 src="/images/feature-image-01.webp"
-                alt="App Store"
-                width={2080}
-                height={2080}
+                alt="Feature 1"
+                width={1080}
+                height={720}
+                sizes="(max-width:640px) 100vw, 45vw"
                 className="w-full h-auto block scale-100 sm:scale-100"
               />
               <div className="absolute left-0 right-0 bottom-2 sm:bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />
@@ -162,9 +163,10 @@ export function Features() {
             <div className="relative w-full max-w-[820px] overflow-hidden -mr-4 md:mr-0">
               <Image
                 src="/images/feature-image-02.webp"
-                alt="App Store"
-                width={2080}
-                height={2080}
+                alt="Feature 2"
+                width={1080}
+                height={720}
+                sizes="(max-width:640px) 100vw, 45vw"
                 className="w-full h-auto block scale-100 sm:scale-100"
               />
               <div className="absolute left-0 right-0 bottom-2 sm:bottom-10 h-[90%] bg-gradient-to-t from-black/95 to-transparent pointer-events-none" />

@@ -90,7 +90,9 @@ export function PodcastTicker() {
                 <Image
                   src={podcast.image}
                   alt={podcast.name}
-                  fill
+                  width={168}
+                  height={168}
+                  sizes="(max-width:640px) 96px, (max-width:1024px) 168px, 168px"
                   className="object-cover"
                 />
               </div>
