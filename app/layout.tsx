@@ -25,6 +25,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
+        {/* Preload critical local font to reduce FOIT/FOUC for LCP */}
+        <link rel="preload" href="/fonts/MonumentExtended-Regular.otf" as="font" type="font/otf" crossOrigin="anonymous" />
         {process.env.NEXT_PUBLIC_META_PIXEL_ID && process.env.NODE_ENV === 'production' && (
           <>
             <Script
