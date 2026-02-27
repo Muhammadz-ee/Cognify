@@ -86,7 +86,7 @@ export function PodcastTicker() {
               transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
               className="flex flex-col items-center gap-2 group cursor-pointer"
             >
-              <div className="w-24 h-24 md:w-42 md:h-42 overflow-hidden relative border border-white/10 shadow-lg transition-transform duration-300 mx-auto">
+              <div className="w-24 h-24 md:w-42 md:h-42 overflow-hidden relative transition-transform duration-300 mx-auto">
                 <Image
                   src={podcast.image}
                   alt={podcast.name}
