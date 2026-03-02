@@ -49,9 +49,9 @@ export function PodcastTicker() {
           transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-[30px] md:text-5xl text-white mb-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
         >
-          <div className="leading-[1.0]">Learn Smarter from</div>
-          <div className="leading-[1.0]">the YouTube Content</div>
-          <div className="leading-[1.0] inline-flex items-center whitespace-nowrap -mt-6">
+          <span className="leading-[1.0] block">Learn Smarter from</span>
+          <span className="leading-[1.0] block">the YouTube Content</span>
+          <span className="leading-[1.0] inline-flex items-center whitespace-nowrap -mt-6">
             You Already Love
             <Image
               src="/images/heart.webp"
@@ -60,7 +60,7 @@ export function PodcastTicker() {
               height={76}
               className="inline-block w-12 h-12 md:w-[76px] md:h-[76px]"
             />
-          </div>
+          </span>
         </motion.h3>
 
         {/* Animated Subtext */}
