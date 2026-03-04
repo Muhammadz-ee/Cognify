@@ -47,12 +47,10 @@ export function PodcastTicker() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-[30px] md:text-5xl text-white mb-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
+          className="text-[30px] md:text-5xl text-white mb-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
         >
-          <div className="leading-[1.0]">Learn Smarter from</div>
-          <div className="leading-[1.0]">the YouTube Content</div>
-          <div className="leading-[1.0] inline-flex items-center whitespace-nowrap -mt-6">
-            You Already Love
+          <div className="text-[25px] md:text-[50px] mt-4 leading-[1.0] inline-flex items-center whitespace-nowrap -mt-6">
+            Crush Your Podcast Backlog
             <Image
               src="/images/heart.webp"
               alt="heart"
@@ -69,14 +67,14 @@ export function PodcastTicker() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="text-[clamp(18px,1.2vw,18px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-[#dcdcdc] text-brown-200 font-thin mx-auto mt-4 md:mt-6"
+          className="text-[clamp(18px,1.2vw,18px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-[#dcdcdc] text-brown-200 font-thin mx-auto mt-4 md:mt-6"
         >
-          DESIGNED FOR YOUR FOCUS, GROWTH, AND RETENTION.
+          The Intelligence Layer for High-Performers.
         </motion.p>
       </div>
 
       <div className="w-full bg-[#2E2D31] p-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1 sm:gap-2 md:gap-2 justify-items-center md:px-42">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-3 md:gap-3 justify-items-center md:px-42">
           {podcasts.map((podcast, index) => (
             <motion.div
               key={index}
@@ -84,9 +82,9 @@ export function PodcastTicker() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
-              className="flex flex-col items-center gap-2 group cursor-pointer"
+              className="flex flex-col items-start group cursor-pointer w-24 md:w-42"
             >
-              <div className="w-24 h-24 md:w-42 md:h-42 overflow-hidden relative transition-transform duration-300 mx-auto">
+              <div className="w-24 h-24 md:w-42 md:h-42 overflow-hidden relative transition-transform duration-300">
                 <Image
                   src={podcast.image}
                   alt={podcast.name}
@@ -96,11 +94,11 @@ export function PodcastTicker() {
                   className="object-cover"
                 />
               </div>
-              <div className="text-center">
-                <span className="text-xs md:text-sm font-medium text-gray-300 group-hover:text-white transition-colors block">
+              <div className="text-left w-full">
+                <span className="text-[10px] md:text-[14px] font-medium text-white transition-colors block truncate w-full">
                   {podcast.name}
                 </span>
-                <span className="text-xs md:text-sm text-gray-400 group-hover:text-gray-100 transition-colors block mt-1">
+                <span className="text-[8px] md:text-[11px] text-gray-400 transition-colors block mt-0.5 truncate w-full">
                   {podcast.artist}
                 </span>
               </div>

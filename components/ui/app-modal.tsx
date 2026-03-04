@@ -15,123 +15,84 @@ export function AppModal({ isOpen, onClose, qrCode }: AppModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-      <div className="relative w-full max-w-2xl mx-2 rounded-3xl bg-gradient-to-b from-slate-800 to-slate-900 p-6 sm:p-12 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+      <div className="relative w-full max-w-[520px] rounded-[24px] bg-[#1a1f26] p-8 sm:p-10 shadow-2xl flex flex-col items-center">
         {/* Close button */}
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-5 right-5 text-white hover:text-gray-300 transition-colors cursor-pointer"
+          className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors cursor-pointer"
         >
-          <X className="w-7 h-7 sm:w-8 sm:h-8" />
+          <X className="w-6 h-6" />
         </button>
 
         {/* Heading */}
-        <h2 className="text-center text-3xl sm:text-4xl font-bold text-white mb-10">
-          Download the app
+        <h2 className="text-center text-[28px] sm:text-[32px] font-bold text-[#5ce1e6] mb-8">
+          Get the app
         </h2>
 
-        {/* Main Content */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
-          {/* LEFT COLUMN — QR CODE */}
-          <div className="flex justify-center md:justify-center">
-            <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-xl">
-              {qrCode ? (
-                <Image
-                  src={qrCode}
-                  alt="QR Code"
-                  width={240}
-                  height={240}
-                  className="w-44 h-44 sm:w-56 sm:h-56 object-contain"
-                />
-              ) : (
-                <div className="w-44 h-44 sm:w-56 sm:h-56 bg-gray-200 flex items-center justify-center rounded-xl">
-                  <span className="text-gray-500 text-sm">QR Code</span>
-                </div>
-              )}
+        {/* QR Code */}
+        <div className="flex justify-center w-full mb-8">
+          {qrCode ? (
+            <Image
+              src={qrCode}
+              alt="QR Code"
+              width={200}
+              height={200}
+              className="w-full max-w-[200px] h-auto object-contain bg-white rounded-md"
+            />
+          ) : (
+            <div className="w-full max-w-[200px] aspect-square bg-gray-200 flex items-center justify-center rounded-md">
+              <span className="text-gray-500 text-sm">QR Code</span>
             </div>
-          </div>
+          )}
+        </div>
 
-          {/* RIGHT COLUMN — BUTTONS */}
-          <div className="flex flex-col items-center justify-center gap-6">
-            {/* App Store */}
-            <Button
-              size="lg"
-              asChild
-              className="
-              w-full sm:w-80 md:w-64
-              h-auto
-              rounded-2xl
-              flex items-center justify-center
-              transition-all duration-300 hover:scale-105 active:scale-95
-              bg-[#5b4a7a] hover:bg-[#4a3a67]
-              text-white cursor-pointer
-              focus:outline-none focus:ring-2 focus:ring-[#6B5A90]
-              px-4 py-4"
-            >
-              <a
-                href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-4 w-full h-full"
-              >
-                <Image
-                  src="/images/app-store.svg"
-                  alt="App Store"
-                  width={42}
-                  height={42}
-                  className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
-                />
-                <div className="text-center">
-                  <div className="text-[11px] sm:text-[13px] font-semibold uppercase tracking-wider opacity-80">
-                    Download for free
-                  </div>
-                  <div className="text-[16px] sm:text-[20px] font-bold leading-tight">
-                    App Store
-                  </div>
-                </div>
-              </a>
-            </Button>
+        {/* Buttons - Side by Side */}
+        <div className="flex flex-row items-center justify-center gap-4 w-full">
+          {/* App Store */}
+          <a
+            href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 h-14 sm:h-16 flex flex-row items-center justify-center gap-3 bg-black border border-gray-600 rounded-xl px-2 sm:px-4 transition-transform hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
+          >
+            <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center flex-shrink-0">
+              <Image
+                src="/images/app-store.svg"
+                alt="App Store"
+                width={32}
+                height={32}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col text-left justify-center flex-shrink-0 min-w-[85px] sm:min-w-[105px]">
+              <span className="text-[10px] sm:text-[12px] text-gray-300 leading-tight whitespace-nowrap">Download on the</span>
+              <span className="text-[14px] sm:text-[18px] text-white font-semibold leading-tight whitespace-nowrap">App Store</span>
+            </div>
+          </a>
 
-            {/* Google Play */}
-            <Button
-              size="lg"
-              asChild
-              className="
-              w-full sm:w-80 md:w-64
-              h-auto 
-              rounded-2xl
-              flex items-center justify-center
-              transition-all duration-300 hover:scale-105 active:scale-95
-              bg-[#5b4a7a] hover:bg-[#4a3a67]
-              text-white cursor-pointer
-              focus:outline-none focus:ring-2 focus:ring-[#6B5A90]
-              px-4 py-4"
-            >
-              <a
-                href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-4 w-full h-full"
-              >
-                <Image
-                  src="/images/play-store.svg"
-                  alt="Google Play"
-                  width={42}
-                  height={42}
-                  className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
-                />
-                <div className="text-center">
-                  <div className="text-[11px] sm:text-[13px] font-semibold uppercase tracking-wider opacity-80">
-                    Download for free
-                  </div>
-                  <div className="text-[16px] sm:text-[20px] font-bold leading-tight">
-                    Google Play
-                  </div>
-                </div>
-              </a>
-            </Button>
-          </div>
+          {/* Google Play */}
+          <a
+            href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 h-14 sm:h-16 flex flex-row items-center justify-center gap-3 bg-black border border-gray-600 rounded-xl px-2 sm:px-4 transition-transform hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
+          >
+            <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center flex-shrink-0">
+              <Image
+                src="/images/play-store.svg"
+                alt="Google Play"
+                width={32}
+                height={32}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col text-left justify-center flex-shrink-0 min-w-[85px] sm:min-w-[105px]">
+              <span className="text-[10px] sm:text-[12px] text-gray-300 leading-tight whitespace-nowrap">GET IT ON</span>
+              <span className="text-[14px] sm:text-[18px] text-white font-semibold leading-tight whitespace-nowrap">Google Play</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>

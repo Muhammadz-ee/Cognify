@@ -91,11 +91,10 @@ export function Hero() {
             transition={{ delay: 0.2 }}
             className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] leading-[1.2] sm:leading-[1.03] text-[#ad9ad6] font-bold mb-4 sm:mb-10 mx-auto text-center px-4 max-w-[95%] md:max-w-[95%]"
           >
-            Turn long podcasts into a Personal Masterclass. Instantly distill
-            hours of content into 3, 15, or custom-minute highlights.
+            Turn any podcast into custom-length highlights.
             <br />
-            <span className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] text-white block mt-0.5 sm:mt-2">
-              Finish a 3-hour podcast while you brew your coffee.
+            <span className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] text-white block mt-2 sm:mt-3 md:mt-4 w-[60%] mx-auto">
+              Master hours of content in the time it takes to brew your coffee.
             </span>
           </motion.div>
 
@@ -103,7 +102,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-0 mb-[-12px] sm:-mb-70 z-30 px-2 sm:px-4"
+            className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-0 mb-0 z-30 px-2 sm:px-4"
           >
             <Button
               onClick={() => setShowModal(true)}
@@ -141,29 +140,51 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="relative w-[100%] -ml-[2.5%] sm:w-full sm:ml-0 -mt-26 sm:mt-0 max-w-[1320px] mx-auto mb-4 sm:mb-2 z-10 px-0 sm:px-4"
+            className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[100px] md:-mt-[300px] mb-0 z-10 px-0 sm:px-4"
           >
             {/* Decorative background thumbnails behind the phone mockup */}
-            <div className="absolute inset-x-0 top-[26%] sm:top-[25%] md:top-50 lg:top-110 flex justify-center z-0 pointer-events-none">
-              <div className="flex gap-2 sm:gap-2 md:gap-3 lg:gap-4 items-center opacity-30 brightness-75 md:opacity-60 md:brightness-100 transform -translate-y-6">
+            <div className="absolute inset-x-0 top-[26%] sm:top-[25%] md:top-50 lg:top-110 flex justify-center z-30 pointer-events-none">
+              <div className="flex gap-2 sm:gap-2 md:gap-4 lg:gap-6 items-start opacity-30 brightness-75 md:opacity-60 md:brightness-100 transform -translate-y-6">
                 <div className="flex flex-col gap-1 md:gap-3">
                   <Image
                     src="/images/album-1.webp"
                     alt="Mel Robbins"
                     width={220}
                     height={220}
-                    sizes="(max-width:640px) 75px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[38px] h-[38px] sm:w-[75px] sm:h-[75px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover"
+                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
+                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
                   />
-                  <div className="text-left w-[38px] sm:w-[75px] md:w-auto md:max-w-[220px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[15px] font-bold text-white block truncate">
-                      The Mel Robbins Podcast
+                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
+                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
+                      Mel Robbins Podcast
                     </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[13px] text-gray-400 block mt-0 md:mt-1 truncate">
+                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
                       Mel Robbins
                     </span>
                   </div>
                 </div>
+                <div className="flex flex-col gap-1 md:gap-3">
+                  <Image
+                    src="/images/album-3.webp"
+                    alt="Modern Wisdom"
+                    width={220}
+                    height={220}
+                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
+                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
+                  />
+                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
+                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
+                      Modern Wisdom
+                    </span>
+                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
+                      Chris Williamson
+                    </span>
+                  </div>
+                </div>
+
+                {/* Spacer for the center video to shine through */}
+                <div className="w-[220px] sm:w-[280px] md:w-[520px] lg:w-[720px]"></div>
+
                 <div className="flex flex-col gap-1 md:gap-3">
                   <Image
                     src="/images/album-2.webp"
@@ -171,54 +192,32 @@ export function Hero() {
                     width={220}
                     height={220}
                     sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover -mr-1"
+                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
                   />
-                  <div className="text-left w-[50px] sm:w-[100px] md:w-auto md:max-w-[220px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[15px] font-bold text-white block truncate">
+                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
+                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
                       The Diary of a CEO
                     </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[13px] text-gray-400 block mt-0 md:mt-1 truncate">
+                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
                       Steven Bartlett
                     </span>
                   </div>
                 </div>
-
-                {/* Spacer for the center video to shine through */}
-                <div className="w-[215px] sm:w-[220px] md:w-[280px] lg:w-[620px]"></div>
-
                 <div className="flex flex-col gap-1 md:gap-3">
                   <Image
                     src="/images/album-4.webp"
-                    alt="The Joe Rogan Experience"
+                    alt="The School of Greatness"
                     width={220}
                     height={220}
                     sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover -ml-1"
+                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
                   />
-                  <div className="text-left w-[50px] sm:w-[100px] md:w-auto md:max-w-[220px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[15px] font-bold text-white block truncate">
-                      The Joe Rogan Experience
+                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
+                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
+                      The School of Greatness
                     </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[13px] text-gray-400 block mt-0 md:mt-1 truncate">
-                      Joe Rogan
-                    </span>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-1 md:gap-3">
-                  <Image
-                    src="/images/album-5.webp"
-                    alt="Huberman Lab"
-                    width={220}
-                    height={220}
-                    sizes="(max-width:640px) 75px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-2xl border border-gray-900 md:border-2 w-[38px] h-[38px] sm:w-[75px] sm:h-[75px] md:w-32 md:h-32 lg:w-[220px] lg:h-[220px] object-cover"
-                  />
-                  <div className="text-left w-[38px] sm:w-[75px] md:w-auto md:max-w-[220px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[15px] font-bold text-white block truncate">
-                      Huberman Lab
-                    </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[13px] text-gray-400 block mt-0 md:mt-1 truncate">
-                      Andrew Huberman
+                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
+                      Lewis Howes
                     </span>
                   </div>
                 </div>
@@ -228,7 +227,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none group h-[800px] sm:h-[650px] md:h-[820px] lg:h-[1950px] w-full mx-auto">
+            <div className="relative overflow-hidden border-none group h-[100vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"
@@ -238,60 +237,56 @@ export function Hero() {
                 playsInline
                 onTimeUpdate={onTimeUpdate}
                 onLoadedMetadata={onTimeUpdate}
-                className="w-full h-full object-cover object-center pointer-events-none"
+                className="w-full h-full object-cover object-center pointer-events-none relative z-0"
               />
 
               {/* Overlay: Try For Free + Testimonial bottom-center on video */}
-              <div className="absolute bottom-0 sm:bottom-12 left-1/2 transform -translate-x-1/2 z-20 w-full px-4 flex flex-col items-center gap-3 sm:gap-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-12 pb-6 sm:bg-none sm:pt-0 sm:pb-0">
+              <div className="absolute bottom-10 sm:bottom-20 left-1/2 transform -translate-x-1/2 z-30 w-full px-4 flex flex-col items-center gap-3 sm:gap-6 pt-8 pb-6 sm:pt-0 sm:pb-0 pointer-events-none">
                 <div className="text-center">
-                  <h3 className="text-[20px] sm:text-4xl md:text-[3rem] font-bold tracking-tight mb-1 text-white">
-                    Try For{" "}
-                    <span className="text-purple-300 relative inline-block">
-                      <span className="relative z-10">Free</span>
-                    </span>
+                  <h3 className="text-[28px] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
+                    Try For <span className="text-[#b292ff]">Free</span>
                   </h3>
-                  <p className="mt-6 text-[12px] sm:text-[18px] md:text-[24px] font-bold tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
+                  <p className="mt-2 sm:mt-4 text-[10px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
                     7 DAY FREE TRIAL - CANCEL ANY TIME
                   </p>
                 </div>
 
-                <div className="mt-2 mb-6 sm:mt-16 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-10">
+                <div className="mt-4 sm:mt-12 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8">
                   <div className="flex flex-col items-center">
-                    <div className="inline-flex bg-white rounded-full p-1.5 pr-3 sm:p-3 sm:pr-8 items-center gap-1.5 sm:gap-4 shadow-2xl scale-100">
-                      <div className="w-[24px] h-[24px] sm:w-[64px] sm:h-[64px] rounded-full bg-gray-200 overflow-hidden relative border border-purple-500/60 flex-shrink-0">
+                    <div className="inline-flex bg-white rounded-full p-2 pr-4 sm:p-3 sm:pr-8 items-center gap-2 sm:gap-4 shadow-2xl scale-100">
+                      <div className="w-[32px] h-[32px] sm:w-[56px] sm:h-[56px] rounded-full bg-gray-200 overflow-hidden relative flex-shrink-0">
                         <Image
                           src="/images/testimonial.webp"
                           alt="Sam"
-                          width={64}
-                          height={64}
-                          className="object-cover"
+                          width={56}
+                          height={56}
+                          className="object-cover grayscale"
                         />
                       </div>
 
-                      <div className="flex gap-0.5 sm:gap-1 text-[#ad9ad6] sm:text-purple-300">
-                        <Star className="w-3.5 h-3.5 sm:w-8 sm:h-8 md:w-12 md:h-12 fill-current" />
-                        <Star className="w-3.5 h-3.5 sm:w-8 sm:h-8 md:w-12 md:h-12 fill-current" />
-                        <Star className="w-3.5 h-3.5 sm:w-8 sm:h-8 md:w-12 md:h-12 fill-current" />
-                        <Star className="w-3.5 h-3.5 sm:w-8 sm:h-8 md:w-12 md:h-12 fill-current" />
-                        <Star className="w-3.5 h-3.5 sm:w-8 sm:h-8 md:w-12 md:h-12 fill-current" />
+                      <div className="flex gap-1 text-[#b292ff]">
+                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
                       </div>
                     </div>
 
-                    <div className="mt-1 sm:mt-2 text-[8px] sm:text-xs md:text-sm font-extrabold text-[#ad9ad6] sm:text-purple-300 tracking-widest">
+                    <div className="mt-2 text-[10px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
                       SAM D.
                     </div>
                   </div>
 
-                  <p className="text-[9px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[130px] sm:max-w-2xl leading-[1.3] drop-shadow-md lg:drop-shadow-none">
-                    “FINALLY, AN APP THAT HELPS ME ACTUALLY REMEMBER WHAT I
-                    WATCH.”
+                  <p className="text-[10px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[160px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
+                    “FINALLY, AN APP THAT HELPS ME<br className="hidden sm:block" /> ACTUALLY REMEMBER WHAT I WATCH.”
                   </p>
                 </div>
               </div>
 
               {/* Bottom playback controls (dark strip) */}
-              <div className="absolute left-0 right-0 bottom-0 z-30 px-4 py-4 bg-gradient-to-t from-black/95 to-transparent opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200">
-                <div className="max-w-[1320px] mx-auto flex items-center gap-4">
+              <div className="absolute left-0 right-0 bottom-1 sm:bottom-4 z-30 px-4 py-2 pointer-events-none group-hover:opacity-100 transition-opacity duration-200">
+                <div className="max-w-[1320px] mx-auto flex items-center gap-2 sm:gap-4 pointer-events-auto">
                   {/* progress track with dynamic white fill */}
                   <input
                     aria-label="Seek"
@@ -300,21 +295,21 @@ export function Hero() {
                     max={100}
                     value={progress}
                     onChange={onSeek}
-                    className="flex-1 h-1 rounded-full appearance-none cursor-pointer"
+                    className="flex-1 h-[2px] sm:h-1 rounded-full appearance-none cursor-pointer"
                     style={{
-                      background: `linear-gradient(to right, white ${progress}%, rgba(255,255,255,0.3) ${progress}%)`,
+                      background: `linear-gradient(to right, white ${progress}%, rgba(255,255,255,0.2) ${progress}%)`,
                     }}
                   />
 
                   <button
                     onClick={toggleMute}
                     aria-label={muted ? "Unmute" : "Mute"}
-                    className="w-9 h-9 md:w-10 md:h-10 flex items-center justify-center text-white"
+                    className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
                   >
                     {muted ? (
-                      <VolumeX className="w-5 h-5" />
+                      <VolumeX className="w-3 h-3 sm:w-4 sm:h-4 stroke-2" />
                     ) : (
-                      <Volume2 className="w-5 h-5" />
+                      <Volume2 className="w-3 h-3 sm:w-4 sm:h-4 stroke-2" />
                     )}
                   </button>
                 </div>
@@ -357,7 +352,7 @@ export function Hero() {
           transition: background 0.1s linear;
         }
       `}</style>
-      <AppModal isOpen={showModal} onClose={() => setShowModal(false)} qrCode="/images/qrcode.png" />
+      <AppModal isOpen={showModal} onClose={() => setShowModal(false)} qrCode="/images/website-qr.webp" />
     </section>
   );
 }
