@@ -24,6 +24,33 @@ export function Hero() {
   const [progress, setProgress] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
+  const handleDownloadClick = () => {
+    // Detect if mobile
+    const userAgent = typeof window !== "undefined" ? navigator.userAgent : "";
+    const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
+      userAgent.toLowerCase()
+    );
+
+    if (isMobile) {
+      // Detect OS
+      const isIOS = /iphone|ipad|ipod/i.test(userAgent.toLowerCase());
+      const isAndroid = /android/i.test(userAgent.toLowerCase());
+
+      if (isIOS) {
+        // Open Apple App Store
+        window.location.href =
+          "https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398";
+      } else if (isAndroid) {
+        // Open Google Play Store
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=com.cognifyai.mobile";
+      }
+    } else {
+      // Desktop - show modal
+      setShowModal(true);
+    }
+  };
+
   // helper in case we want to toggle by clicking the video container
   const togglePlay = () => {
     const v = videoRef.current;
@@ -105,7 +132,7 @@ export function Hero() {
             className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-0 mb-0 z-30 px-2 sm:px-4"
           >
             <Button
-              onClick={() => setShowModal(true)}
+              onClick={handleDownloadClick}
               size="lg"
               className="h-auto py-1.5 sm:py-0 sm:h-22 
               w-auto px-2 sm:px-6 
