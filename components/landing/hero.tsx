@@ -80,7 +80,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-1 sm:mb-4"
           >
-            <h1 className="text-[40px] sm:text-[64px] md:text-[100px] lg:text-[144.048px] font-black tracking-wider text-white mb-2 sm:mb-4 uppercase leading-[1.04] font-monument">
+            <h1 className="text-[28px] xs:text-[32px] sm:text-[48px] md:text-[80px] lg:text-[120px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
               PODCASTS <br /> DISTILLED
             </h1>
           </motion.div>
@@ -89,11 +89,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] leading-[1.2] sm:leading-[1.03] text-[#ad9ad6] font-bold mb-4 sm:mb-10 mx-auto text-center px-4 max-w-[95%] md:max-w-[95%] relative z-20"
+            className="text-[12px] xs:text-[14px] sm:text-[20px] md:text-[28px] lg:text-[40px] xl:text-[54px] leading-[1.2] sm:leading-[1.15] md:leading-[1.08] lg:leading-[1.03] text-[#ad9ad6] font-bold mb-3 xs:mb-4 sm:mb-6 md:mb-8 lg:mb-10 mx-auto text-center px-3 xs:px-4 sm:px-4 max-w-[95%] md:max-w-[95%] relative z-20"
           >
             Turn any podcast into custom-length highlights.
             <br />
-            <span className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] text-white block mt-2 sm:mt-3 md:mt-4 w-[80%] md:w-[60%] mx-auto">
+            <span className="text-[12px] xs:text-[14px] sm:text-[20px] md:text-[28px] lg:text-[40px] xl:text-[54px] text-white block mt-2 xs:mt-2.5 sm:mt-3 md:mt-4 lg:mt-5 w-[85%] sm:w-[80%] md:w-[75%] lg:w-[65%] xl:w-[60%] mx-auto">
               Master hours of content in the time it takes to brew your coffee.
             </span>
           </motion.div>
