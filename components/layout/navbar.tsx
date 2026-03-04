@@ -32,7 +32,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="mt-8 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
+    <nav className="mt-2 md:mt-8 z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
       <Container>
         <div className="flex items-center justify-between h-20 md:px-12">
           {/* Logo */}
