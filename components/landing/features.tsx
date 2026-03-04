@@ -108,7 +108,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12 -mt-2 md:-mt-4"
+          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12  mb-12 -mt-2 md:-mt-4"
         >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-30">
             <div className="relative w-full max-w-[820px] overflow-hidden -ml-4 md:ml-0">
@@ -157,7 +157,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12 -mt-16 md:-mt-52"
+          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12 mb-12 -mt-16 md:-mt-52"
         >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-20">
             <div className="relative w-full max-w-[820px] overflow-hidden -mr-4 md:mr-0">
@@ -205,7 +205,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 -mt-16 md:-mt-36"
+          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 mb-12 -mt-16 md:-mt-36"
         >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-10">
             <div className="relative w-full max-w-[620px] overflow-hidden -ml-4 md:ml-0">
@@ -252,7 +252,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12 -mt-16 md:-mt-52"
+          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12  mb-12 -mt-16 md:-mt-52"
         >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-20">
             <div className="relative w-full max-w-[820px] overflow-hidden -mr-4 md:mr-0">
@@ -299,7 +299,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 -mt-16 md:-mt-36"
+          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 mb-12 -mt-16 md:-mt-36"
         >
           <div className="w-[45%] md:flex-1 relative flex justify-center md:z-10">
             <div className="relative w-full max-w-[620px] overflow-hidden -ml-4 md:ml-0">
