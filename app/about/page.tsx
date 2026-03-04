@@ -106,10 +106,10 @@ export default function AboutPage() {
                     size="lg"
                     asChild
                     className="h-auto py-2 sm:py-0 sm:h-18 w-auto px-2 sm:px-4 
-                rounded-xl sm:rounded-2xl flex items-center justify-center sm:justify-start 
-                gap-2 sm:gap-4 transition-all hover:scale-105 active:scale-95 
-                bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer 
-                focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                    rounded-xl sm:rounded-2xl flex items-center justify-center sm:justify-start 
+                    gap-2 sm:gap-4 transition-all hover:scale-105 active:scale-95 
+                    bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer 
+                    focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
                   >
                     <a
                       href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
@@ -125,10 +125,10 @@ export default function AboutPage() {
                         className="w-4 h-4 sm:w-8 sm:h-10 object-contain"
                       />
                       <div className="text-left">
-                        <div className="text-[8px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
+                        <div className="text-[7px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
                           Download for free
                         </div>
-                        <div className="text-[12px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
+                        <div className="text-[10px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
                           App Store
                         </div>
                       </div>
@@ -140,10 +140,10 @@ export default function AboutPage() {
                     size="lg"
                     asChild
                     className="h-auto py-2 sm:py-0 sm:h-18 w-auto px-2 sm:px-4 
-                rounded-xl sm:rounded-2xl flex items-center justify-center sm:justify-start 
-                gap-2 sm:gap-4 transition-all hover:scale-105 active:scale-95 
-                bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer 
-                focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
+                    rounded-xl sm:rounded-2xl flex items-center justify-center sm:justify-start 
+                    gap-2 sm:gap-4 transition-all hover:scale-105 active:scale-95 
+                    bg-[#5b4a7a] hover:bg-[#4a3a67] text-white cursor-pointer 
+                    focus:outline-none focus:ring-2 focus:ring-[#6B5A90]"
                   >
                     <a
                       href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
@@ -159,10 +159,10 @@ export default function AboutPage() {
                         className="w-4 h-4 sm:w-8 sm:h-10 object-contain"
                       />
                       <div className="text-left">
-                        <div className="text-[8px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
+                        <div className="text-[7px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
                           Download for free
                         </div>
-                        <div className="text-[12px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
+                        <div className="text-[10px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
                           Google Play
                         </div>
                       </div>
