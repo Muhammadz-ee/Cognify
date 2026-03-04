@@ -140,7 +140,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[100px] md:-mt-[300px] mb-0 z-10 px-0 sm:px-4"
+            className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[80px] md:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
           >
             {/* Decorative background thumbnails behind the phone mockup */}
             <div className="absolute inset-x-0 top-[26%] sm:top-[25%] md:top-50 lg:top-110 flex justify-center z-30 pointer-events-none">
@@ -183,7 +183,7 @@ export function Hero() {
                 </div>
 
                 {/* Spacer for the center video to shine through */}
-                <div className="w-[220px] sm:w-[280px] md:w-[520px] lg:w-[720px]"></div>
+                <div className="w-[160px] sm:w-[280px] md:w-[520px] lg:w-[720px]"></div>
 
                 <div className="flex flex-col gap-1 md:gap-3">
                   <Image
@@ -227,7 +227,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none group h-[100vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
+            <div className="relative overflow-hidden border-none group h-[85vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"
@@ -241,20 +241,20 @@ export function Hero() {
               />
 
               {/* Overlay: Try For Free + Testimonial bottom-center on video */}
-              <div className="absolute bottom-10 sm:bottom-20 left-1/2 transform -translate-x-1/2 z-30 w-full px-4 flex flex-col items-center gap-3 sm:gap-6 pt-8 pb-6 sm:pt-0 sm:pb-0 pointer-events-none">
+              <div className="absolute inset-x-0 bottom-[10%] sm:bottom-20 z-30 flex flex-col items-center gap-3 sm:gap-6 px-4 pointer-events-none">
                 <div className="text-center">
-                  <h3 className="text-[28px] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
+                  <h3 className="text-[20px] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
                     Try For <span className="text-[#b292ff]">Free</span>
                   </h3>
-                  <p className="mt-2 sm:mt-4 text-[10px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
+                  <p className="mt-1 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
                     7 DAY FREE TRIAL - CANCEL ANY TIME
                   </p>
                 </div>
 
-                <div className="mt-4 sm:mt-12 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8">
+                <div className="mt-2 sm:mt-12 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-2 sm:gap-6 md:gap-8">
                   <div className="flex flex-col items-center">
-                    <div className="inline-flex bg-white rounded-full p-2 pr-4 sm:p-3 sm:pr-8 items-center gap-2 sm:gap-4 shadow-2xl scale-100">
-                      <div className="w-[32px] h-[32px] sm:w-[56px] sm:h-[56px] rounded-full bg-gray-200 overflow-hidden relative flex-shrink-0">
+                    <div className="inline-flex bg-white rounded-full p-1.5 pr-3 sm:p-3 sm:pr-8 items-center gap-1.5 sm:gap-4 shadow-2xl scale-100">
+                      <div className="w-[24px] h-[24px] sm:w-[56px] sm:h-[56px] rounded-full bg-gray-200 overflow-hidden relative flex-shrink-0">
                         <Image
                           src="/images/testimonial.webp"
                           alt="Sam"
@@ -264,28 +264,28 @@ export function Hero() {
                         />
                       </div>
 
-                      <div className="flex gap-1 text-[#b292ff]">
-                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-4 h-4 sm:w-8 sm:h-8 fill-current" />
+                      <div className="flex gap-0.5 sm:gap-1 text-[#b292ff]">
+                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
                       </div>
                     </div>
 
-                    <div className="mt-2 text-[10px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
+                    <div className="mt-1 text-[8px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
                       SAM D.
                     </div>
                   </div>
 
-                  <p className="text-[10px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[160px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
+                  <p className="text-[8px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[140px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
                     “FINALLY, AN APP THAT HELPS ME<br className="hidden sm:block" /> ACTUALLY REMEMBER WHAT I WATCH.”
                   </p>
                 </div>
               </div>
 
               {/* Bottom playback controls (dark strip) */}
-              <div className="absolute left-0 right-0 bottom-1 sm:bottom-4 z-30 px-4 py-2 pointer-events-none group-hover:opacity-100 transition-opacity duration-200">
+              <div className="absolute inset-x-0 bottom-4 sm:bottom-4 z-30 px-4 py-2 pointer-events-none group-hover:opacity-100 transition-opacity duration-200">
                 <div className="max-w-[1320px] mx-auto flex items-center gap-2 sm:gap-4 pointer-events-auto">
                   {/* progress track with dynamic white fill */}
                   <input
