@@ -49,7 +49,7 @@ export function PodcastTicker() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-[30px] md:text-5xl text-white mb-2 sm:mb-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
         >
-          <div className="text-[22px] md:text-[50px] mt-2 md:mt-4 leading-[1.0] inline-flex items-center whitespace-nowrap">
+          <div className="text-[20px] sm:text-[28px] md:text-[50px] mt-2 md:mt-4 leading-[1.0] inline-flex items-center whitespace-nowrap">
             Crush Your Podcast Backlog
             <Image
               src="/images/heart.webp"

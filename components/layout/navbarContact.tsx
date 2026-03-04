@@ -24,7 +24,7 @@ export function NavbarContact() {
     return pathname === href;
   };
 
-  const linkClass = (href: string, base = "font-sans font-medium text-[12px] sm:text-[16px] md:text-[26.8224px] transition-colors capitalize") => {
+  const linkClass = (href: string, base = "font-sans font-medium text-[10px] sm:text-[16px] md:text-[26.8224px] transition-colors capitalize") => {
     return `${base} ${isActive(href) ? "text-[#6B5A90] underline decoration-[#6B5A90] underline-offset-4" : "text-gray-600 hover:text-black"}`;
   };
 

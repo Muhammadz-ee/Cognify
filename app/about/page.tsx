@@ -14,34 +14,34 @@ export default function AboutPage() {
       <Navbar />
       <main className="bg-black text-white">
         <Container>
-          <div className="max-w-4xl mx-auto text-center pt-20">
+          <div className="max-w-4xl mx-auto text-center pt-12 sm:pt-16 md:pt-20 px-4 sm:px-6">
             <h2
-              className="text-4xl md:text-5xl font-bold mb-4 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 md:mb-6 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Turn Any Video Into a Masterclass"
             >
               Cognify turns watching
               <br /> into learning.
             </h2>
-            <p className="mt-6 text-md sm:text-base text-gray-300 max-w-[780px] mx-auto w-[80%]">
+            <p className="mt-4 sm:mt-6 text-sm sm:text-base md:text-lg text-gray-300 max-w-[780px] mx-auto px-2 sm:px-0">
               Our mission is to help you unlock the power of technology to
               <br />{" "}
               <strong> actively listen—rather than passively consume.</strong>
             </p>
 
-            <div className="mx-auto w-[380px] sm:w-[480px] md:w-[580px] p-4">
+            <div className="mx-auto w-[280px] sm:w-[380px] md:w-[480px] lg:w-[580px] p-2 sm:p-4 mt-6 sm:mt-8 md:mt-10">
               <div className="relative aspect-square w-full">
                 <Image
                   src="/images/about-img.webp"
                   alt="sketch"
                   width={580}
                   height={580}
-                  sizes="(max-width:640px) 380px, (max-width:1024px) 480px, 580px"
+                  sizes="(max-width:480px) 280px, (max-width:640px) 380px, (max-width:1024px) 480px, 580px"
                   className="object-contain"
                 />
               </div>
             </div>
 
-            <p className="mt-2 text-xs sm:text-sm text-white-400 max-w-[80%] md:max-w-[50%] mx-auto italic">
+            <p className="mt-4 sm:mt-6 md:mt-8 text-xs sm:text-sm md:text-base text-gray-400 max-w-[90%] sm:max-w-[80%] md:max-w-[60%] mx-auto italic px-2">
               It all started with a question: how can we learn better from what
               we watch? Cognify began as a scribble on paper — a simple idea to
               turn videos into actionable learning.
@@ -49,14 +49,14 @@ export default function AboutPage() {
           </div>
         </Container>
 
-        <section className="mt-20">
-          <div className="w-full bg-gradient-to-r from-[#6f607a] via-[#2b2230] to-black py-20">
+        <section className="mt-12 sm:mt-16 md:mt-20">
+          <div className="w-full bg-gradient-to-r from-[#6f607a] via-[#2b2230] to-black py-12 sm:py-16 md:py-20 lg:py-24">
             <Container>
-              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+              <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start lg:items-center gap-6 sm:gap-8 md:gap-10 px-3 sm:px-6">
                 {/* Left column: big title - 30% */}
-                <div className="md:col-span-1 px-6 md:px-0 flex items-center justify-center md:justify-start">
+                <div className="sm:col-span-2 lg:col-span-1 flex items-center justify-center lg:justify-start">
                   <h2
-                    className="text-4xl md:text-5xl font-bold mb-4 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] text-center md:text-left"
+                    className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] text-center lg:text-left"
                     data-text="Turn Any Video Into a Masterclass"
                   >
                     Our Why?
@@ -64,22 +64,23 @@ export default function AboutPage() {
                 </div>
 
                 {/* Right column: content + logo - 70% */}
-                <div className="md:col-span-2 px-6 md:px-0 text-center md:text-left">
-                  <p className="text-lg sm:text-xl md:text-2xl text-gray-100 max-w-[80%] mx-auto md:mx-0 w-full leading-relaxed">
+                <div className="sm:col-span-2 lg:col-span-2 text-center lg:text-left">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 max-w-full lg:max-w-[95%] mx-auto lg:mx-0 leading-relaxed px-2 sm:px-0">
                     Cognify is an AI-powered platform that transforms passive
                     video consumption into active learning.
                   </p>
 
-                  <div className="mt-8 flex justify-left md:justify-left">
+                  <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center lg:justify-start px-2 sm:px-0">
                     <Image
                       src="/images/site-logo.webp"
                       alt="Cognify"
                       width={280}
                       height={200}
+                      className="w-[200px] sm:w-[240px] md:w-[280px] h-auto"
                     />
                   </div>
 
-                  <p className="text-xl mt-8 text-gray-300 max-w-[82%] mx-auto md:mx-0 leading-relaxed">
+                  <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-full lg:max-w-[95%] mx-auto lg:mx-0 leading-relaxed mt-6 sm:mt-8 md:mt-10 px-2 sm:px-0">
                     The name Cognify blends 'Cognition' and 'Amplify'—reflecting
                     our mission to enhance learning through technology. Our logo
                     represents the flow of information and insight, symbolizing
@@ -92,14 +93,14 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-20">
+        <section className="py-12 sm:py-16 md:py-20 lg:py-24">
           <Container>
-            <div className="max-w-4xl mx-auto text-center">
-              <h3 className="text-4xl sm:text-5xl font-semibold w-[65%] mx-auto leading-[1.1]">
+            <div className="max-w-4xl mx-auto text-center px-3 sm:px-6">
+              <h3 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold max-w-full sm:max-w-[95%] md:max-w-[90%] lg:max-w-[85%] mx-auto leading-tight sm:leading-[1.2] md:leading-[1.1]">
                 Join us in transforming how you learn from videos.
               </h3>
-              <div className="flex justify-center gap-4 mt-4">
-                <div className="flex flex-row justify-center gap-2 sm:gap-4 w-full px-2">
+              <div className="flex justify-center gap-2 sm:gap-4 mt-6 sm:mt-8 md:mt-10">
+                <div className="flex flex-row justify-center gap-2 sm:gap-4 w-full px-2 sm:px-0">
                   {/* App Store */}
                   <Button
                     size="lg"
@@ -169,7 +170,7 @@ export default function AboutPage() {
                   </Button>
                 </div>
               </div>
-              <p className="mt-8 text-[10px] md:text-[16px] text-gray-200">
+              <p className="mt-6 sm:mt-8 md:mt-10 text-[12px] xs:text-sm sm:text-base md:text-lg text-gray-200 px-2">
                 🎧 Smarter listening starts today — Download now.
               </p>
             </div>
