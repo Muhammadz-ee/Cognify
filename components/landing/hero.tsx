@@ -89,11 +89,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] leading-[1.2] sm:leading-[1.03] text-[#ad9ad6] font-bold mb-4 sm:mb-10 mx-auto text-center px-4 max-w-[95%] md:max-w-[95%]"
+            className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] leading-[1.2] sm:leading-[1.03] text-[#ad9ad6] font-bold mb-4 sm:mb-10 mx-auto text-center px-4 max-w-[95%] md:max-w-[95%] relative z-20"
           >
             Turn any podcast into custom-length highlights.
             <br />
-            <span className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] text-white block mt-2 sm:mt-3 md:mt-4 w-[80%] md:w-[60%] mx-auto z-99">
+            <span className="text-[12px] sm:text-[clamp(24px,2.0vw,54px)] text-white block mt-2 sm:mt-3 md:mt-4 w-[80%] md:w-[60%] mx-auto">
               Master hours of content in the time it takes to brew your coffee.
             </span>
           </motion.div>
