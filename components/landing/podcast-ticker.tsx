@@ -39,7 +39,7 @@ const podcasts = [
 
 export function PodcastTicker() {
   return (
-    <section className="py-2 bg-grey overflow-hidden">
+    <section className="py-0 bg-grey overflow-hidden">
       <div className="text-center mb-6 sm:mb-10">
         {/* Animated Heading */}
         <motion.h3

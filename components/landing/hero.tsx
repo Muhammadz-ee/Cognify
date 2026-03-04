@@ -227,7 +227,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none group h-[85vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
+            <div className="relative overflow-hidden border-none group h-[80vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"

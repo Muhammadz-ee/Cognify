@@ -63,7 +63,7 @@ export function NavbarContact() {
               {pathname !== "/" && (
                 <Link href="/about" className={linkClass("/about")}>About Us</Link>
               )}
-              <Link href="/\#features" className={linkClass("/\#features")}>Features</Link>
+              <Link href="/#features" className={linkClass("/#features")}>Features</Link>
               <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
             </div>
           </div>

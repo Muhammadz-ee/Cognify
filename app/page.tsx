@@ -123,7 +123,7 @@ export default function Home() {
                     <div className="text-[7px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[10px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
+                    <div className="text-[10px] xs:text-[12px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
                       App Store
                     </div>
                   </div>
@@ -157,7 +157,7 @@ export default function Home() {
                     <div className="text-[7px] sm:text-[14px] font-bold uppercase tracking-wider opacity-90">
                       Download for free
                     </div>
-                    <div className="text-[10px] sm:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
+                    <div className="text-[10px] xs:text-[12px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-bold leading-none mt-0.5 sm:mt-0">
                       Google Play
                     </div>
                   </div>
