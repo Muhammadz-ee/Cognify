@@ -28,8 +28,8 @@ export default function AboutPage() {
               <strong> actively listen—rather than passively consume.</strong>
             </p>
 
-            <div className="mx-auto w-[280px] sm:w-[380px] md:w-[480px] lg:w-[580px] p-2 sm:p-4 mt-6 sm:mt-8 md:mt-10">
-              <div className="relative aspect-square w-full">
+            <div className="mx-auto w-[280px] sm:w-[380px] md:w-[480px] lg:w-[580px] p-2 sm:p-4 mt-6 sm:mt-8 md:mt-10 flex items-center justify-center">
+              <div className="relative aspect-square w-full flex items-center justify-center">
                 <Image
                   src="/images/about-img.webp"
                   alt="sketch"

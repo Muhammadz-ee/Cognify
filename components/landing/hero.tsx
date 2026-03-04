@@ -93,7 +93,7 @@ export function Hero() {
           >
             Turn any podcast into custom-length highlights.
             <br />
-            <span className="text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[30px] xl:text-[44px] text-white block mt-2 xs:mt-2.5 sm:mt-3 md:mt-4 lg:mt-5 w-[85%] sm:w-[80%] md:w-[75%] lg:w-[65%] xl:w-[60%] mx-auto">
+            <span className="text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[30px] xl:text-[44px] text-white block mt-2 xs:mt-2.5 sm:mt-3 md:mt-4 lg:mt-5 w-[80%] mx-auto">
               Master hours of content in the time it takes to brew your coffee.
             </span>
           </motion.div>

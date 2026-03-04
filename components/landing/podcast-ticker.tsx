@@ -67,7 +67,7 @@ export function PodcastTicker() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-[clamp(14px,1.1vw,16px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-[#dcdcdc] text-brown-200 font-thin mx-auto mt-4 md:mt-6"
+          className="text-[clamp(14px,1.1vw,16px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-[#dcdcdc] text-brown-200 font-thin mx-auto mt-1 sm:mt-4 md:mt-6"
         >
           The Intelligence Layer for High-Performers.
         </motion.p>

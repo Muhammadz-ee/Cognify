@@ -5,10 +5,12 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { Menu, X } from "lucide-react"; // hamburger icons
 
 export function NavbarContact() {
   const pathname = usePathname();
   const [hash, setHash] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setHash(typeof window !== "undefined" ? window.location.hash : "");
@@ -46,12 +48,24 @@ export function NavbarContact() {
 
           {/* Nav Links (Desktop & Mobile) */}
           <div className="flex items-center gap-3 sm:gap-8">
-            <Link href="/" className={linkClass("/")}>Home</Link>
-            {pathname !== "/" && (
-              <Link href="/about" className={linkClass("/about")}>About Us</Link>
-            )}
-            <Link href="/#features" className={linkClass("/#features")}>Features</Link>
-            <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
+            {/* hamburger for mobile */}
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="sm:hidden p-2 text-gray-600 hover:text-black"
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+            <div className={`${menuOpen ? 'flex' : 'hidden'} sm:flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8`}
+              onClick={() => setMenuOpen(false)}
+            >
+              <Link href="/" className={linkClass("/")}>Home</Link>
+              {pathname !== "/" && (
+                <Link href="/about" className={linkClass("/about")}>About Us</Link>
+              )}
+              <Link href="/\#features" className={linkClass("/\#features")}>Features</Link>
+              <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
+            </div>
           </div>
         </div>
       </Container>
