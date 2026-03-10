@@ -49,7 +49,7 @@ export function PodcastTicker() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-white mb-2 sm:mb-4 px-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
         >
-          <div className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[50px] mt-1 md:mt-4 leading-tight inline-flex items-center justify-center whitespace-nowrap gap-2 sm:gap-3 lg:gap-4 flex-wrap sm:flex-nowrap">
+          <div className="text-[16px] sm:text-[32px] md:text-[40px] lg:text-[50px] mt-1 md:mt-4 leading-tight inline-flex items-center justify-center whitespace-nowrap flex-nowrap gap-1.5 sm:gap-3 lg:gap-4">
             Crush Your Podcast Backlog
             <Image
               src="/images/heart.webp"
@@ -74,7 +74,7 @@ export function PodcastTicker() {
       </div>
 
       <div className="w-full bg-[#1c1b22] py-8 sm:py-12 lg:py-16 px-4 sm:px-8 border-y border-white/5">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:gap-8 justify-items-center">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-2 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:gap-8 justify-items-center">
           {podcasts.map((podcast, index) => (
             <motion.div
               key={index}
@@ -82,7 +82,7 @@ export function PodcastTicker() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
-              className="flex flex-col items-start group cursor-pointer w-full max-w-[125px] sm:max-w-[145px] md:max-w-[165px] lg:max-w-[220px]"
+              className="flex flex-col items-start group cursor-pointer w-full max-w-[90px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[220px]"
             >
               <div className="w-full aspect-square overflow-hidden relative shadow-xl border border-white/5 bg-black/50">
                 <Image
@@ -94,10 +94,10 @@ export function PodcastTicker() {
                 />
               </div>
               <div className="text-left w-full mt-2 sm:mt-3 px-1 sm:px-0">
-                <span className="text-[9.5px] sm:text-[11.5px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight">
+                <span className="text-[7.5px] sm:text-[10px] md:text-[11px] lg:text-[15px] font-medium text-gray-200 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight">
                   {podcast.name}
                 </span>
-                <span className="text-[8px] sm:text-[10px] md:text-[11px] lg:text-[13px] text-gray-500 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight mt-0.5">
+                <span className="text-[6.5px] sm:text-[8px] md:text-[9.5px] lg:text-[13px] text-gray-500 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight mt-0.5">
                   {podcast.artist}
                 </span>
               </div>

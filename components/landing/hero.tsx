@@ -170,92 +170,91 @@ export function Hero() {
             className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[80px] md:-mt-[140px] lg:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
           >
             {/* Decorative background thumbnails behind the phone mockup */}
-            <div className="absolute inset-x-0 mx-auto top-[18%] sm:top-[20%] md:top-[18%] lg:top-[24%] flex justify-center z-30 pointer-events-none w-full max-w-[1600px]">
-              <div className="flex w-full items-start justify-center gap-2 sm:gap-6 md:gap-10 lg:gap-16 px-2 sm:px-8 md:px-12 opacity-50 md:opacity-80 transition-opacity">
-                {/* Left group */}
-                <div className="flex flex-1 justify-end gap-2 sm:gap-2 md:gap-4 lg:gap-6">
-                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
-                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
-                      <Image
-                        src="/images/album-1.webp"
-                        alt="Mel Robbins"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 15vw, 200px"
-                      />
-                    </div>
-                    <div className="text-left w-full pl-0.5 sm:pl-1">
-                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
-                        Mel Robbins Podcast
-                      </span>
-                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
-                        Mel Robbins
-                      </span>
-                    </div>
+            <div className="absolute inset-x-0 mx-auto top-[22%] sm:top-[22%] md:top-[22%] lg:top-[24%] flex w-full max-w-[1600px] justify-between px-2 sm:px-4 md:px-0 z-30 pointer-events-none opacity-50 md:opacity-80 transition-opacity">
+
+              {/* Left group */}
+              <div className="flex w-[26%] md:w-[26%] lg:w-[29%] justify-end gap-1.5 sm:gap-3 md:gap-5">
+                <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                    <Image
+                      src="/images/album-1.webp"
+                      alt="Mel Robbins"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 14vw, 200px"
+                    />
                   </div>
-                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
-                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
-                      <Image
-                        src="/images/album-3.webp"
-                        alt="Modern Wisdom"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 15vw, 200px"
-                      />
-                    </div>
-                    <div className="text-left w-full pl-0.5 sm:pl-1">
-                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
-                        Modern Wisdom
-                      </span>
-                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
-                        Chris Williamson
-                      </span>
-                    </div>
+                  <div className="text-left w-full pl-0.5 sm:pl-1">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                      Mel Robbins Podcast
+                    </span>
+                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                      Mel Robbins
+                    </span>
                   </div>
                 </div>
-
-                {/* Center Video Spacer (invisible, pushes groups out) */}
-                <div className="w-[46vw] sm:w-[44vw] md:w-[40vw] max-w-[460px] min-w-[160px] md:min-w-[280px] lg:min-w-[420px] flex-shrink" />
-
-                {/* Right group */}
-                <div className="flex flex-1 justify-start gap-2 sm:gap-3 md:gap-4 lg:gap-6">
-                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
-                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
-                      <Image
-                        src="/images/album-2.webp"
-                        alt="The Diary of a CEO"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 15vw, 200px"
-                      />
-                    </div>
-                    <div className="text-left w-full pl-0.5 sm:pl-1">
-                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
-                        DOAC
-                      </span>
-                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
-                        Steven Bartlett
-                      </span>
-                    </div>
+                <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                    <Image
+                      src="/images/album-3.webp"
+                      alt="Modern Wisdom"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 14vw, 200px"
+                    />
                   </div>
-                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
-                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
-                      <Image
-                        src="/images/album-4.webp"
-                        alt="The School of Greatness"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 15vw, 200px"
-                      />
-                    </div>
-                    <div className="text-left w-full pl-0.5 sm:pl-1">
-                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
-                        The School of Greatness
-                      </span>
-                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
-                        Lewis Howes
-                      </span>
-                    </div>
+                  <div className="text-left w-full pl-0.5 sm:pl-1">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                      Modern Wisdom
+                    </span>
+                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                      Chris Williamson
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Center Video Spacer (invisible, strict % width to completely lock positions from shifting) */}
+              <div className="w-[48%] md:w-[48%] lg:w-[38%] flex-shrink-0" />
+
+              {/* Right group */}
+              <div className="flex w-[26%] md:w-[26%] lg:w-[29%] justify-start gap-1.5 sm:gap-3 md:gap-5">
+                <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                    <Image
+                      src="/images/album-2.webp"
+                      alt="The Diary of a CEO"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 14vw, 200px"
+                    />
+                  </div>
+                  <div className="text-left w-full pl-0.5 sm:pl-1">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                      DOAC
+                    </span>
+                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                      Steven Bartlett
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                    <Image
+                      src="/images/album-4.webp"
+                      alt="The School of Greatness"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 14vw, 200px"
+                    />
+                  </div>
+                  <div className="text-left w-full pl-0.5 sm:pl-1">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                      The School of Greatness
+                    </span>
+                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                      Lewis Howes
+                    </span>
                   </div>
                 </div>
               </div>

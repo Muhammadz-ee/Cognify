@@ -111,7 +111,7 @@ export function Features() {
           className="flex flex-col lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 -mt-2 lg:-mt-4"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-30">
-            <div className="relative w-[75%] sm:w-[85%] md:w-[70%] lg:w-full max-w-[820px] mx-auto overflow-hidden">
+            <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-1.webp"
                 alt="Feature 1"
@@ -143,10 +143,8 @@ export function Features() {
             >
               Distill in Minutes
             </h2>
-            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
-              From a 3-minute brief to a deep dive, customize your highlight
-              length to match your schedule. Get exactly the context you need,
-              nothing more.
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] whitespace-normal">
+              From a 3-minute brief to a deep dive, customize your highlight length to match your schedule. Get exactly the context you need, nothing more.
             </p>
           </motion.div>
         </motion.div>
@@ -161,7 +159,7 @@ export function Features() {
           className="flex flex-col lg:flex-row-reverse items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-20">
-            <div className="relative w-[75%] sm:w-[85%] md:w-[70%] lg:w-full max-w-[820px] mx-auto overflow-hidden">
+            <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-2.webp"
                 alt="Feature 2"
@@ -193,7 +191,7 @@ export function Features() {
             >
               Summarize Your Way.
             </h2>
-            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] whitespace-normal">
               Instant takeaways and structured insights—so you save time and actually remember.
             </p>
           </motion.div>
@@ -208,7 +206,7 @@ export function Features() {
           className="flex flex-col lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-36"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-10">
-            <div className="relative w-[75%] sm:w-[85%] md:w-[70%] lg:w-full max-w-[620px] mx-auto overflow-hidden">
+            <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-3.webp"
                 alt="Feature 3"
@@ -239,7 +237,7 @@ export function Features() {
             >
               From Passive Watching to Active Listening
             </h2>
-            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] whitespace-normal">
               Instantly capture ideas and effortlessly annotate videos in real time—without interrupting your flow.
             </p>
           </motion.div>
@@ -254,7 +252,7 @@ export function Features() {
           className="flex flex-col lg:flex-row-reverse items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-20">
-            <div className="relative w-[75%] sm:w-[85%] md:w-[70%] lg:w-full max-w-[820px] mx-auto overflow-hidden">
+            <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-4.webp"
                 alt="Feature 4"
@@ -285,7 +283,7 @@ export function Features() {
             >
               Retention for the 1%
             </h2>
-            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] whitespace-normal">
               In a world of constant content, it's easy to forget what we hear. Cognify changes that. Your key takeaways are captured, organized, and always accessible.
             </p>
           </motion.div>
@@ -300,7 +298,7 @@ export function Features() {
           className="flex flex-col lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-10">
-            <div className="relative w-[75%] sm:w-[85%] md:w-[70%] lg:w-full max-w-[620px] mx-auto overflow-hidden">
+            <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-5.webp"
                 alt="Feature 5"
@@ -331,7 +329,7 @@ export function Features() {
             >
               Ask Anything, Instantly
             </h2>
-            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] mb-4 sm:mb-8 md:mb-12">
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] mb-4 sm:mb-8 md:mb-12 whitespace-normal">
               Deepen your understanding with a built-in AI assistant. Extract precise insights and get instant answers without ever hitting rewind.
             </p>
           </motion.div>
