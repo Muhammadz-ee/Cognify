@@ -14,12 +14,12 @@ export function Features() {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h2
-            className="text-4xl md:text-5xl font-bold mb-4 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+            className="text-3xl md:text-5xl font-bold mb-4 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
             data-text="Turn Any Video Into a Masterclass"
           >
             Turn Any Video Into a Masterclass <br />
           </h2>
-          <p className="text-white text-[clamp(20px,1.2vw,22px)] sm:text-[clamp(22px,1.3vw,26px)] max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
+          <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
             Summarize key points, take organized notes, and get AI-powered{" "}
             answers—so you don’t just watch, you truly learn.
           </p>
@@ -108,10 +108,10 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-8 sm:mb-12  mb-12 -mt-2 md:-mt-4"
+          className="flex flex-col md:flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-12 sm:mb-8 -mt-2 md:-mt-4"
         >
-          <div className="w-[45%] md:flex-1 relative flex justify-center md:z-30">
-            <div className="relative w-full max-w-[820px] overflow-hidden -ml-4 md:ml-0">
+          <div className="w-full md:flex-1 relative flex justify-center md:z-30">
+            <div className="relative w-[75%] sm:w-full max-w-[820px] mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-1.webp"
                 alt="Feature 1"
@@ -128,24 +128,25 @@ export function Features() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="w-[55%] md:flex-1 text-left pr-2 md:pr-0"
+            className="w-full md:flex-1 text-left px-4 md:px-0 flex flex-col items-start relative z-10"
           >
             <Button
               size="lg"
-              className="text-[6px] sm:text-sm md:text-[18px] font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
+              className="text-[10px] sm:text-[12px] md:text-[18px] lg:text-[20px] font-bold text-white mb-3 md:mb-5 border border-white h-auto py-1.5 md:h-12 px-3 md:px-6 rounded-full inline-flex w-[max-content] items-center gap-1.5 sm:gap-3 lg:gap-4"
               aria-label="Key Moments™"
             >
               Key Moments™
             </Button>
             <h2
-              className="text-[14px] sm:text-[28px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-1 sm:mb-4 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[24px] sm:text-[32px] md:text-[50px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Summarize. Skip the Noise. Learn What Counts."
             >
               Distill in Minutes
             </h2>
-            <p className="text-gray-100 text-[8px] sm:text-[14px] md:text-[clamp(22px,1.3vw,26px)] leading-[1.2]">
-              Instant takeaways and structured insights—so you save time and
-              actually remember.
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+              From a 3-minute brief to a deep dive, customize your highlight
+              length to match your schedule. Get exactly the context you need,
+              nothing more.
             </p>
           </motion.div>
         </motion.div>
@@ -157,10 +158,10 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12 mb-12 -mt-16 md:-mt-52"
+          className="flex flex-col md:flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-12 sm:mb-8 mt-8 md:-mt-52"
         >
-          <div className="w-[45%] md:flex-1 relative flex justify-center md:z-20">
-            <div className="relative w-full max-w-[820px] overflow-hidden -mr-4 md:mr-0">
+          <div className="w-full md:flex-1 relative flex justify-center md:z-20">
+            <div className="relative w-[75%] sm:w-full max-w-[820px] mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-2.webp"
                 alt="Feature 2"
@@ -177,24 +178,23 @@ export function Features() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="w-[55%] md:flex-1 text-left pl-2 md:pl-0"
+            className="w-full md:flex-1 text-left px-4 md:px-0 flex flex-col items-start relative z-10"
           >
             <Button
               size="lg"
-              className="text-[6px] sm:text-sm md:text-[18px] font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
+              className="text-[10px] sm:text-[12px] md:text-[18px] lg:text-[20px] font-bold text-white mb-3 md:mb-5 border border-white h-auto py-1.5 md:h-12 px-3 md:px-6 rounded-full inline-flex w-[max-content] items-center gap-1.5 sm:gap-3 lg:gap-4"
               aria-label="Insight Modes™"
             >
               Insight Modes™
             </Button>
             <h2
-              className="text-[14px] sm:text-[28px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-1 sm:mb-4 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
-              data-text="From Passive Watching to Active Listening"
+              className="text-[24px] sm:text-[32px] md:text-[50px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              data-text="Summarize Your Way."
             >
               Summarize Your Way.
             </h2>
-            <p className="text-gray-100 text-[8px] sm:text-[14px] md:text-[clamp(22px,1.3vw,26px)] leading-[1.2]">
-              Instantly capture ideas and effortlessly annotate videos in real
-              time—without interrupting your flow.
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+              Instant takeaways and structured insights—so you save time and actually remember.
             </p>
           </motion.div>
         </motion.div>
@@ -205,10 +205,10 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 mb-12 -mt-16 md:-mt-36"
+          className="flex flex-col md:flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-12 sm:mb-8 mt-8 md:-mt-36"
         >
-          <div className="w-[45%] md:flex-1 relative flex justify-center md:z-10">
-            <div className="relative w-full max-w-[620px] overflow-hidden -ml-4 md:ml-0">
+          <div className="w-full md:flex-1 relative flex justify-center md:z-10">
+            <div className="relative w-[75%] sm:w-full max-w-[620px] mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-3.webp"
                 alt="Feature 3"
@@ -224,24 +224,23 @@ export function Features() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="w-[55%] md:flex-1 text-left pr-2 md:pr-0"
+            className="w-full md:flex-1 text-left px-4 md:px-0 flex flex-col items-start relative z-10"
           >
             <Button
               size="lg"
-              className="text-[6px] sm:text-sm md:text-[18px] font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
+              className="text-[10px] sm:text-[12px] md:text-[18px] lg:text-[20px] font-bold text-white mb-3 md:mb-5 border border-white h-auto py-1.5 md:h-12 px-3 md:px-6 rounded-full inline-flex w-[max-content] items-center gap-1.5 sm:gap-3 lg:gap-4"
               aria-label="Annotations™"
             >
               Annotations™
             </Button>
             <h2
-              className="text-[14px] sm:text-[28px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-1 sm:mb-4 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[24px] sm:text-[32px] md:text-[48px] lg:text-[52px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="From Passive Watching to Active Listening"
             >
-              From Passive Watching to <strong  >Active Listening</strong>
+              From Passive Watching to Active Listening
             </h2>
-            <p className="text-gray-100 text-[8px] sm:text-[14px] md:text-[clamp(22px,1.3vw,26px)] leading-[1.2]">
-              Instantly capture ideas and effortlessly annotate videos in real
-              time—without interrupting your flow.
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+              Instantly capture ideas and effortlessly annotate videos in real time—without interrupting your flow.
             </p>
           </motion.div>
         </motion.div>
@@ -252,10 +251,10 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-6 sm:mb-12  mb-12 -mt-16 md:-mt-52"
+          className="flex flex-col md:flex-row-reverse items-center gap-2 sm:gap-8 md:gap-12 mb-12 sm:mb-8 mt-8 md:-mt-52"
         >
-          <div className="w-[45%] md:flex-1 relative flex justify-center md:z-20">
-            <div className="relative w-full max-w-[820px] overflow-hidden -mr-4 md:mr-0">
+          <div className="w-full md:flex-1 relative flex justify-center md:z-20">
+            <div className="relative w-[75%] sm:w-full max-w-[820px] mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-4.webp"
                 alt="Feature 4"
@@ -271,24 +270,23 @@ export function Features() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="w-[55%] md:flex-1 text-left pl-2 md:pl-0"
+            className="w-full md:flex-1 text-left px-4 md:px-0 flex flex-col items-start -mt-8 sm:mt-0 relative z-10"
           >
             <Button
               size="lg"
-              className="text-[6px] sm:text-sm md:text-[18px] font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
+              className="text-[10px] sm:text-[12px] md:text-[18px] lg:text-[20px] font-bold text-white mb-3 md:mb-5 border border-white h-auto py-1.5 md:h-12 px-3 md:px-6 rounded-full inline-flex w-[max-content] items-center gap-1.5 sm:gap-3 lg:gap-4"
               aria-label="NoteVault™"
             >
               NoteVault™
             </Button>
             <h2
-              className="text-[14px] sm:text-[28px] md:text-[48px] lg:text-[53.6701px] font-normal text-white mb-1 sm:mb-4 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
-              data-text="From Passive Watching to Active Listening"
+              className="text-[24px] sm:text-[32px] md:text-[50px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              data-text="Retention for the 1%"
             >
-              Ask Anything, Instantly.
+              Retention for the 1%
             </h2>
-            <p className="text-gray-100 text-[8px] sm:text-[14px] md:text-[clamp(22px,1.3vw,26px)] leading-[1.2]">
-              Instantly capture ideas and effortlessly annotate videos in real
-              time—without interrupting your flow.
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[clamp(20px,1.5vw,26px)] leading-[1.4]">
+              In a world of constant content, it's easy to forget what we hear. Cognify changes that. Your key takeaways are captured, organized, and always accessible.
             </p>
           </motion.div>
         </motion.div>
@@ -299,10 +297,10 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-row items-center gap-2 sm:gap-8 md:gap-12 -mb-4 sm:-mb-10 mb-12 -mt-16 md:-mt-36"
+          className="flex flex-col md:flex-row items-center gap-2 sm:gap-8 md:gap-12 mb-12 sm:mb-8 mt-8 md:-mt-52"
         >
-          <div className="w-[45%] md:flex-1 relative flex justify-center md:z-10">
-            <div className="relative w-full max-w-[620px] overflow-hidden -ml-4 md:ml-0">
+          <div className="w-full md:flex-1 relative flex justify-center md:z-10">
+            <div className="relative w-[75%] sm:w-full max-w-[620px] mx-auto overflow-hidden">
               <Image
                 src="/images/feature-image-5.webp"
                 alt="Feature 5"
@@ -318,34 +316,31 @@ export function Features() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="w-[55%] md:flex-1 text-left pr-2 md:pr-0"
+            className="w-full md:flex-1 text-left px-4 md:px-0 flex flex-col items-start -mt-12 sm:mt-0 relative z-10"
           >
             <Button
               size="lg"
-              className="text-[6px] sm:text-sm md:text-[18px] font-bold text-white mb-2 sm:mb-4 border border-white h-auto py-1 sm:h-12 px-2 sm:px-4 rounded-full flex items-center gap-1 sm:gap-4 text-white"
+              className="text-[10px] sm:text-[12px] md:text-[18px] lg:text-[20px] font-bold text-white mb-3 md:mb-5 border border-white h-auto py-1.5 md:h-12 px-3 md:px-6 rounded-full inline-flex w-[max-content] items-center gap-1.5 sm:gap-3 lg:gap-4"
               aria-label="AI Assistant™"
             >
               AI Assistant™
             </Button>
             <h2
-              className="text-[14px] sm:text-[28px] md:text-[48px] lg:text-[53.6701px] font-bold text-white mb-1 sm:mb-4 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
-              data-text="Retention for the 1%."
+              className="text-[24px] sm:text-[32px] md:text-[50px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              data-text="Ask Anything, Instantly"
             >
-              Retention for the 1%.
+              Ask Anything, Instantly
             </h2>
-            <p className="text-gray-100 text-[8px] sm:text-[14px] md:text-[clamp(22px,1.3vw,26px)] leading-[1.2] mb-4 sm:mb-8">
-              In a world of constant content, it's easy to forget what we hear.
-              Cognify changes that. Your key takeaways are captured, organized,
-              and always accessible.
+            <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[clamp(20px,1.5vw,26px)] leading-[1.4] mb-4 sm:mb-8 md:mb-12">
+              Deepen your understanding with a built-in AI assistant. Extract precise insights and get instant answers without ever hitting rewind.
             </p>
           </motion.div>
         </motion.div>
 
-        <p className="text-gray-100 text-[4px] sm:text-[clamp(14px,1.0vw,18px)] md:text-[clamp(18px,1.2vw,20px)] font-bold leading-relaxed mb-8 text-center mt-2 sm:mt-0">
+        <p className="text-gray-100 text-[8px] sm:text-[clamp(11px,1.1vw,14px)] md:text-[clamp(12px,1.2vw,18px)] font-bold leading-relaxed mb-8 text-center mt-0 -mb-4 sm:mb-0">
           {" "}
           „Tell me and I forget, teach me and I may remember, involve me and I
-          learn.” <br />
-          -Benjamin Franklin{" "}
+          learn.” <br />-Benjamin Franklin{" "}
         </p>
       </Container>
     </section>

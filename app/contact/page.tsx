@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/container";
 import { NavbarContact } from "@/components/layout/navbarContact";
 
 export default function ContactPage() {
-
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
       <NavbarContact />
@@ -17,8 +16,8 @@ export default function ContactPage() {
           <div className="max-w-6xl mx-auto relative z-10 mt-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left column: heading + form */}
-              <div className="space-y-4 sm:space-y-6">
-                <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-900">
+              <div className="space-y-2 sm:space-y-4">
+                <h1 className="text-[20.8224px] md:text-[26.8224px] font-bold font-sans text-center text-gray-900">
                   We Love Feedback!
                 </h1>
                 {/* Left: form card */}
@@ -77,7 +76,11 @@ export default function ContactPage() {
                     <iframe
                       src="https://form.jotform.com/251245347804153"
                       className="w-full border-none"
-                      style={{ minHeight: "760px", borderRadius: "18px", boxShadow: "0 10px 30px rgba(0,0,0,0.1)" }}
+                      style={{
+                        minHeight: "760px",
+                        borderRadius: "18px",
+                        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+                      }}
                       loading="lazy"
                       allow="geolocation; microphone; camera"
                     />
@@ -92,7 +95,7 @@ export default function ContactPage() {
                     Have a question, need support, or want to collaborate? Reach
                     out—we'd love to hear from you.
                   </h3>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 mt-8 sm:mt-10">
                     <div className="w-10 h-10 flex items-center justify-center rounded-full bg-[#C5AFEC] shadow-sm ring-2 ring-dark-200">
                       <svg
                         viewBox="0 0 24 24"
@@ -118,25 +121,30 @@ export default function ContactPage() {
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </div>
-
-                    <div>
-                      <a
+                    </div>   
+                    <a
                         href="mailto:admin@getcognifyai.com"
-                        className="font-semibold text-base md:text-lg text-gray-900 hover:underline"
+                        className="mt-2 font-bold text-base md:text-xl text-gray-900 hover:underline"
                       >
                         admin@getcognifyai.com
-                      </a>
-                      <br />
-                      <p className="mt-8   text-sm text-gray-600 max-w-sm">
-                        If you want to delete your Cognify account or any
-                        personal data associated with it, please email us at{" "}
-                        <strong>admin@getcognifyai.com</strong>. We'll
-                        permanently delete your data (email, saved notes,
-                        summaries, and usage history) within 7 days.
-                      </p>
-                    </div>
+                      </a>               
                   </div>
+                    <div>
+                      
+                      <br />
+                      <div className="mt-4 sm:mt-5 space-y-3 sm:space-y-4">
+                        
+                        <p className="text-left text-sm sm:text-base text-gray-600 leading-relaxed">
+                          If you want to delete your Cognify account or any
+                          personal data associated with it, please email us at{" "}
+                          <strong>admin@getcognifyai.com</strong>.
+                        </p>
+                        <p className="text-left text-sm sm:text-base text-gray-600 leading-relaxed">
+                          We'll permanently delete your data (email, saved
+                          notes, summaries, and usage history) within 7 days.
+                        </p>
+                      </div>
+                    </div>
                 </div>
               </aside>
             </div>

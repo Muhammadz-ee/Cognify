@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-white/10 pt-16 pb-8 z-100">
+    <footer className="bg-black pt-16 pb-8 z-100">
       <Container>
         {/* ========================================================= */}
         {/* DESKTOP LAYOUT */}
@@ -34,7 +34,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="#features"
-                    className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
+                    className="text-xs text-gray-400"
                   >
                     Features
                   </Link>
@@ -47,8 +47,8 @@ export function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
-                    className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
+                    href="/contact"
+                    className="text-xs text-gray-400"
                   >
                     Help Center
                   </Link>
@@ -56,7 +56,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/terms"
-                    className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
+                    className="text-xs text-gray-400"
                   >
                     Terms of Use
                   </Link>
@@ -64,7 +64,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/privacy"
-                    className="text-xs text-gray-400 hover:text-brand-purple transition-colors"
+                    className="text-xs text-gray-400"
                   >
                     Privacy Policy
                   </Link>
@@ -78,7 +78,7 @@ export function Footer() {
                 <li>
                   <a
                     href="mailto:admin@getcognifyai.com"
-                    className="text-gray-400 hover:text-brand-purple transition-colors inline-flex items-center gap-2"
+                    className="text-gray-400 inline-flex items-center gap-2"
                   >
                     <span className="w-6 h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
                       <svg
@@ -114,7 +114,7 @@ export function Footer() {
                     href="https://www.instagram.com/cognify_app?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-400 hover:text-brand-purple transition-colors inline-flex items-center gap-2"
+                    className="text-gray-400 inline-flex items-center gap-2"
                   >
                     <span className="w-6 h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
                       <svg
@@ -152,7 +152,7 @@ export function Footer() {
                     href="https://www.facebook.com/people/Get-Cognify-App/61573621870727/?rdid=tndZvRJ3axJvcn64&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17v5y2KmcL%2F "
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-400 hover:text-brand-purple transition-colors inline-flex items-center gap-2"
+                    className="text-gray-400 inline-flex items-center gap-2"
                   >
                     <span className="w-6 h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
                       <svg
@@ -224,7 +224,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="#features"
-                    className="text-[9px] sm:text-xs text-[#888888] hover:text-brand-purple transition-colors"
+                    className="text-[9px] sm:text-xs text-[#888888]"
                   >
                     Features
                   </Link>
@@ -239,8 +239,8 @@ export function Footer() {
               <ul className="space-y-2 sm:space-y-3">
                 <li>
                   <Link
-                    href="#"
-                    className="text-[9px] sm:text-xs text-[#888888] hover:text-brand-purple transition-colors"
+                    href="/contact"
+                    className="text-[9px] sm:text-xs text-[#888888]"
                   >
                     Help Center
                   </Link>
@@ -248,7 +248,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/terms"
-                    className="text-[9px] sm:text-xs text-[#888888] hover:text-brand-purple transition-colors"
+                    className="text-[9px] sm:text-xs text-[#888888]"
                   >
                     Terms of Use
                   </Link>
@@ -256,7 +256,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/privacy"
-                    className="text-[9px] sm:text-xs text-[#888888] hover:text-brand-purple transition-colors"
+                    className="text-[9px] sm:text-xs text-[#888888]"
                   >
                     Privacy Policy
                   </Link>
@@ -272,7 +272,7 @@ export function Footer() {
                 <li>
                   <a
                     href="mailto:admin@getcognifyai.com"
-                    className="hover:text-brand-purple transition-colors flex justify-center"
+                    className="flex justify-center"
                   >
                     <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
                       <svg
@@ -309,7 +309,7 @@ export function Footer() {
                     href="https://instagram.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-brand-purple transition-colors flex justify-center"
+                    className="flex justify-center"
                   >
                     <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
                       <svg
@@ -348,7 +348,7 @@ export function Footer() {
                     href="https://facebook.com"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-brand-purple transition-colors flex justify-center"
+                    className="flex justify-center"
                   >
                     <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white flex items-center justify-center flex-shrink-0">
                       <svg

@@ -95,10 +95,10 @@ export function PodcastTicker() {
                 />
               </div>
               <div className="text-left w-full">
-                <span className="text-[10px] md:text-[14px] font-medium text-white transition-colors block truncate w-full">
+                <span className="text-[10px] md:text-[14px] font-normal text-white transition-colors block w-full">
                   {podcast.name}
                 </span>
-                <span className="text-[8px] md:text-[11px] text-gray-400 transition-colors block mt-0.5 truncate w-full">
+                <span className="text-[8px] md:text-[12px] text-gray-400 block w-full">
                   {podcast.artist}
                 </span>
               </div>

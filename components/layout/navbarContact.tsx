@@ -60,7 +60,7 @@ export function NavbarContact() {
               onClick={() => setMenuOpen(false)}
             >
               <Link href="/" className={linkClass("/")}>Home</Link>
-              {pathname !== "/" && (
+              {pathname !== "/" && pathname !== "/contact" && (
                 <Link href="/about" className={linkClass("/about")}>About Us</Link>
               )}
               <Link href="/#features" className={linkClass("/#features")}>Features</Link>

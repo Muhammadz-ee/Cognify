@@ -170,82 +170,92 @@ export function Hero() {
             className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[80px] md:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
           >
             {/* Decorative background thumbnails behind the phone mockup */}
-            <div className="absolute inset-x-0 top-[26%] sm:top-[25%] md:top-50 lg:top-110 flex justify-center z-30 pointer-events-none">
-              <div className="flex gap-2 sm:gap-2 md:gap-4 lg:gap-6 items-start opacity-30 brightness-75 md:opacity-60 md:brightness-100 transform -translate-y-6">
-                <div className="flex flex-col gap-1 md:gap-3">
-                  <Image
-                    src="/images/album-1.webp"
-                    alt="Mel Robbins"
-                    width={220}
-                    height={220}
-                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
-                  />
-                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
-                      Mel Robbins Podcast
-                    </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
-                      Mel Robbins
-                    </span>
+            <div className="absolute inset-x-0 mx-auto top-[18%] sm:top-[20%] md:top-[18%] lg:top-[24%] flex justify-center z-30 pointer-events-none w-full max-w-[1600px]">
+              <div className="flex w-full items-start justify-center gap-2 sm:gap-6 md:gap-10 lg:gap-16 px-2 sm:px-8 md:px-12 opacity-50 md:opacity-80 transition-opacity">
+                {/* Left group */}
+                <div className="flex flex-1 justify-end gap-2 sm:gap-2 md:gap-4 lg:gap-6">
+                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
+                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
+                      <Image
+                        src="/images/album-1.webp"
+                        alt="Mel Robbins"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 15vw, 200px"
+                      />
+                    </div>
+                    <div className="text-left w-full pl-0.5 sm:pl-1">
+                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
+                        Mel Robbins Podcast
+                      </span>
+                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
+                        Mel Robbins
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col gap-1 md:gap-3">
-                  <Image
-                    src="/images/album-3.webp"
-                    alt="Modern Wisdom"
-                    width={220}
-                    height={220}
-                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
-                  />
-                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
-                      Modern Wisdom
-                    </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
-                      Chris Williamson
-                    </span>
+                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
+                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
+                      <Image
+                        src="/images/album-3.webp"
+                        alt="Modern Wisdom"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 15vw, 200px"
+                      />
+                    </div>
+                    <div className="text-left w-full pl-0.5 sm:pl-1">
+                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
+                        Modern Wisdom
+                      </span>
+                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
+                        Chris Williamson
+                      </span>
+                    </div>
                   </div>
                 </div>
 
-                {/* Spacer for the center video to shine through */}
-                <div className="w-[120px] sm:w-[220px] md:w-[520px] lg:w-[720px]"></div>
+                {/* Center Video Spacer (invisible, pushes groups out) */}
+                <div className="w-[48vw] sm:w-[45vw] md:w-[40vw] max-w-[460px] min-w-[160px] md:min-w-[450px] flex-shrink" />
 
-                <div className="flex flex-col gap-1 md:gap-3">
-                  <Image
-                    src="/images/album-2.webp"
-                    alt="The Diary of a CEO"
-                    width={220}
-                    height={220}
-                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
-                  />
-                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
-                      The Diary of a CEO
-                    </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
-                      Steven Bartlett
-                    </span>
+                {/* Right group */}
+                <div className="flex flex-1 justify-start gap-2 sm:gap-3 md:gap-4 lg:gap-6">
+                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
+                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
+                      <Image
+                        src="/images/album-2.webp"
+                        alt="The Diary of a CEO"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 15vw, 200px"
+                      />
+                    </div>
+                    <div className="text-left w-full pl-0.5 sm:pl-1">
+                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
+                        DOAC
+                      </span>
+                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
+                        Steven Bartlett
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col gap-1 md:gap-3">
-                  <Image
-                    src="/images/album-4.webp"
-                    alt="The School of Greatness"
-                    width={220}
-                    height={220}
-                    sizes="(max-width:640px) 100px, (max-width:1024px) 128px, 220px"
-                    className="rounded-[8px] md:rounded-3xl shadow-xl border border-gray-900 md:border-2 w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[140px] md:h-[140px] lg:w-[240px] lg:h-[240px] object-cover"
-                  />
-                  <div className="text-left w-[50px] sm:w-[100px] md:w-[140px] md:max-w-[240px]">
-                    <span className="text-[5px] sm:text-[8px] md:text-[13px] lg:text-[15px] font-bold text-gray-200 block truncate">
-                      The School of Greatness
-                    </span>
-                    <span className="text-[4.5px] sm:text-[7px] md:text-[11px] lg:text-[13px] text-gray-500 block mt-0 md:mt-1 truncate">
-                      Lewis Howes
-                    </span>
+                  <div className="flex flex-col gap-1 sm:gap-2 flex-shrink w-[13vw] sm:w-[14vw] md:w-[15vw] lg:w-[15vw] xl:w-[16vw] max-w-[200px] min-w-[30px]">
+                    <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl md:rounded-[2rem] shadow-2xl border border-white/5 overflow-hidden">
+                      <Image
+                        src="/images/album-4.webp"
+                        alt="The School of Greatness"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 15vw, 200px"
+                      />
+                    </div>
+                    <div className="text-left w-full pl-0.5 sm:pl-1">
+                      <span className="text-[9px] sm:text-[11px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block truncate font-sans tracking-wide">
+                        The School of Greatness
+                      </span>
+                      <span className="text-[7px] sm:text-[9px] md:text-[11px] lg:text-[13px] text-gray-500 block truncate font-sans tracking-wide mt-0.5">
+                        Lewis Howes
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -254,7 +264,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none group h-[80vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
+            <div className="relative overflow-hidden border-none group h-[85vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"
@@ -267,78 +277,85 @@ export function Hero() {
                 className="w-full h-full object-cover object-center pointer-events-none relative z-0"
               />
 
-              {/* Overlay: Try For Free + Testimonial bottom-center on video */}
-              <div className="absolute inset-x-0 bottom-[10%] sm:bottom-20 z-30 flex flex-col items-center gap-3 sm:gap-6 px-4 pointer-events-none">
-                <div className="text-center">
-                  <h3 className="text-[20px] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
-                    Try For <span className="text-[#b292ff]">Free</span>
-                  </h3>
-                  <p className="mt-1 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
-                    7 DAY FREE TRIAL - CANCEL ANY TIME
-                  </p>
-                </div>
+              {/* Dark gradient overlay at bottom for smooth transition */}
+              <div className="absolute inset-x-0 bottom-0 h-[40vh] sm:h-64 bg-gradient-to-t from-black via-black/80 to-transparent z-10 pointer-events-none"></div>
 
-                <div className="mt-2 sm:mt-12 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-2 sm:gap-6 md:gap-8">
-                  <div className="flex flex-col items-center">
-                    <div className="inline-flex bg-white rounded-full p-1.5 pr-3 sm:p-3 sm:pr-8 items-center gap-1.5 sm:gap-4 shadow-2xl scale-100">
-                      <div className="w-[24px] h-[24px] sm:w-[56px] sm:h-[56px] rounded-full bg-gray-200 overflow-hidden relative flex-shrink-0">
-                        <Image
-                          src="/images/testimonial.webp"
-                          alt="Sam"
-                          width={56}
-                          height={56}
-                          className="object-cover grayscale"
-                        />
-                      </div>
+              {/* Stacked Overlay: Try For Free + Testimonial + Playback Controls */}
+              <div className="absolute inset-x-0 bottom-0 z-30 flex flex-col items-center pb-2 sm:pb-4 pointer-events-none">
 
-                      <div className="flex gap-0.5 sm:gap-1 text-[#b292ff]">
-                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
-                        <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
-                      </div>
-                    </div>
-
-                    <div className="mt-1 text-[8px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
-                      SAM D.
-                    </div>
+                {/* Overlay: Try For Free + Testimonial */}
+                <div className="flex flex-col items-center gap-2 sm:gap-6 px-2 sm:px-4 scale-90 sm:scale-100 pointer-events-auto mb-2 sm:mb-6">
+                  <div className="text-center">
+                    <h3 className="text-[20px] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
+                      Try For <span className="text-[#b292ff]">Free</span>
+                    </h3>
+                    <p className="mt-1 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
+                      7 DAY FREE TRIAL - CANCEL ANY TIME
+                    </p>
                   </div>
 
-                  <p className="text-[8px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[140px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
-                    “FINALLY, AN APP THAT HELPS ME<br className="hidden sm:block" /> ACTUALLY REMEMBER WHAT I WATCH.”
-                  </p>
+                  <div className="mt-2 sm:mt-6 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-2 sm:gap-6 md:gap-8">
+                    <div className="flex flex-col items-center">
+                      <div className="inline-flex bg-white rounded-full p-1.5 pr-3 sm:p-3 sm:pr-8 items-center gap-1.5 sm:gap-4 shadow-xl">
+                        <div className="w-[24px] h-[24px] sm:w-[56px] sm:h-[56px] rounded-full bg-gray-200 overflow-hidden relative flex-shrink-0">
+                          <Image
+                            src="/images/testimonial.webp"
+                            alt="Sam"
+                            width={56}
+                            height={56}
+                            className="object-cover grayscale"
+                          />
+                        </div>
+
+                        <div className="flex gap-0.5 sm:gap-1 text-[#b292ff]">
+                          <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                          <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                          <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                          <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                          <Star className="w-3 h-3 sm:w-8 sm:h-8 fill-current" />
+                        </div>
+                      </div>
+
+                      <div className="mt-1 text-[8px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
+                        SAM D.
+                      </div>
+                    </div>
+
+                    <p className="text-[8px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[140px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
+                      “FINALLY, AN APP THAT HELPS ME<br className="hidden sm:block" /> ACTUALLY REMEMBER WHAT I WATCH.”
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              {/* Bottom playback controls (dark strip) */}
-              <div className="absolute inset-x-0 bottom-4 sm:bottom-4 z-30 px-4 py-2 pointer-events-none group-hover:opacity-100 transition-opacity duration-200">
-                <div className="max-w-[1320px] mx-auto flex items-center gap-2 sm:gap-4 pointer-events-auto">
-                  {/* progress track with dynamic white fill */}
-                  <input
-                    aria-label="Seek"
-                    type="range"
-                    min={0}
-                    max={100}
-                    value={progress}
-                    onChange={onSeek}
-                    className="flex-1 h-[2px] sm:h-1 rounded-full appearance-none cursor-pointer"
-                    style={{
-                      background: `linear-gradient(to right, white ${progress}%, rgba(255,255,255,0.2) ${progress}%)`,
-                    }}
-                  />
+                {/* Bottom playback controls (dark strip) */}
+                <div className="w-full px-4 pt-1 sm:pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-auto">
+                  <div className="max-w-[1320px] mx-auto flex items-center gap-2 sm:gap-4">
+                    {/* progress track with dynamic white fill */}
+                    <input
+                      aria-label="Seek"
+                      type="range"
+                      min={0}
+                      max={100}
+                      value={progress}
+                      onChange={onSeek}
+                      className="flex-1 h-[2px] sm:h-1 rounded-full appearance-none cursor-pointer"
+                      style={{
+                        background: `linear-gradient(to right, white ${progress}%, rgba(255,255,255,0.2) ${progress}%)`,
+                      }}
+                    />
 
-                  <button
-                    onClick={toggleMute}
-                    aria-label={muted ? "Unmute" : "Mute"}
-                    className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
-                  >
-                    {muted ? (
-                      <VolumeX className="w-3 h-3 sm:w-4 sm:h-4 stroke-2" />
-                    ) : (
-                      <Volume2 className="w-3 h-3 sm:w-4 sm:h-4 stroke-2" />
-                    )}
-                  </button>
+                    <button
+                      onClick={toggleMute}
+                      aria-label={muted ? "Unmute" : "Mute"}
+                      className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+                    >
+                      {muted ? (
+                        <VolumeX className="w-3 h-3 sm:w-4 sm:h-4 stroke-2" />
+                      ) : (
+                        <Volume2 className="w-3 h-3 sm:w-4 sm:h-4 stroke-2" />
+                      )}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
