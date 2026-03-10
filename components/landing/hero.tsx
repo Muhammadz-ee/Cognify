@@ -107,7 +107,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-1 sm:mb-4"
           >
-            <h1 className="text-[36px] xs:text-[40px] sm:text-[48px] md:text-[80px] lg:text-[120px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
+            <h1 className="text-[36px] xs:text-[40px] sm:text-[48px] md:text-[60px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
               PODCASTS <br /> DISTILLED
             </h1>
           </motion.div>
@@ -152,7 +152,7 @@ export function Hero() {
                 className="w-4 h-4 sm:w-8 sm:h-8"
               />
               <div className="text-left">
-                <div className="text-[6px] sm:text-[18px] font-bold uppercase tracking-wider opacity-90 leading-tight">
+                <div className="text-[6px] sm:text-[12] md:text-[18px] font-bold uppercase tracking-wider opacity-90 leading-tight">
                   Try for free
                 </div>
               </div>
@@ -167,7 +167,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[80px] md:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
+            className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[80px] md:-mt-[140px] lg:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
           >
             {/* Decorative background thumbnails behind the phone mockup */}
             <div className="absolute inset-x-0 mx-auto top-[18%] sm:top-[20%] md:top-[18%] lg:top-[24%] flex justify-center z-30 pointer-events-none w-full max-w-[1600px]">
@@ -215,7 +215,7 @@ export function Hero() {
                 </div>
 
                 {/* Center Video Spacer (invisible, pushes groups out) */}
-                <div className="w-[48vw] sm:w-[45vw] md:w-[40vw] max-w-[460px] min-w-[160px] md:min-w-[450px] flex-shrink" />
+                <div className="w-[46vw] sm:w-[44vw] md:w-[40vw] max-w-[460px] min-w-[160px] md:min-w-[280px] lg:min-w-[420px] flex-shrink" />
 
                 {/* Right group */}
                 <div className="flex flex-1 justify-start gap-2 sm:gap-3 md:gap-4 lg:gap-6">
@@ -264,7 +264,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none group h-[85vh] sm:h-[120vh] md:h-[160vh] lg:h-[220vh] w-full mx-auto z-20">
+            <div className="relative overflow-hidden border-none group h-[85vh] sm:h-[120vh] md:h-[110vh] lg:h-[220vh] w-full mx-auto z-20">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"
@@ -281,12 +281,12 @@ export function Hero() {
               <div className="absolute inset-x-0 bottom-0 h-[40vh] sm:h-64 bg-gradient-to-t from-black via-black/80 to-transparent z-10 pointer-events-none"></div>
 
               {/* Stacked Overlay: Try For Free + Testimonial + Playback Controls */}
-              <div className="absolute inset-x-0 bottom-0 z-30 flex flex-col items-center pb-2 sm:pb-4 pointer-events-none">
+              <div className="absolute inset-x-0 bottom-0 z-30 flex flex-col items-center pb-2 sm:pb-4 lg:pb-8 pointer-events-none">
 
                 {/* Overlay: Try For Free + Testimonial */}
-                <div className="flex flex-col items-center gap-2 sm:gap-6 px-2 sm:px-4 scale-90 sm:scale-100 pointer-events-auto mb-2 sm:mb-6">
+                <div className="flex flex-col items-center gap-2 sm:gap-6 px-2 sm:px-4 scale-[0.85] md:scale-[0.7] lg:scale-100 transform origin-bottom pointer-events-auto mb-2 sm:mb-4 lg:mb-6">
                   <div className="text-center">
-                    <h3 className="text-[20px] sm:text-5xl md:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
+                    <h3 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
                       Try For <span className="text-[#b292ff]">Free</span>
                     </h3>
                     <p className="mt-1 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
@@ -328,7 +328,7 @@ export function Hero() {
                 </div>
 
                 {/* Bottom playback controls (dark strip) */}
-                <div className="w-full px-4 pt-1 sm:pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-auto">
+                <div className="hidden lg:block w-full px-4 pt-1 sm:pt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-auto">
                   <div className="max-w-[1320px] mx-auto flex items-center gap-2 sm:gap-4">
                     {/* progress track with dynamic white fill */}
                     <input

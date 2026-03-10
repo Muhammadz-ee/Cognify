@@ -40,65 +40,64 @@ const podcasts = [
 export function PodcastTicker() {
   return (
     <section className="py-0 bg-grey overflow-hidden">
-      <div className="text-center mb-6 sm:mb-10">
+      <div className="text-center mb-8 sm:mb-12 lg:mb-16">
         {/* Animated Heading */}
         <motion.h3
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-[30px] md:text-5xl text-white mb-1 sm:mb-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
+          className="text-white mb-2 sm:mb-4 px-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
         >
-          <div className="text-[18px] sm:text-[28px] md:text-[50px] mt-1 md:mt-4 leading-[1.0] inline-flex items-center whitespace-nowrap">
+          <div className="text-[20px] sm:text-[32px] md:text-[40px] lg:text-[50px] mt-1 md:mt-4 leading-tight inline-flex items-center justify-center whitespace-nowrap gap-2 sm:gap-3 lg:gap-4 flex-wrap sm:flex-nowrap">
             Crush Your Podcast Backlog
             <Image
               src="/images/heart.webp"
               alt="heart"
               width={76}
               height={76}
-              className="inline-block w-8 h-8 sm:w-12 md:w-[76px] md:h-[76px]"
+              className="inline-block w-6 h-6 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[60px] lg:h-[60px] object-contain flex-shrink-0"
             />
           </div>
         </motion.h3>
 
         {/* Animated Subtext */}
         <motion.p
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-[clamp(14px,1.1vw,16px)] sm:text-[clamp(22px,1.4vw,28px)] leading-[1.03] text-[#dcdcdc] text-brown-200 font-thin mx-auto mt-0.5 sm:mt-4 md:mt-6"
+          className="text-[12px] sm:text-[18px] md:text-[24px] lg:text-[28px] leading-[1.2] text-[#dcdcdc] font-thin mx-auto px-4 mt-2 sm:mt-4"
         >
           The Intelligence Layer for High-Performers.
         </motion.p>
       </div>
 
-      <div className="w-full bg-[#2E2D31] p-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-3 md:gap-3 justify-items-center md:px-42">
+      <div className="w-full bg-[#1c1b22] py-8 sm:py-12 lg:py-16 px-4 sm:px-8 border-y border-white/5">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:gap-8 justify-items-center">
           {podcasts.map((podcast, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
-              className="flex flex-col items-start group cursor-pointer w-24 md:w-42"
+              className="flex flex-col items-start group cursor-pointer w-full max-w-[125px] sm:max-w-[145px] md:max-w-[165px] lg:max-w-[220px]"
             >
-              <div className="w-24 h-24 md:w-42 md:h-42 overflow-hidden relative transition-transform duration-300">
+              <div className="w-full aspect-square overflow-hidden relative shadow-xl border border-white/5 bg-black/50">
                 <Image
                   src={podcast.image}
                   alt={podcast.name}
-                  width={168}
-                  height={168}
-                  sizes="(max-width:640px) 96px, (max-width:1024px) 168px, 168px"
-                  className="object-cover"
+                  fill
+                  sizes="(max-width:640px) 50vw, (max-width:1024px) 33vw, 16vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="text-left w-full">
-                <span className="text-[10px] md:text-[14px] font-normal text-white transition-colors block w-full">
+              <div className="text-left w-full mt-2 sm:mt-3 px-1 sm:px-0">
+                <span className="text-[9.5px] sm:text-[11.5px] md:text-[13px] lg:text-[15px] font-medium text-gray-200 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight">
                   {podcast.name}
                 </span>
-                <span className="text-[8px] md:text-[12px] text-gray-400 block w-full">
+                <span className="text-[8px] sm:text-[10px] md:text-[11px] lg:text-[13px] text-gray-500 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight mt-0.5">
                   {podcast.artist}
                 </span>
               </div>

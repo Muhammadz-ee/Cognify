@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-black pt-16 pb-8 z-100">
+    <footer className="bg-black pt-0 md:pt-16 pb-8 z-100">
       <Container>
         {/* ========================================================= */}
         {/* DESKTOP LAYOUT */}
