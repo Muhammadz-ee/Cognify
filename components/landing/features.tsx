@@ -19,10 +19,10 @@ export function Features() {
           >
             Turn Any Video Into a Masterclass <br />
           </h2>
-          <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] max-w-[80%] md:max-w-[75%] md:max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
+            <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] lg:text-[clamp(18px,1.5vw,22px)] max-w-[80%] md:max-w-[75%] md:max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
             Summarize key points, take organized notes, and get AI-powered{" "}
-            answers—so you don’t just watch, you truly learn.
-          </p>
+            answers—so you don't just watch, you truly learn.
+            </p>
 
           <div className="flex justify-center gap-4 mt-2">
             <motion.div
@@ -189,7 +189,7 @@ export function Features() {
               className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Summarize Your Way."
             >
-              Summarize Your Way.
+              Summarize Your Way
             </h2>
             <p className="text-gray-100 text-[14px] sm:text-[16px] md:text-[16px] lg:text-[clamp(20px,1.5vw,26px)] leading-[1.4] whitespace-normal">
               Instant takeaways and structured insights—so you save time and actually remember.

@@ -69,12 +69,12 @@ export function PodcastTicker() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           className="text-[12px] sm:text-[18px] md:text-[24px] lg:text-[28px] leading-[1.2] text-[#dcdcdc] font-thin mx-auto px-4 mt-2 sm:mt-4"
         >
-          The Intelligence Layer for High-Performers.
+          The Intelligence Layer for High-Performers
         </motion.p>
       </div>
 
       <div className="w-full bg-[#1c1b22] py-8 sm:py-12 lg:py-16 px-4 sm:px-8 border-y border-white/5">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-2 gap-y-6 sm:gap-x-6 sm:gap-y-10 lg:gap-8 justify-items-center">
+        <div className="max-w-[1400px] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-x-3 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:gap-8 justify-items-center">
           {podcasts.map((podcast, index) => (
             <motion.div
               key={index}
@@ -82,7 +82,7 @@ export function PodcastTicker() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.1 }}
-              className="flex flex-col items-start group cursor-pointer w-full max-w-[90px] sm:max-w-[120px] md:max-w-[140px] lg:max-w-[220px]"
+              className="flex flex-col items-start group cursor-pointer w-full max-w-[120px] sm:max-w-[140px] md:max-w-[160px] lg:max-w-[220px]"
             >
               <div className="w-full aspect-square overflow-hidden relative shadow-xl border border-white/5 bg-black/50">
                 <Image
@@ -94,10 +94,10 @@ export function PodcastTicker() {
                 />
               </div>
               <div className="text-left w-full mt-2 sm:mt-3 px-1 sm:px-0">
-                <span className="text-[7.5px] sm:text-[10px] md:text-[11px] lg:text-[15px] font-medium text-gray-200 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight">
+                <span className="text-[9px] sm:text-[11px] md:text-[12px] lg:text-[15px] font-medium text-gray-200 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight">
                   {podcast.name}
                 </span>
-                <span className="text-[6.5px] sm:text-[8px] md:text-[9.5px] lg:text-[13px] text-gray-500 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight mt-0.5">
+                <span className="text-[8px] sm:text-[9px] md:text-[10.5px] lg:text-[13px] text-gray-500 block w-full whitespace-nowrap tracking-tighter sm:tracking-tight mt-0.5">
                   {podcast.artist}
                 </span>
               </div>

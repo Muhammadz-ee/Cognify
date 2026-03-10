@@ -107,7 +107,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-1 sm:mb-4"
           >
-            <h1 className="text-[36px] xs:text-[40px] sm:text-[48px] md:text-[80px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
+            <h1 className="text-[42px] xs:text-[46px] sm:text-[48px] md:text-[80px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
               PODCASTS <br /> DISTILLED
             </h1>
           </motion.div>
@@ -268,7 +268,7 @@ export function Hero() {
             {/*
               NOTE: Replace the `src` below with the actual hero video file placed under `public/videos/`.
             */}
-            <div className="relative overflow-hidden border-none group h-[85vh] sm:h-[120vh] md:h-[110vh] lg:h-[220vh] w-full mx-auto z-20">
+            <div className="relative overflow-hidden border-none group h-[80vh] sm:h-[120vh] md:h-[110vh] lg:h-[220vh] w-full mx-auto z-20">
               <video
                 ref={videoRef}
                 src="/videos/main-asset.webm"
@@ -294,12 +294,12 @@ export function Hero() {
                     <h3 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
                       Try For <span className="text-[#b292ff]">Free</span>
                     </h3>
-                    <p className="mt-1 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
+                    <p className="mt-4 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
                       7 DAY FREE TRIAL - CANCEL ANY TIME
                     </p>
                   </div>
 
-                  <div className="mt-2 sm:mt-6 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-2 sm:gap-6 md:gap-8">
+                  <div className="mt-10 sm:mt-10 md:mt-22 relative z-10 max-w-4xl mx-auto flex flex-row items-center justify-center gap-2 sm:gap-6 md:gap-8">
                     <div className="flex flex-col items-center">
                       <div className="inline-flex bg-white rounded-full p-1.5 pr-3 sm:p-3 sm:pr-8 items-center gap-1.5 sm:gap-4 shadow-xl">
                         <div className="w-[24px] h-[24px] sm:w-[56px] sm:h-[56px] rounded-full bg-gray-200 overflow-hidden relative flex-shrink-0">
