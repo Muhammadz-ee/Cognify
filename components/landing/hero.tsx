@@ -185,10 +185,10 @@ export function Hero() {
                     />
                   </div>
                   <div className="text-left w-full pl-0.5 sm:pl-1">
-                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight truncate md:no-truncate">
                       Mel Robbins Podcast
                     </span>
-                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                    <span className="text-[3.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
                       Mel Robbins
                     </span>
                   </div>
@@ -204,10 +204,10 @@ export function Hero() {
                     />
                   </div>
                   <div className="text-left w-full pl-0.5 sm:pl-1">
-                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight truncate md:no-truncate">
                       Modern Wisdom
                     </span>
-                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                    <span className="text-[3.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
                       Chris Williamson
                     </span>
                   </div>
@@ -230,10 +230,10 @@ export function Hero() {
                     />
                   </div>
                   <div className="text-left w-full pl-0.5 sm:pl-1">
-                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight truncate md:no-truncate">
                       DOAC
                     </span>
-                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                    <span className="text-[3.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
                       Steven Bartlett
                     </span>
                   </div>
@@ -249,10 +249,10 @@ export function Hero() {
                     />
                   </div>
                   <div className="text-left w-full pl-0.5 sm:pl-1">
-                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight">
+                    <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight truncate md:no-truncate">
                       The School of Greatness
                     </span>
-                    <span className="text-[4.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
+                    <span className="text-[3.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
                       Lewis Howes
                     </span>
                   </div>
