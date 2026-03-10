@@ -19,7 +19,7 @@ export function Features() {
           >
             Turn Any Video Into a Masterclass <br />
           </h2>
-          <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
+          <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] max-w-[80%] md:max-w-[75%] md:max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
             Summarize key points, take organized notes, and get AI-powered{" "}
             answers—so you don’t just watch, you truly learn.
           </p>

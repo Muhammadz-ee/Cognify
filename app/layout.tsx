@@ -26,7 +26,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
         {/* Preload critical local font to reduce FOIT/FOUC for LCP */}
-        <link rel="preload" href="/fonts/MonumentExtended-Regular.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/MonumentExtended-Ultrabold.otf" as="font" type="font/otf" crossOrigin="anonymous" fetchPriority="high" />
+        <link rel="preload" href="/fonts/MonumentExtended-Regular.otf" as="font" type="font/otf" crossOrigin="anonymous" fetchPriority="high" />
+        {/* Preload hero video immediately to improve LCP specifically on mobile where it dominates above-the-fold content */}
+        <link rel="preload" href="/videos/main-asset.webm" as="video" type="video/webm" fetchPriority="high" />
         {process.env.NEXT_PUBLIC_META_PIXEL_ID && process.env.NODE_ENV === 'production' && (
           <>
             <Script

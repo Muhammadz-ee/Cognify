@@ -107,7 +107,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             className="mb-1 sm:mb-4"
           >
-            <h1 className="text-[36px] xs:text-[40px] sm:text-[48px] md:text-[60px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
+            <h1 className="text-[36px] xs:text-[40px] sm:text-[48px] md:text-[80px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
               PODCASTS <br /> DISTILLED
             </h1>
           </motion.div>
@@ -149,6 +149,7 @@ export function Hero() {
                 alt="App Store"
                 width={46}
                 height={46}
+                priority
                 className="w-4 h-4 sm:w-8 sm:h-8"
               />
               <div className="text-left">
@@ -180,6 +181,7 @@ export function Hero() {
                       src="/images/album-1.webp"
                       alt="Mel Robbins"
                       fill
+                      priority
                       className="object-cover"
                       sizes="(max-width: 640px) 14vw, 200px"
                     />
@@ -199,6 +201,7 @@ export function Hero() {
                       src="/images/album-3.webp"
                       alt="Modern Wisdom"
                       fill
+                      priority
                       className="object-cover"
                       sizes="(max-width: 640px) 14vw, 200px"
                     />
@@ -225,6 +228,7 @@ export function Hero() {
                       src="/images/album-2.webp"
                       alt="The Diary of a CEO"
                       fill
+                      priority
                       className="object-cover"
                       sizes="(max-width: 640px) 14vw, 200px"
                     />
@@ -244,6 +248,7 @@ export function Hero() {
                       src="/images/album-4.webp"
                       alt="The School of Greatness"
                       fill
+                      priority
                       className="object-cover"
                       sizes="(max-width: 640px) 14vw, 200px"
                     />
@@ -271,6 +276,7 @@ export function Hero() {
                 loop
                 muted={muted}
                 playsInline
+                preload="auto"
                 onTimeUpdate={onTimeUpdate}
                 onLoadedMetadata={onTimeUpdate}
                 className="w-full h-full object-cover object-center pointer-events-none relative z-0"
@@ -302,6 +308,7 @@ export function Hero() {
                             alt="Sam"
                             width={56}
                             height={56}
+                            priority
                             className="object-cover grayscale"
                           />
                         </div>
