@@ -168,15 +168,15 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="relative w-full ml-0 max-w-[1320px] mx-auto -mt-[80px] md:-mt-[140px] lg:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
+            className="relative w-full ml-0 max-w-[1380px] mx-auto -mt-[80px] md:-mt-[140px] lg:-mt-[280px] mb-0 z-10 px-0 sm:px-4"
           >
             {/* Decorative background thumbnails behind the phone mockup */}
-            <div className="absolute inset-x-0 mx-auto top-[22%] sm:top-[22%] md:top-[22%] lg:top-[24%] flex w-full max-w-[1600px] justify-between px-2 sm:px-4 md:px-0 z-30 pointer-events-none opacity-50 md:opacity-80 transition-opacity">
+            <div className="absolute inset-x-0 mx-auto top-[22%] sm:top-[22%] md:top-[22%] lg:top-[24%] flex w-full max-w-[1600px] justify-between px-2 sm:px-4 md:px-0 z-30 pointer-events-none opacity-50 md:opacity-50 transition-opacity">
 
               {/* Left group */}
               <div className="flex w-[26%] md:w-[26%] lg:w-[29%] justify-end gap-1.5 sm:gap-3 md:gap-5">
                 <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
-                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                    <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border-1 md:border-2 border-white/10 overflow-hidden">
                     <Image
                       src="/images/album-1.webp"
                       alt="Mel Robbins"
@@ -185,7 +185,7 @@ export function Hero() {
                       className="object-cover"
                       sizes="(max-width: 640px) 14vw, 200px"
                     />
-                  </div>
+                    </div>
                   <div className="text-left w-full pl-0.5 sm:pl-1">
                     <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight truncate md:no-truncate">
                       Mel Robbins Podcast
@@ -196,7 +196,7 @@ export function Hero() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
-                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border-1 md:border-2 border-white/10 overflow-hidden">
                     <Image
                       src="/images/album-3.webp"
                       alt="Modern Wisdom"
@@ -223,7 +223,7 @@ export function Hero() {
               {/* Right group */}
               <div className="flex w-[26%] md:w-[26%] lg:w-[29%] justify-start gap-1.5 sm:gap-3 md:gap-5">
                 <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
-                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border-1 md:border-2 border-white/10 overflow-hidden">
                     <Image
                       src="/images/album-2.webp"
                       alt="The Diary of a CEO"
@@ -243,7 +243,7 @@ export function Hero() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1 flex-1 min-w-0 max-w-[160px] lg:max-w-[240px]">
-                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border border-white/5 overflow-hidden">
+                  <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border-1 md:border-2 border-white/10 overflow-hidden">
                     <Image
                       src="/images/album-4.webp"
                       alt="The School of Greatness"
