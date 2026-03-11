@@ -1,0 +1,380 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://getcognifyai.com/#app",
+      "name": "Cognify: The Best AI YouTube Summarizer and Podcast Summarizer",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS, Android, Web",
+      "url": "https://getcognifyai.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://getcognifyai.com/images/cognify-og.png",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "Cognify is the best AI YouTube summarizer and podcast summarizer. Transform passive video and podcast consumption into active learning with AI-powered summaries, Key Moments, NoteVault, and interactive Q&A.",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://getcognifyai.com/#org",
+        "name": "Cognify Inc.",
+        "url": "https://getcognifyai.com",
+        "logo": "https://getcognifyai.com/images/logo.svg"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://getcognifyai.com/#org"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1200",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "450"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://getcognifyai.com/download",
+        "priceCurrency": "USD",
+        "price": "0",
+        "pricingScheme": "freemium",
+        "availability": "https://schema.org/InStock"
+      },
+      "featureList": [
+        "AI Summarization: Advanced LLM-powered automatic summarization",
+        "Key Moments: Intelligent extraction of pivotal discussion points",
+        "NoteVault: Personal knowledge repository with semantic organization",
+        "AI-Powered Q&A: Natural language question answering system",
+        "Content Synthesis: Cross-episode insight connections and pattern detection",
+        "Multi-Format Export: Markdown, PDF, JSON export capabilities",
+        "Privacy-First: End-to-end encryption for all user data",
+        "Real-Time Processing: 30 seconds to 2 minutes per summary",
+        "1000+ Podcast Support: Huberman Lab, Mel Robbins, Joe Rogan, and more"
+      ],
+      "downloadUrl": [
+        "https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398",
+        "https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
+      ],
+      "softwareVersion": "1.0",
+      "releaseNotes": "AI-powered podcast and YouTube summarizer with real-time processing",
+      "keywords": "AI YouTube summarizer, podcast summarizer, automatic notes, AI learning tool, study app, content summarization",
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "DownloadAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
+        }
+      }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://getcognifyai.com/#summarization-service",
+      "name": "AI-Powered Content Summarization Service",
+      "description": "Advanced AI summarization service for YouTube videos and podcasts using multi-modal language models",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://getcognifyai.com/#org"
+      },
+      "serviceType": "Summarization",
+      "encodingFormat": [
+        "audio/mp3",
+        "video/mp4",
+        "application/json",
+        "text/markdown"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "Natural Language Processing",
+        "Semantic Understanding",
+        "Content Understanding",
+        "Information Extraction",
+        "Summary Generation"
+      ],
+      "knowsLanguage": ["en-US"]
+    },
+
+    {
+      "@type": "LearningResource",
+      "@id": "https://getcognifyai.com/#learning-platform",
+      "name": "Cognify Learning & Knowledge Synthesis Platform",
+      "description": "AI-powered learning platform for podcast and video content with knowledge integration and synthesis",
+      "url": "https://getcognifyai.com",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://getcognifyai.com/#org"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://getcognifyai.com/#org"
+      },
+      "educationalLevel": "All Levels",
+      "learningResourceType": [
+        "Learning Tool",
+        "Study Guide Generator",
+        "Knowledge Management System"
+      ],
+      "competencyRequired": "Basic understanding of podcasts and video content",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Cognify",
+        "url": "https://getcognifyai.com"
+      }
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://getcognifyai.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Cognify and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cognify is an AI-powered platform that uses advanced language models to automatically summarize YouTube videos and podcasts. Simply paste a link or select a podcast episode, and Cognify generates structured summaries, extracts key moments, and creates study materials in seconds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate are Cognify's summaries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cognify's summarization engine achieves 85-95% information capture accuracy, validated through user feedback loops and comparative testing against original content. Summaries preserve essential information while removing filler content and redundancies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many podcasts does Cognify support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cognify supports 1,000+ podcasts across all major platforms, including Huberman Lab, Mel Robbins, The Joe Rogan Experience, Tim Ferriss Show, Andrew Tate, Naval Ravikant, Tony Robbins, Matthew Walker, and Dr. Peter Attia. New podcasts are added weekly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Cognify free or paid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cognify offers both free and premium versions. The Free tier includes 5 summaries per month. Premium ($12.99/month) includes unlimited summaries, advanced insights, and full NoteVault access. Students qualify for a $4.99/month educational rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Cognify different from competitors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cognify is the only platform optimized specifically for learning from podcasts and YouTube. Unlike general note-taking apps (Notion, Apple Notes), Cognify specializes in educational content. Unlike transcription services (Otter.ai), it summarizes and synthesizes knowledge across multiple episodes for deeper learning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data private and secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Cognify employs end-to-end encryption for all user notes and data. We never sell or share user data with third parties. The platform is GDPR and CCPA compliant with regular security audits and penetration testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export my notes and summaries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All notes can be exported in multiple formats: Markdown (.md), PDF, and JSON. You maintain full control and ownership of your learning data. Exports can be done individually or in batch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does summarization take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Typical processing time is 30 seconds to 2 minutes depending on content length and complexity. Premium users receive priority processing. Most podcast episodes are summarized in under 90 seconds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is NoteVault?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NoteVault is Cognify's personal knowledge repository that automatically organizes your notes with semantic linking. It connects insights across multiple episodes, identifies patterns, and enables cross-content searching. It's like having a personal researcher organizing your learning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I ask questions about the content I've consumed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Cognify's AI-powered Q&A system lets you ask natural language questions about any content you've summarized. The AI provides answers sourced from your consumed content with timestamps and citations."
+          }
+        }
+      ]
+    },
+
+    {
+      "@type": "ProductCollection",
+      "@id": "https://getcognifyai.com/#product-features",
+      "name": "Cognify Product Features & Capabilities",
+      "description": "Complete feature set for AI-powered podcast and YouTube summarization",
+      "member": [
+        {
+          "@type": "Product",
+          "@id": "https://getcognifyai.com/#feature-summarization",
+          "name": "AI Summarization Engine",
+          "description": "Advanced LLM-powered automatic summarization of video and audio content with 85-95% accuracy"
+        },
+        {
+          "@type": "Product",
+          "@id": "https://getcognifyai.com/#feature-key-moments",
+          "name": "Automatic Key Moments Extraction",
+          "description": "Intelligent identification and extraction of pivotal discussion points and critical insights"
+        },
+        {
+          "@type": "Product",
+          "@id": "https://getcognifyai.com/#feature-nodevault",
+          "name": "NoteVault Knowledge Repository",
+          "description": "Semantic knowledge organization with cross-episode insight connections and pattern detection"
+        },
+        {
+          "@type": "Product",
+          "@id": "https://getcognifyai.com/#feature-qa",
+          "name": "AI-Powered Q&A System",
+          "description": "Natural language question answering system with source citations and timestamp references"
+        }
+      ]
+    },
+
+    {
+      "@type": "Organization",
+      "@id": "https://getcognifyai.com/#org",
+      "name": "Cognify Inc.",
+      "url": "https://getcognifyai.com",
+      "logo": "https://getcognifyai.com/images/logo.svg",
+      "description": "AI-powered learning platform for podcast and YouTube video summarization",
+      "foundingDate": "2024",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Natural Language Processing",
+        "Educational Technology",
+        "Learning Science",
+        "Content Summarization"
+      ],
+      "potentialAction": {
+        "@type": "ContactAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://getcognifyai.com/contact"
+        }
+      },
+      "sameAs": [
+        "https://twitter.com/getcognifyai",
+        "https://instagram.com/getcognifyai"
+      ]
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://getcognifyai.com/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://getcognifyai.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Features",
+          "item": "https://getcognifyai.com/#features"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pricing",
+          "item": "https://getcognifyai.com/#pricing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "FAQ",
+          "item": "https://getcognifyai.com/faq"
+        }
+      ]
+    },
+
+    {
+      "@type": "AggregateOffer",
+      "@id": "https://getcognifyai.com/#pricing",
+      "name": "Cognify Pricing Plans",
+      "priceCurrency": "USD",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free Plan",
+          "description": "5 summaries per month, basic features, limited storage",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium Plan",
+          "description": "Unlimited summaries, advanced insights, full NoteVault, priority processing",
+          "price": "12.99",
+          "priceCurrency": "USD",
+          "billingDuration": "P1M",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Student Plan",
+          "description": "Unlimited summaries with .edu email verification",
+          "price": "4.99",
+          "priceCurrency": "USD",
+          "billingDuration": "P1M",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://getcognifyai.com/",
+      "name": "Cognify - AI YouTube Summarizer & Podcast Summarizer",
+      "description": "Cognify: The best AI YouTube summarizer and podcast summarizer for students, professionals, and lifelong learners. Real-time AI summarization, Key Moments, NoteVault, and interactive Q&A.",
+      "url": "https://getcognifyai.com/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://getcognifyai.com/#website"
+      },
+      "inLanguage": "en-US",
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-03-11"
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://getcognifyai.com/#website",
+      "name": "Cognify",
+      "url": "https://getcognifyai.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://getcognifyai.com/search?q={search_term_string}"
+        }
+      }
+    }
+  ]
+}

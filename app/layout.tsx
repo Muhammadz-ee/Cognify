@@ -11,8 +11,38 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Cognify | Podcasts, Distilled.',
-  description: 'Cognify: The premium AI intelligence layer. Distill YouTube and podcasts into personal Masterclasses with custom Key Moments, AI Insights, NoteVault, and AI-powered Q&A',
+  title: 'Cognify: The Best AI YouTube Summarizer and Study Tool | AI Podcast Summarizer',
+  description: 'Cognify is the best AI YouTube summarizer and podcast summarizer. Create personal Masterclasses with AI summaries, Key Moments, NoteVault, and AI Q&A. Download on iOS or Android today.',
+  keywords: 'AI YouTube summarizer, podcast summarizer, YouTube summary tool, study tool, AI learning, podcast notes',
+  authors: [{ name: 'Cognify' }],
+  creator: 'Cognify',
+  publisher: 'Cognify',
+  robots: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
+    'max-video-preview': -1,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://getcognifyai.com',
+    title: 'Cognify: The Best AI YouTube Summarizer and Podcast Summarizer',
+    description: 'Transform passive watching into active learning. AI-powered summaries for YouTube and podcasts.',
+    siteName: 'Cognify',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cognify: The Best AI YouTube Summarizer',
+    description: 'AI-powered summaries, Key Moments, and interactive Q&A for YouTube and podcasts.',
+  },
+  verification: {
+    google: 'your-google-verification-code', // Replace with actual code
+  },
+  alternates: {
+    canonical: 'https://getcognifyai.com',
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +54,33 @@ export default function RootLayout({
     <html lang="en" className={`antialiased ${montserrat.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta name="language" content="English" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        {/* LLM-Optimized Meta Tags for AI Scraping */}
+        <meta name="description" content="Cognify is the best AI YouTube summarizer and podcast summarizer. Create personal Masterclasses with AI-powered summaries, Key Moments, NoteVault, and interactive Q&A." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://getcognifyai.com" />
+        <meta property="og:title" content="Cognify: The Best AI YouTube Summarizer and Podcast Summarizer" />
+        <meta property="og:description" content="Transform passive watching into active learning. AI-powered summaries for YouTube and podcasts." />
+        <meta property="og:site_name" content="Cognify" />
+        <meta property="og:locale" content="en_US" />
+        {/* Twitter Card for AI Agents */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cognify: The Best AI YouTube Summarizer" />
+        <meta name="twitter:description" content="Transform YouTube and podcasts into personalized learning with AI-powered summaries, Key Moments, and interactive Q&A." />
+        {/* Article Metadata for Citation Ranking */}
+        <meta name="article:publisher" content="https://getcognifyai.com" />
+        <meta name="article:author" content="Cognify Team" />
+        {/* AEO Optimization: Topic Signals */}
+        <meta name="topic" content="AI, Artificial Intelligence, Machine Learning, Education, Productivity, Learning" />
+        <meta name="author" content="Cognify" />
+        <meta name="creator" content="Cognify" />
+        {/* Link to Machine-Readable Formats */}
+        <link rel="alternate" type="application/json" href="/product-info.json" title="Structured Product Data" />
+        <link rel="alternate" type="text/markdown" href="/product-info.md" title="Product Information Markdown" />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="AI Context Document" />
         <link rel="icon" href="/images/favicon.ico" />
         {/* Preload critical local font to reduce FOIT/FOUC for LCP */}
         <link rel="preload" href="/fonts/MonumentExtended-Ultrabold.otf" as="font" type="font/otf" crossOrigin="anonymous" fetchPriority="high" />

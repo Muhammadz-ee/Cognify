@@ -1,0 +1,45 @@
+# Cognify SEO & AI Crawler Directive
+# Optimized for LLM indexing and AI agent access
+
+User-agent: *
+Allow: /
+Allow: /product-info.md
+Allow: /llms.txt
+Disallow: /api/
+Disallow: /.next/
+Disallow: /private/
+
+# AI & semantic crawler directives
+User-agent: ChatGPT-User
+Allow: /
+Allow: /product-info.md
+Allow: /llms.txt
+
+User-agent: CCBot
+Allow: /
+Allow: /product-info.md
+Allow: /llms.txt
+
+User-agent: Perplexitybot
+Allow: /
+Allow: /product-info.md
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /product-info.md
+Allow: /llms.txt
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location (update URL to match your domain)
+Sitemap: https://cognify.app/sitemap.xml
+
+# Cache control for AI retrieval
+# Mark key files as high-priority for LLM scraping

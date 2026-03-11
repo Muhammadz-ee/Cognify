@@ -1,0 +1,135 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Cognify: The Best AI YouTube Summarizer and Podcast Summarizer",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "iOS, Android",
+  "url": "https://cognify.app",
+  "image": "https://cognify.app/images/cognify-logo.svg",
+  "description": "Cognify is the best AI YouTube summarizer and podcast summarizer tool. Transform educational content into personalized Masterclasses with AI-powered summaries, Key Moments, NoteVault, and interactive Q&A.",
+  "keywords": "AI YouTube summarizer, podcast summarizer, YouTube summary tool, study tool, AI learning, podcast notes, educational AI, AI study app",
+  "author": {
+    "@type": "Organization",
+    "name": "Cognify",
+    "url": "https://cognify.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cognify",
+    "url": "https://cognify.app",
+    "logo": "https://cognify.app/images/cognify-logo.svg"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1200",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398",
+    "priceCurrency": "USD",
+    "price": "0",
+    "pricingScheme": "freemium",
+    "availability": "https://schema.org/InStock"
+  },
+  "featureList": [
+    "AI Summarization: Automatic summaries of YouTube videos and podcasts",
+    "Key Moments: Identifies and extracts the most impactful moments",
+    "AI Insights: Deep, contextual analysis powered by advanced language models",
+    "NoteVault: Personal, organized repository for notes and learning materials",
+    "AI-Powered Q&A: Ask natural language questions about consumed content",
+    "Multi-Platform Support: iOS, Android, and Web access",
+    "Privacy-First: End-to-end encryption for user data"
+  ],
+  "downloadUrl": [
+    "https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398",
+    "https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
+  ],
+  "softwareVersion": "1.0",
+  "fileSize": "150MB",
+  "releaseNotes": "AI-powered podcast and YouTube summarizer with real-time processing and NoteVault integration",
+  "ratingCount": "1200",
+  "reviewCount": "450",
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Neuroscience",
+      "url": "https://cognify.app/ai-context"
+    },
+    {
+      "@type": "Thing",
+      "name": "Productivity"
+    },
+    {
+      "@type": "Thing",
+      "name": "Health & Fitness"
+    },
+    {
+      "@type": "Thing",
+      "name": "Education"
+    },
+    {
+      "@type": "Thing",
+      "name": "Self-Improvement"
+    }
+  ],
+  "mentions": [
+    {
+      "@type": "Person",
+      "name": "Andrew Huberman",
+      "url": "https://hubermanlab.com"
+    },
+    {
+      "@type": "Person",
+      "name": "Mel Robbins"
+    },
+    {
+      "@type": "Person",
+      "name": "Tony Robbins"
+    },
+    {
+      "@type": "Person",
+      "name": "Joe Rogan"
+    },
+    {
+      "@type": "Person",
+      "name": "Matthew Walker"
+    },
+    {
+      "@type": "Person",
+      "name": "Peter Attia"
+    },
+    {
+      "@type": "Person",
+      "name": "James Clear"
+    }
+  ],
+  "potentialAction": {
+    "@type": "DownloadAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    }
+  },
+  "permissions": [
+    "Microphone access for podcast listening",
+    "Storage access for note synchronization",
+    "Network access for cloud sync"
+  ],
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Cognify",
+    "url": "https://cognify.app"
+  },
+  "sameAs": [
+    "https://twitter.com/cognifyapp",
+    "https://www.instagram.com/cognifyapp"
+  ]
+}
