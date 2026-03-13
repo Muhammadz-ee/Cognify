@@ -49,7 +49,7 @@ export function PodcastTicker() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-white mb-2 sm:mb-4 px-4 font-semibold inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff] leading-[1.4]"
         >
-          <div className="text-[16px] sm:text-[32px] md:text-[40px] lg:text-[50px] mt-1 md:mt-4 leading-tight inline-flex items-center justify-center whitespace-nowrap flex-nowrap gap-1.5 sm:gap-3 lg:gap-4">
+          <div className="text-[22px] sm:text-[36px] md:text-[46px] lg:text-[56px] mt-1 md:mt-4 leading-tight inline-flex items-center justify-center whitespace-nowrap flex-nowrap gap-1.5 sm:gap-3 lg:gap-4">
             Crush Your Podcast Backlog
             <Image
               src="/images/heart.webp"
@@ -67,7 +67,7 @@ export function PodcastTicker() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-[12px] sm:text-[18px] md:text-[24px] lg:text-[28px] leading-[1.2] text-[#dcdcdc] font-thin mx-auto px-4 mt-2 sm:mt-4"
+          className="text-[16px] sm:text-[20px] md:text-[28px] lg:text-[32px] leading-[1.2] text-[#dcdcdc] font-thin mx-auto px-4 mt-2 sm:mt-4"
         >
           The Intelligence Layer for High-Performers
         </motion.p>

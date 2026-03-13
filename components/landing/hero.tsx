@@ -103,15 +103,15 @@ export function Hero() {
     setProgress(val);
   };
   return (
-    <section className="relative md:pt-15 pb-1 overflow-hidden bg-black">
+    <section className="relative pt-12 sm:pt-16 md:pt-16 lg:pt-16 pb-4 sm:pb-2 md:pb-2 lg:pb-2 overflow-hidden bg-black">
       <Container>
         <div className="flex flex-col items-center text-center z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mb-1 sm:mb-4"
+            className="mb-3 sm:mb-4 md:mb-5 lg:mb-6"
           >
-            <h1 className="text-[42px] xs:text-[46px] sm:text-[48px] md:text-[80px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-1 xs:mb-2 sm:mb-3 md:mb-4 uppercase leading-[1.04] font-monument">
+            <h1 className="text-[42px] xs:text-[46px] sm:text-[48px] md:text-[80px] lg:text-[100px] xl:text-[144.048px] font-black tracking-wider text-white mb-2 xs:mb-3 sm:mb-4 md:mb-6 uppercase leading-[1.04] font-monument">
               PODCASTS <br /> DISTILLED
             </h1>
           </motion.div>
@@ -120,11 +120,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[30px] xl:text-[44px] leading-[1.2] sm:leading-[1.15] md:leading-[1.08] lg:leading-[1.03] text-[#ad9ad6] font-bold mb-3 xs:mb-4 sm:mb-6 md:mb-8 lg:mb-10 mx-auto text-center px-3 xs:px-4 sm:px-4 max-w-[100%] md:max-w-[100%] relative z-20"
+            className="text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[26px] xl:text-[38px] leading-[1.2] sm:leading-[1.15] md:leading-[1.08] lg:leading-[1.03] text-[#ad9ad6] font-bold mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8 mx-auto text-center px-3 xs:px-4 sm:px-4 max-w-[100%] md:max-w-[100%] relative z-20"
           >
             Turn any podcast into custom-length highlights.
             <br />
-            <span className="text-[12px] xs:text-[14px] sm:text-[16px] md:text-[20px] lg:text-[30px] xl:text-[44px] text-white block mt-2 xs:mt-2.5 sm:mt-3 md:mt-4 lg:mt-5 w-[80%] mx-auto">
+            <span className="text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[26px] xl:text-[38px] text-white block mt-3 xs:mt-4 sm:mt-5 md:mt-4 lg:mt-4 w-full mx-auto">
               Master hours of content in the time it takes to brew your coffee.
             </span>
           </motion.div>
@@ -133,7 +133,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-0 mb-0 z-30 px-2 sm:px-4"
+            className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-2 sm:mt-2 md:mt-2 lg:mt-8 mb-0 z-30 px-2 sm:px-4"
           >
             <Button
               onClick={handleDownloadClick}
@@ -157,7 +157,7 @@ export function Hero() {
                 className="w-4 h-4 sm:w-8 sm:h-8"
               />
               <div className="text-left">
-                <div className="text-[6px] sm:text-[12] md:text-[18px] font-bold uppercase tracking-wider opacity-90 leading-tight">
+                <div className="text-[10px] sm:text-[12] md:text-[18px] font-bold uppercase tracking-wider opacity-90 leading-tight">
                   Try for free
                 </div>
               </div>
@@ -250,7 +250,7 @@ export function Hero() {
                   <div className="relative aspect-square w-full rounded-lg sm:rounded-lg md:rounded-[1rem] shadow-2xl border-1 md:border-2 border-white/10 overflow-hidden">
                     <Image
                       src="/images/album-4.webp"
-                      alt="The School of Greatness"
+                      alt="The Joe Rogan Experience"
                       fill
                       priority
                       className="object-cover"
@@ -259,10 +259,10 @@ export function Hero() {
                   </div>
                   <div className="text-left w-full pl-0.5 sm:pl-1">
                     <span className="text-[4px] sm:text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] font-medium text-gray-200 block font-sans tracking-tight truncate md:no-truncate">
-                      The School of Greatness
+                      The Joe Rogan Experience
                     </span>
                     <span className="text-[3.5px] sm:text-[6px] md:text-[6px] lg:text-[8px] xl:text-[12px] text-gray-500 block font-sans tracking-tight mt-0.5 lg:mt-1">
-                      Lewis Howes
+                      Joe Rogan
                     </span>
                   </div>
                 </div>
@@ -295,10 +295,10 @@ export function Hero() {
                 {/* Overlay: Try For Free + Testimonial */}
                 <div className="flex flex-col items-center gap-2 sm:gap-6 px-2 sm:px-4 scale-[0.85] md:scale-[0.7] lg:scale-100 transform origin-bottom pointer-events-auto mb-2 sm:mb-4 lg:mb-6">
                   <div className="text-center">
-                    <h3 className="text-[20px] sm:text-[40px] md:text-[48px] lg:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
+                    <h3 className="text-[24px] sm:text-[40px] md:text-[48px] lg:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
                       Try For <span className="text-[#b292ff]">Free</span>
                     </h3>
-                    <p className="mt-4 sm:mt-4 text-[8px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
+                    <p className="mt-4 sm:mt-4 text-[11px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
                       7 DAY FREE TRIAL - CANCEL ANY TIME
                     </p>
                   </div>
@@ -326,12 +326,12 @@ export function Hero() {
                         </div>
                       </div>
 
-                      <div className="mt-1 text-[8px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
+                      <div className="mt-1 text-[11px] sm:text-sm font-extrabold text-[#b292ff] tracking-widest uppercase">
                         SAM D.
                       </div>
                     </div>
 
-                    <p className="text-[8px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[140px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
+                    <p className="text-[10px] sm:text-sm md:text-lg lg:text-xl font-extrabold italic text-white text-left max-w-[180px] sm:max-w-xs md:max-w-md leading-tight drop-shadow-md lg:drop-shadow-none">
                       “FINALLY, AN APP THAT HELPS ME<br className="hidden sm:block" /> ACTUALLY REMEMBER WHAT I WATCH.”
                     </p>
                   </div>

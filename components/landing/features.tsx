@@ -9,22 +9,22 @@ import { Apple, Play } from "lucide-react";
 
 export function Features() {
   return (
-    <section id="features" className="py-16 bg-black overflow-hidden">
+    <section id="features" className="py-10 md:py-16 bg-black overflow-hidden">
       <Container>
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h2
-            className="text-3xl md:text-5xl font-bold mb-4 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+            className="text-3xl md:text-5xl font-bold mb-0 md:mb-4 text-white inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
             data-text="Turn Any Video Into a Masterclass"
           >
-            Turn Any Video Into a Masterclass <br />
+            Turn Any Video Into a Masterclass 
           </h2>
             <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] lg:text-[clamp(18px,1.5vw,22px)] max-w-[80%] md:max-w-[75%] md:max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
             Summarize key points, take organized notes, and get AI-powered{" "}
             answers—so you don't just watch, you truly learn.
             </p>
 
-          <div className="flex justify-center gap-4 mt-2">
+          <div className="flex justify-center gap-4 mt-2 mb-22 sm:mb-22 md:mb-32 lg:mb-22">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 -mt-2 lg:-mt-4"
+          className="flex flex-col-reverse lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 -mt-2 lg:-mt-4"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-30">
             <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
@@ -156,7 +156,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col lg:flex-row-reverse items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
+          className="flex flex-col-reverse lg:flex-row-reverse items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-20">
             <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
@@ -203,7 +203,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-36"
+          className="flex flex-col-reverse lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-36"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-10">
             <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
@@ -249,7 +249,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col lg:flex-row-reverse items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
+          className="flex flex-col-reverse lg:flex-row-reverse items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-0 mt-8 lg:-mt-52"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-20">
             <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
@@ -295,7 +295,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
+          className="flex flex-col-reverse lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 mt-8 lg:-mt-52"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-10">
             <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
@@ -335,11 +335,11 @@ export function Features() {
           </motion.div>
         </motion.div>
 
-        <p className="text-gray-100 text-[8px] sm:text-[clamp(11px,1.1vw,14px)] md:text-[clamp(12px,1.2vw,18px)] font-bold leading-relaxed mb-8 text-center mt-0 -mb-4 sm:mb-0 w-full">
+        {/* <p className="text-gray-100 text-[8px] sm:text-[clamp(11px,1.1vw,14px)] md:text-[clamp(12px,1.2vw,18px)] font-bold leading-relaxed mb-8 text-center mt-0 -mb-4 sm:mb-0 w-full">
           {" "}
           „Tell me and I forget, teach me and I may remember, involve me and I
           learn.” <br />-Benjamin Franklin{" "}
-        </p>
+        </p> */}
       </Container>
     </section>
   );

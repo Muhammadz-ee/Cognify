@@ -2,12 +2,12 @@
 
 import { useRef, useEffect } from "react";
 import { Container } from "@/components/ui/container";
-import { NavbarContact } from "@/components/layout/navbarContact";
+import { Navbar } from "@/components/layout/navbar";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
-      <NavbarContact />
+      <Navbar />
 
       <main className="relative py-8 flex-1">
         <div className="absolute inset-0 top-0 w-full h-full bg-gradient-to-b from-purple-200 via-purple-100 to-transparent opacity-40 blur-3xl z-0" />

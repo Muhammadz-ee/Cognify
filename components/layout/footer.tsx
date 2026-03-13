@@ -22,7 +22,7 @@ export function Footer() {
                   alt="Cognify Logo"
                   width={192}
                   height={72}
-                  className="w-48 h-auto"
+                  className="w-64 h-auto"
                 />
               </Link>
             </div>
@@ -197,7 +197,7 @@ export function Footer() {
         <div className="block md:hidden">
           {/* Header/Copyright & Logo section */}
           <div className="flex flex-col items-center mb-12 gap-8">
-            <p className="text-[#888888] text-[10px] text-center">
+            <p className="text-[#888888] text-[12px] sm:text-[13px] text-center">
               © 2026 CognifyAI Corporation. All rights reserved.
             </p>
             <Link href="/" className="flex justify-center -mb-2">
@@ -206,7 +206,7 @@ export function Footer() {
                 alt="Cognify Logo"
                 width={192}
                 height={72}
-                className="w-42 h-auto"
+                className="w-52 h-auto"
               />
             </Link>
           </div>
@@ -217,14 +217,14 @@ export function Footer() {
 
           <div className="flex flex-row justify-between items-start mb-12 w-full max-w-2xl mx-auto px-1 sm:px-0">
             <div className="flex flex-col gap-4">
-              <h4 className="text-[10px] sm:text-xs font-bold text-white">
+              <h4 className="text-[12px] sm:text-xs font-bold text-white">
                 Product
               </h4>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="#features"
-                    className="text-[9px] sm:text-xs text-[#888888]"
+                    className="text-[11px] sm:text-xs text-[#888888]"
                   >
                     Features
                   </Link>
@@ -233,14 +233,14 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <h4 className="text-[10px] sm:text-xs font-bold text-white">
+              <h4 className="text-[12px] sm:text-xs font-bold text-white">
                 Support
               </h4>
               <ul className="space-y-2 sm:space-y-3">
                 <li>
                   <Link
                     href="/contact"
-                    className="text-[9px] sm:text-xs text-[#888888]"
+                    className="text-[11px] sm:text-xs text-[#888888]"
                   >
                     Help Center
                   </Link>
@@ -248,7 +248,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/terms"
-                    className="text-[9px] sm:text-xs text-[#888888]"
+                    className="text-[11px] sm:text-xs text-[#888888]"
                   >
                     Terms of Use
                   </Link>
@@ -256,7 +256,7 @@ export function Footer() {
                 <li>
                   <Link
                     href="/privacy"
-                    className="text-[9px] sm:text-xs text-[#888888]"
+                    className="text-[11px] sm:text-xs text-[#888888]"
                   >
                     Privacy Policy
                   </Link>
@@ -265,7 +265,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col items-center gap-4">
-              <h4 className="text-[10px] sm:text-xs font-bold text-white">
+              <h4 className="text-[12px] sm:text-xs font-bold text-white">
                 Connect
               </h4>
               <ul className="flex flex-col gap-3">
@@ -369,7 +369,7 @@ export function Footer() {
           </div>
 
           <div className="pt-0 border-t border-white/10 flex flex-col justify-center gap-4 text-left">
-            <p className="text-[7.5px] text-[#ffffff] leading-tight uppercase font-sans tracking-wide">
+            <p className="text-[10px] sm:text-[11px] text-[#ffffff] leading-tight uppercase font-sans tracking-wide">
               <strong>DISCLAIMER:</strong> ALL PODCAST AND VIDEO CONTENT
               DISPLAYED IN THIS APP—INCLUDING CREATOR IMAGES—IS FOR ILLUSTRATIVE
               PURPOSES ONLY. WE DO NOT CLAIM OWNERSHIP OF THIRD-PARTY CONTENT,

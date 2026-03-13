@@ -16,18 +16,18 @@ export function AppModal({ isOpen, onClose, qrCode }: AppModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-      <div className="relative w-full max-w-[520px] rounded-[24px] bg-[#1a1f26] p-8 sm:p-10 shadow-2xl flex flex-col items-center">
+      <div className="relative w-full max-w-[520px] rounded-[24px] bg-[#101317] p-8 sm:p-10 shadow-2xl flex flex-col items-center border border-[#6B5A90]/30">
         {/* Close button */}
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors cursor-pointer"
+          className="absolute top-4 right-4 text-purple-300 hover:text-white transition-colors cursor-pointer"
         >
           <X className="w-6 h-6" />
         </button>
 
         {/* Heading */}
-        <h2 className="text-center text-[28px] sm:text-[32px] font-bold text-[#5ce1e6] mb-8">
+        <h2 className="text-center text-[28px] sm:text-[32px] font-bold text-[#ad9ad6] mb-8">
           Get the app
         </h2>
 
@@ -55,7 +55,7 @@ export function AppModal({ isOpen, onClose, qrCode }: AppModalProps) {
             href="https://apps.apple.com/us/app/cognify-smarter-listening/id6744607398"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 h-14 sm:h-16 flex flex-row items-center justify-center gap-3 bg-black border border-gray-600 rounded-xl px-2 sm:px-4 transition-transform hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
+            className="flex-1 h-14 sm:h-16 flex flex-row items-center justify-center gap-3 bg-black border border-[#6B5A90] hover:border-[#ad9ad6] rounded-xl px-2 sm:px-4 transition-all hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
           >
             <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center flex-shrink-0">
               <Image
@@ -67,7 +67,7 @@ export function AppModal({ isOpen, onClose, qrCode }: AppModalProps) {
               />
             </div>
             <div className="flex flex-col text-left justify-center flex-shrink-0 min-w-[85px] sm:min-w-[105px]">
-              <span className="text-[10px] sm:text-[12px] text-gray-300 leading-tight whitespace-nowrap">Download on the</span>
+              <span className="text-[10px] sm:text-[12px] text-purple-300 leading-tight whitespace-nowrap">Download on the</span>
               <span className="text-[14px] sm:text-[18px] text-white font-semibold leading-tight whitespace-nowrap">App Store</span>
             </div>
           </a>
@@ -77,7 +77,7 @@ export function AppModal({ isOpen, onClose, qrCode }: AppModalProps) {
             href="https://play.google.com/store/apps/details?id=com.cognifyai.mobile"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 h-14 sm:h-16 flex flex-row items-center justify-center gap-3 bg-black border border-gray-600 rounded-xl px-2 sm:px-4 transition-transform hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
+            className="flex-1 h-14 sm:h-16 flex flex-row items-center justify-center gap-3 bg-black border border-[#6B5A90] hover:border-[#ad9ad6] rounded-xl px-2 sm:px-4 transition-all hover:scale-105 active:scale-95 cursor-pointer overflow-hidden"
           >
             <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center flex-shrink-0">
               <Image
@@ -89,7 +89,7 @@ export function AppModal({ isOpen, onClose, qrCode }: AppModalProps) {
               />
             </div>
             <div className="flex flex-col text-left justify-center flex-shrink-0 min-w-[85px] sm:min-w-[105px]">
-              <span className="text-[10px] sm:text-[12px] text-gray-300 leading-tight whitespace-nowrap">GET IT ON</span>
+              <span className="text-[10px] sm:text-[12px] text-purple-300 leading-tight whitespace-nowrap">GET IT ON</span>
               <span className="text-[14px] sm:text-[18px] text-white font-semibold leading-tight whitespace-nowrap">Google Play</span>
             </div>
           </a>
