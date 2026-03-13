@@ -87,7 +87,7 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/MonumentExtended-Regular.otf" as="font" type="font/otf" crossOrigin="anonymous" fetchPriority="high" />
         {/* Preload hero video immediately to improve LCP specifically on mobile where it dominates above-the-fold content */}
         <link rel="preload" href="/videos/main-asset.webm" as="video" type="video/webm" fetchPriority="high" />
-        {process.env.NEXT_PUBLIC_META_PIXEL_ID && process.env.NODE_ENV === 'production' && (
+        {process.env.NEXT_PUBLIC_META_PIXEL_ID && (
           <>
             <Script
               src="https://connect.facebook.net/en_US/fbevents.js"

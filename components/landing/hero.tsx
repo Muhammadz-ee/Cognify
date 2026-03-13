@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import React, { useRef, useState } from "react";
 import { AppModal } from "@/components/ui/app-modal";
+import { trackDownload } from "@/lib/tracking";
 
 export function Hero() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -25,6 +26,9 @@ export function Hero() {
   const [showModal, setShowModal] = useState(false);
 
   const handleDownloadClick = () => {
+    // Track the download button click
+    trackDownload();
+
     // Detect if mobile
     const userAgent = typeof window !== "undefined" ? navigator.userAgent : "";
     const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(
