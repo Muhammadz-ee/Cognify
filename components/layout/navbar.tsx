@@ -113,7 +113,7 @@ export function Navbar() {
                       }
                     }
                   }}
-                  className="sm:hidden px-3 py-1.5 bg-gradient-to-r from-[#ad9ad6] to-[#7a6ba8] text-white font-semibold text-[11px] rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap flex-shrink-0"
+                  className="sm:hidden px-3 py-1.5 bg-linear-to-r from-brand-purple to-brand-green text-white font-semibold text-[11px] rounded-lg hover:opacity-90 shadow-lg shadow-purple-500/20 transition-opacity whitespace-nowrap flex-shrink-0"
                 >
                   Try for Free
                 </button>

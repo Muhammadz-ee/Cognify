@@ -19,7 +19,7 @@ export function Features() {
           >
             Turn Any Video Into a Masterclass 
           </h2>
-            <p className="text-white text-[clamp(14px,1.2vw,16px)] sm:text-[clamp(16px,1.3vw,18px)] lg:text-[clamp(18px,1.5vw,22px)] max-w-[80%] md:max-w-[75%] md:max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
+            <p className="text-white text-[clamp(16px,1.3vw,18px)] sm:text-[clamp(16px,1.3vw,18px)] lg:text-[clamp(18px,1.5vw,22px)] max-w-[90%] md:max-w-[75%] md:max-w-2xl mx-auto mt-2 mb-8 leading-[1.05] w-full mt-4 sm:mt-6">
             Summarize key points, take organized notes, and get AI-powered{" "}
             answers—so you don't just watch, you truly learn.
             </p>
@@ -138,7 +138,7 @@ export function Features() {
               Key Moments™
             </Button>
             <h2
-              className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-bold text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Summarize. Skip the Noise. Learn What Counts."
             >
               Distill in Minutes
@@ -186,7 +186,7 @@ export function Features() {
               Insight Modes™
             </Button>
             <h2
-              className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-bold text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Summarize Your Way."
             >
               Summarize Your Way
@@ -232,7 +232,7 @@ export function Features() {
               Annotations™
             </Button>
             <h2
-              className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[52px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[52px] font-bold text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="From Passive Watching to Active Listening"
             >
               From Passive Watching to Active Listening
@@ -278,7 +278,7 @@ export function Features() {
               NoteVault™
             </Button>
             <h2
-              className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-bold text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Retention for the 1%"
             >
               Retention for the 1%
@@ -324,7 +324,7 @@ export function Features() {
               AI Assistant™
             </Button>
             <h2
-              className="text-[24px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-normal text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
+              className="text-[26px] sm:text-[32px] md:text-[36px] lg:text-[56px] font-bold text-white mb-2 sm:mb-4 lg:mb-6 leading-[1.1] inline-block drop-shadow-none sm:[text-shadow:-1px_0_0_#00ffff,1px_0_0_#ff00ff]"
               data-text="Ask Anything, Instantly"
             >
               Ask Anything, Instantly
