@@ -134,7 +134,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-4 sm:mt-8 md:mt-8 lg:mt-8 mb-0 z-30 px-2 sm:px-4"
+            className="flex flex-row justify-center w-full gap-2 sm:gap-6 mt-2 sm:mt-4 md:mt-8 lg:mt-8 mb-0 z-30 px-2 sm:px-4"
           >
             <Button
               onClick={handleDownloadClick}

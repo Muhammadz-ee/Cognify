@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <section className="w-full min-h-screen flex justify-center items-start py-4 px-4">
                   <div className="w-full max-w-5xl">
                     <iframe
-                      src="https://form.jotform.com/251245347804153"
+                      src="https://form.jotform.com/251245347804153?iframe=1"
                       className="w-full border-none"
                       style={{
                         minHeight: "760px",

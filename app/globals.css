@@ -128,5 +128,14 @@ svg {
 }
 
 .formFooter{
-  display: none;
+  display: none !important;
+}
+
+.formFooter-wrapper {
+  display: none !important;
+}
+
+.formFooter-heightMask {
+  display: none !important;
+  height: 0 !important;
 }

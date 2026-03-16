@@ -6,7 +6,7 @@ export default function TermsPage() {
   return (
     <main className="min-h-screen bg-black text-white">
       <Navbar />
-      <Container className="pt-16 sm:pt-20 md:pt-32 pb-20">
+      <Container className="pt-8 sm:pt-16 md:pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           {/* Terms of Service */}
           <section className="mb-12 sm:mb-14 md:mb-16">

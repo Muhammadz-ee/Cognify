@@ -6,7 +6,7 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-black text-white">
       <Navbar />
-      <Container className="pt-16 sm:pt-20 md:pt-32 pb-20">
+      <Container className="pt-8 sm:pt-16 md:pt-24 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-4">
             Privacy Policy
