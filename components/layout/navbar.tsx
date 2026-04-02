@@ -135,7 +135,7 @@ export function Navbar() {
                   {pathname !== "/" && pathname !== "/contact" && (
                     <Link href="/about" className={`${linkClass("/about")} text-[20px] sm:text-base`}>About Us</Link>
                   )}
-                  <Link href={isContact ? "/#features" : "#features"} className={`${linkClass(isContact ? "/#features" : "#features")} text-[20px] sm:text-base`}>Features</Link>
+                  <Link href={isContact ? "/#key-moments" : "#key-moments"} className={`${linkClass(isContact ? "/#key-moments" : "#key-moments")} text-[20px] sm:text-base`}>Features</Link>
                   <Link href="/contact" className={`${linkClass("/contact")} text-[20px] sm:text-base`}>Contact Us</Link>
                 </div>
               </>
@@ -146,7 +146,7 @@ export function Navbar() {
                 {pathname !== "/" && pathname !== "/contact" && (
                   <Link href="/about" className={linkClass("/about")}>About Us</Link>
                 )}
-                <Link href={isContact ? "/#features" : "#features"} className={linkClass(isContact ? "/#features" : "#features")}>Features</Link>
+                <Link href={isContact ? "/#key-moments" : "#key-moments"} className={linkClass(isContact ? "/#key-moments" : "#key-moments")}>Features</Link>
                 <Link href="/contact" className={linkClass("/contact")}>Contact Us</Link>
               </>
             )}

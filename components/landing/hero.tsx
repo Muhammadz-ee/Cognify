@@ -297,7 +297,7 @@ export function Hero() {
                 <div className="flex flex-col items-center gap-2 sm:gap-6 px-2 sm:px-4 scale-[0.85] md:scale-[0.7] lg:scale-100 transform origin-bottom pointer-events-auto mb-2 sm:mb-4 lg:mb-6">
                   <div className="text-center">
                     <h3 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[3.5rem] font-bold tracking-tight mb-0 text-white leading-none">
-                      Try For <span className="text-[#b292ff]">Free</span>
+                      {/* Get Instant  <span className="text-[#b292ff]">Access</span>  */}
                     </h3>
                     <p className="mt-4 sm:mt-4 text-[13px] sm:text-[15px] md:text-[20px] font-bold tracking-[0.1em] sm:tracking-[0.12em] uppercase text-gray-200 leading-[1.03]">
                       7 DAY FREE TRIAL - CANCEL ANY TIME
