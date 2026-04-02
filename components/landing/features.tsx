@@ -109,7 +109,7 @@ export function Features() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col-reverse lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 -mt-2 lg:-mt-4 scroll-mt-10 md:scroll-mt-25"
+          className="flex flex-col-reverse lg:flex-row items-center gap-2 sm:gap-8 lg:gap-12 mb-12 sm:mb-8 -mt-2 lg:-mt-4 scroll-mt-20 md:scroll-mt-25"
         >
           <div className="w-full lg:flex-1 relative flex justify-center lg:z-30">
             <div className="relative w-[75%] sm:w-[85%] md:w-[85%] lg:w-full max-w-full mx-auto overflow-hidden">
